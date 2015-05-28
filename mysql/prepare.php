@@ -34,8 +34,8 @@ class timer {
 
 $timer = new timer;
 $timer->start();
-
-$mysql = new mysqli('localhost','root','xulianhong','wei_call_log');
+include_once '../config.php';
+$mysql = new mysqli($db_wei_call_log['host'],$db_wei_call_log['user_name'],$db_wei_call_log['passwd'],$db_wei_call_log['db']);
 
 /* 
 $query = $mysql->query("select username,email from uc_members where uid < 100000"); 

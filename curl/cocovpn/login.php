@@ -5,7 +5,8 @@
  * Date: 15/5/26
  * Time: 上午11:19
  */
-$data = array('username'=>'banditsmile@qq.com','password'=>'xulianhong','submit'=>'登录');
+include_once '../../config.php';
+$data = $coco_vpn;
 $param = http_build_query($data);
 
 $sh = curl_share_init();

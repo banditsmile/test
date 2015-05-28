@@ -64,7 +64,8 @@ $f_ctime = filectime('./list.html');
 if(time()-$f_ctime>86400){
 	$login_url = 'http://www.cojs.net/client/dologin.php';
 	$cookie_file = __DIR__.'/cocovpn.cookie';
-	$post = array('username'=>'banditsmile@qq.com','password'=>'xulianhong','submit'=>'登录');
+	include_once '../../config.php';
+	$post = $coco_vpn;
 
 	login_post($login_url,$cookie_file,$post);
 

@@ -11,7 +11,8 @@ $page_num = 1;
 $limit =1;
 $article_list_base_url = 'http://xx.yzz.cn/gif/5855,%d.shtml';
 
-$mysqli = new mysqli('localhost','root','xulianhong');
+include_once '../../config.php';
+$mysqli = new mysqli($db_local['host'],$db_local['user_name'],$db_local['password']);
 $mysqli->query('set names utf8');
 $mysqli->query('use images');
 for($page_num=1;$page_num<=$limit;$page_num++){

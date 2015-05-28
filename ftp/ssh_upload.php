@@ -7,14 +7,7 @@
  */
 
 class ssh_upload {
-	var $config=array(
-		'username'=>'bandit',
-		'passwd'=>'xulianhong',
-		'host' => 'blog.icodeu.com',
-		'port' => 22,
-		'base_path' =>'/home/bandit/ftp/test/',
-		'file_mod' =>0755
-	);
+	var $config=array();
 
 	var $config_local = array(
 		'base_path' =>'/data/wwwroot/mosheng/',
@@ -32,6 +25,8 @@ class ssh_upload {
 	var $failed = array();
 
 	public function __construct(){
+		include_once '../config.php';
+		$this->config=$blog_ftp;
 		$this->connection = ssh2_connect($this->config['host'], $this->config['port'], $this->methods, $this->callbacks);
 		ssh2_auth_password($this->connection, $this->config['username'],$this->config['passwd']);
 		if (!$this->connection) die('Connection failed');

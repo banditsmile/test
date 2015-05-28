@@ -23,4 +23,4 @@ if (defined('ENVIRONMENT')) {
 	}
 }
 
-include BASE_PATH.'/core/base.php';
+include '../../config.php';

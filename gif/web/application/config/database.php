@@ -5,12 +5,13 @@
  * Date: 2015/3/11
  * Time: 22:26
  */
+
 return array (
 	'servercluster' =>
 		array (
-			'hostname' => '127.0.0.1',
-			'username' => 'root',
-			'password' => 'xulianhong',
+			'hostname' => $db_local['host'],
+			'username' => $db_local['user_name'],
+			'password' => $db_local['password'],
 			'database' => 'images',
 			'dbdriver' => 'mysql',
 			'dbprefix' => '',

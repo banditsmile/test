@@ -8,7 +8,8 @@ if (function_exists('xdebug_disable')) {
     xdebug_disable();
 }
 
-@mysql_connect('localhost', 'root', 'xulianhong');
+include '../../config.php';
+@mysql_connect($db_local['host'], $db_local['user_name'], $db_local['password']);
 @mysql_select_db('hotel');
 
 class MysqlDemo {

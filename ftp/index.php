@@ -5,14 +5,8 @@
  * Date: 2015/3/22
  * Time: 0:09
  */
-$config=array(
-	'username'=>'bandit',
-	'passwd'=>'xulianhong',
-	'host' => 'blog.icodeu.com',
-	'port' => 22,
-	'base_path' =>'/home/bandit/ftp/test/',
-	'file_mod' =>0755
-);
+include_once '../config.php';
+$config=$blog_ftp;
 
 $config_local = array(
 	'base_path' =>'/data/wwwroot/mosheng/',
