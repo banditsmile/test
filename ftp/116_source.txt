@@ -1,0 +1,2 @@
+application/views/default/dialog/analyse/index.php
+application/views/default/dialog/analyse/list.php

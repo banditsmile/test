@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=yes">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>深网传媒 | 互联网整合营销传播新媒体-为价值传播</title>
+<meta name="description" content="深网传媒专注互联网整合营销资讯，为您带来最新、最热、最有价值的内容，传播互联网营销/移动互联网营销创业思维以及营销模式。" />
+<meta name="keywords" content="深网传媒,互联网营销,网络营销,互联网传播,网络营销机构,移动互联网营销，互联网营销公司,互联网营销模式，互联网营销专家,互联网创业,互联网思维" />
+<link rel="shortcut icon" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/favicon.png" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.shenwang001.com/blog/xmlrpc.php">
+<!--[if lt IE 9]><script src="http://www.shenwang001.com/blog/wp-content/themes/Ality/js/html5-css3.js"></script><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/css/ie7/ie7.css" /><![endif]-->
+<!--[if lt IE 7]><script src="http://www.shenwang001.com/blog/wp-content/themes/Ality/js/ie6.js" type="text/javascript"></script><![endif]-->
+<link rel='stylesheet' id='style-css'  href='http://www.shenwang001.com/blog/wp-content/themes/Ality/style.css?ver=2014.11.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaqueries-css'  href='http://www.shenwang001.com/blog/wp-content/themes/Ality/css/mediaqueries.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/jquery.min.js?ver=1.10.1'></script>
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/script.js?ver=1.0'></script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body class="home blog paged paged-3">
+<div id="page" class="page-site">
+	<div id="header-top">
+		<nav id="top-nav" class="main-nav">
+			<div class="home_h"><i class="icon-home_h"><a href="http://www.shenwang001.com/blog" title="返回首页"></a></i></div>
+			<div class="menu-%e9%a1%b6%e9%83%a8%e5%af%bc%e8%88%aa-container"><ul id="menu-%e9%a1%b6%e9%83%a8%e5%af%bc%e8%88%aa" class="menu"><li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="http://www.shenwang001.com/blog/about">关于我们</a></li>
+<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="http://www.shenwang001.com/blog/contact">联系我们</a></li>
+</ul></div>			<div class="clear"></div>
+		</nav>
+	</div>
+	<div id="simple-top">
+	<a id="simple-menu" href="#sidr"><i class="icon-simple-menu"></i></a>
+	</div>
+		<header id="header">
+			<div class="header-clear"></div>
+			<div class="main-header">
+				<hgroup class="logo-main">
+	<div class="title-main">
+		<h1 class="site-title"><a href="http://www.shenwang001.com/blog/" rel="home">深网传媒</a></h1>
+		<h2 id="site-description">互联网整合营销传播新媒体-为价值传播</h2>
+	</div>
+</hgroup>
+				<div id="set-main">
+	<div id="nav-search">
+		<a class="menu-search" href="#">搜索</a>
+	</div>
+	<div id="nav-login">
+		<a href="#login" class="flatbtn" id="login-main" >登录</a>	</div>
+</div>							</div>
+			<div class="clear"></div>
+			<nav id="site-nav" class="main-nav">
+				<div class="menu-sem-container"><ul id="menu-sem" class="menu"><li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-25"><a href="http://www.shenwang001.com/blog/">首页</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://www.shenwang001.com/blog/category/news">最新资讯</a></li>
+<li id="menu-item-773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-773"><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao">网络营销</a></li>
+<li id="menu-item-774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774"><a href="http://www.shenwang001.com/blog/category/yidong">移动营销</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://www.shenwang001.com/blog/category/jingyan">实战经验</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://www.shenwang001.com/blog/category/zhuanjia">人物论点</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="http://www.shenwang001.com/blog/category/sem">sem竞价推广</a></li>
+<li id="menu-item-878" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="http://www.shenwang001.com/blog/category/guanli">企业智慧管理</a></li>
+<li id="menu-item-879" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-879"><a href="http://www.shenwang001.com/blog/category/zhihui">智慧杂谈</a></li>
+</ul></div>				<ul><li class="fill"></li></ul>
+			</nav>
+			<!-- #site-nav -->
+			<div class="clear"></div>
+		</header>
+		<!-- #header -->
+
+	<div id="main" class="wrapper">
+		<div id="search-main">
+			<div id="searchbar">
+	<form method="get" id="searchform" action="http://www.shenwang001.com/blog/">
+		<div><input type="text" value="" name="s" id="s" placeholder="输入搜索内容" required />
+		<input type="submit" id="searchsubmit" value="搜索" />
+		</div>
+	</form>
+</div>			<form action="http://www.baidu.com/baidu" target="_blank">
+	<input name=word class="swap_value" placeholder="百度站内搜索" required >
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="百度" />
+	<input name=tn type=hidden value="bds">
+	<input name=cl type=hidden value="3">
+	<input name=ct type=hidden value="2097152">
+	<input name=si type=hidden value="shenwang001.com/blog/">
+	<input name=si type=hidden value="">
+</form>		</div>
+
+		<nav class="crumbs">文章排序：<a href="http://www.shenwang001.com/blog" rel="nofollow" title="按日期排序"> 日期</a>
+<a  href="http://www.shenwang001.com/blog/?order=rand" rel="nofollow" title="随机排序"> &gt; 随机</a>
+<a class="current" href="http://www.shenwang001.com/blog/?order=commented" rel="nofollow" title="按评论多少排序"> &gt; 评论</a>
+<a  href="http://www.shenwang001.com/blog/?order=views" rel="nofollow" title="按点击量排序"> &gt; 点击</a></nav>
+				<div id="primary" class="site-content">
+				<div class="primary-site">
+							<article id="post-1101" class="post-1101 post type-post status-publish format-standard hentry category-weixin tag-182">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/yidong/weixin/1101.html" rel="bookmark" title="详细阅读 微信营销坚持四点很重要">微信营销坚持四点很重要</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/yidong/weixin/1101.html" rel="bookmark" title="微信营销坚持四点很重要">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/default.jpg" alt="微信营销坚持四点很重要" />
+</a>
+				</figure>
+						<div class="entry-site">
+									说到移动互联网，自然要关注现在的第一大移动互联网应用，那就是微信，当然除了微信也会有别的，还有各种微博，各种信，但那些都不是主流，企业还是应该把主要的精力和资源投入到占市场比重最大的微信上，如果资源有限，其他的就可以忽略了，做好微信就够了。
+第一：主动出击，执行力很重要
+用户的默认习惯是等着别人为我推送什么，而不是我要上去找什么，所以我们必须要主动出击，不能像以前那样做好了几...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月10日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/yidong/weixin" rel="category tag">微信运营</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/yidong/weixin/1101.html#respond" title="《微信营销坚持四点很重要》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 64 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/yidong/weixin/1101.html" rel="bookmark" title="共 2379字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+												<div id="g-posts">
+	<div class="g-posts-main g-main" style="text-align: center;">
+		<a href="/" target="_blank"><img src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/gg/760.jpg" alt="深圳网站建设" /></a>	</div>
+</div>							
+					<article id="post-1042" class="post-1042 post type-post status-publish format-standard hentry category-news tag-629 tag-366 tag-428 tag-630 tag-90 tag-351">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/news/1042.html" rel="bookmark" title="详细阅读 2015互联网各大佬巅峰对决：贺岁大片 震撼上演">2015互联网各大佬巅峰对决：贺岁大片 震撼上演</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/news/1042.html" rel="bookmark" title="2015互联网各大佬巅峰对决：贺岁大片 震撼上演">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2015/02/1.jpg" alt="2015互联网各大佬巅峰对决：贺岁大片 震撼上演" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+
+导读
+
+
+　　岁末年终，公司一年一度的年会来袭!各位老中青、小鲜肉你们是不是还在担心无才无艺怎么上?不用担心，照着马云、雷军、王健林等大佬们赶紧学起来，只要你够胆大，只要你放得开，天空掉下五个字，那都不是事!
+
+
+
+　　作为公司的创始人或CEO，在工作中，他们是公司的标杆;工作之外，这些大佬们脱下“企业领袖”的外衣，变成爱玩爱闹的普通人。他们一样喜欢K歌，喜欢和朋友们喝个小酒，侃大山。
+　...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月02日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/news" rel="category tag">最新资讯</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/news/1042.html#respond" title="《2015互联网各大佬巅峰对决：贺岁大片 震撼上演》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 85 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/news/1042.html" rel="bookmark" title="共 1877字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1057" class="post-1057 post type-post status-publish format-standard hentry category-sem tag-632 tag-631">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/sem/1057.html" rel="bookmark" title="详细阅读 1周百度权重6的方法，震撼！ （干货）">1周百度权重6的方法，震撼！ （干货）</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/sem/1057.html" rel="bookmark" title="1周百度权重6的方法，震撼！ （干货）">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2015/02/01.jpg" alt="1周百度权重6的方法，震撼！ （干货）" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+站长百度权重是什么
+在说方法之前，先跟小白说一下百度权重是怎么算出来的：
+以下为chinaz站长查询定义的百度权重的规则：
+百度预计流量1~99 权重1
+百度预计流量100~499 权重2
+百度预计流量500~999 权重3
+1000~4999 权重4
+5000~9999 权重5
+10000~49999 权重6
+50000~199999 权重7
+200000~999999 权重8
+1000000以上 权重9
+通过这个就很容易理解，百度权重就是你的站有多少个词排在前面这些词能带给你多少ip....								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月03日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/sem" rel="category tag">sem竞价推广</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/sem/1057.html#respond" title="《1周百度权重6的方法，震撼！ （干货）》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 82 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/sem/1057.html" rel="bookmark" title="共 512字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1060" class="post-1060 post type-post status-publish format-standard hentry category-wangluoyingxiao tag-634 tag-633">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1060.html" rel="bookmark" title="详细阅读 手机网站优化关键要点！">手机网站优化关键要点！</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/wangluoyingxiao/1060.html" rel="bookmark" title="手机网站优化关键要点！">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/default.jpg" alt="手机网站优化关键要点！" />
+</a>
+				</figure>
+						<div class="entry-site">
+									在移动手机用户群体中，百度依然占据搜索的龙头位置不可动摇，因此，手机网站优化依然是面向百度这个最大的中文搜索引擎来开展。当然不是说用户体验不重要，是要以搜索引擎优化的前提下尽可能去照顾用户体验。
+1、定位和页面设计。
+无论是PC端还是移动端，网站都要考虑清楚消费群体的定位问题。虽然智能手机用户数量非常普及，但是要明白中国的大部分手机用户使用的还是2G网络，一直高喊的3G、4G手机用户只...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月03日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao" rel="category tag">网络营销</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1060.html#respond" title="《手机网站优化关键要点！》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 78 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1060.html" rel="bookmark" title="共 1143字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1062" class="post-1062 post type-post status-publish format-standard hentry category-jingyan category-weixin tag-635 tag-636">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/1062.html" rel="bookmark" title="详细阅读 一个公众号运营者的感悟之内容篇">一个公众号运营者的感悟之内容篇</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/1062.html" rel="bookmark" title="一个公众号运营者的感悟之内容篇">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2015/02/微信营销.jpg" alt="一个公众号运营者的感悟之内容篇" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+很多账号运营者很多都在发愁什么样的内容能让增粉来的更快些？其实答案也很简单，加大原创内容的产出能力，势必能实现增粉的目的。但是问题来了，我们每个人都不是天生写手，怎么才能不断创造新东西呢？
+问题的答案就是公众号运营者或团队需要有非常强大的内容整合能力，以及搜寻大量可用素材的手段，不管是通过各种国内网站，还是翻墙，找到你想要的一切素材，结合自身的观点、经验进行整合，打造原创精...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月03日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a>, <a href="http://www.shenwang001.com/blog/category/yidong/weixin" rel="category tag">微信运营</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/1062.html#respond" title="《一个公众号运营者的感悟之内容篇》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 54 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/1062.html" rel="bookmark" title="共 2736字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1065" class="post-1065 post type-post status-publish format-standard hentry category-news tag-637 tag-638">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/news/1065.html" rel="bookmark" title="详细阅读 微商培训不会告诉你的10个秘密（转）">微商培训不会告诉你的10个秘密（转）</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/news/1065.html" rel="bookmark" title="微商培训不会告诉你的10个秘密（转）">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/default.jpg" alt="微商培训不会告诉你的10个秘密（转）" />
+</a>
+				</figure>
+						<div class="entry-site">
+									导读：微商现在很火，于是微商的培训也跟着水涨船高。不少做培训的人除了给大家画一个巨大的饼之外，并没有什么实战经验。有些更是吹得让人听了都冷汗直冒。今天看到一个电商人的分享，虽然话糙但理不糙，很适合头脑发热的同学们！
+1、微商到底有的做没的做？2015做是否还来的及？当然有的做！微商是时代的产物，简单的说，沟通的改变，带来商业的变革。电报丶报纸丶电视丶互联网丶移动互联网，哪次都不是...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月04日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/news" rel="category tag">最新资讯</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/news/1065.html#respond" title="《微商培训不会告诉你的10个秘密（转）》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 98 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/news/1065.html" rel="bookmark" title="共 1772字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1067" class="post-1067 post type-post status-publish format-standard hentry category-sem tag-640 tag-639">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/sem/1067.html" rel="bookmark" title="详细阅读 怎样做好搜索营销呢?">怎样做好搜索营销呢?</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/sem/1067.html" rel="bookmark" title="怎样做好搜索营销呢?">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/default.jpg" alt="怎样做好搜索营销呢?" />
+</a>
+				</figure>
+						<div class="entry-site">
+									如何做好搜索营销呢?通过全面精确分析市场背景，结合企业规模、发展战略、广告预算等，为企业提供最具性价比的个性化网络营销解决方案。在整个搜索营销推广过程中还有一项重要的工作就是数据监测与分析，如何监测、分析竞价数据，以及如何根据历史数据分析制定更好的优化策略，这对整个网络营销推广都起到至关重要的作用。
+那么，如何更好的制定优化策略呢?SEM策略师通过人工+工具分析的方法，进行有效的数...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月04日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/sem" rel="category tag">sem竞价推广</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/sem/1067.html#respond" title="《怎样做好搜索营销呢?》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 82 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/sem/1067.html" rel="bookmark" title="共 526字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1069" class="post-1069 post type-post status-publish format-standard hentry category-guanli tag-641 tag-642">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/guanli/1069.html" rel="bookmark" title="详细阅读 为什么学历低的人反而更容易成功?【智慧】">为什么学历低的人反而更容易成功?【智慧】</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/guanli/1069.html" rel="bookmark" title="为什么学历低的人反而更容易成功?【智慧】">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2015/02/201302191718040.jpg" alt="为什么学历低的人反而更容易成功?【智慧】" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+市场险恶，从来富贵险中求。低学历的人多年在市场中拼杀的经验远比书本上的教条更生动。别人从书本上学知识，他们在社会上用血的教训长本事。现实的教训永远是让人印象深刻的，也是让一个人快速成长的。
+而在我们的身边，经常遇到学历不是很高的学员为自己的前途担忧。其实在职场待一段时间你就会发现，也许学历可以助你进门，但是未必能助你留下。能力是决定你走多远的标准。
+“梦想和人性的游戏”
+现在，...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月04日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/guanli" rel="category tag">企业智慧管理</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/guanli/1069.html#respond" title="《为什么学历低的人反而更容易成功?【智慧】》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 86 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/guanli/1069.html" rel="bookmark" title="共 2661字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1072" class="post-1072 post type-post status-publish format-standard hentry category-wangluoyingxiao tag-372 tag-24 tag-41">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1072.html" rel="bookmark" title="详细阅读 互联网时代的5大营销方法">互联网时代的5大营销方法</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/wangluoyingxiao/1072.html" rel="bookmark" title="互联网时代的5大营销方法">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/default.jpg" alt="互联网时代的5大营销方法" />
+</a>
+				</figure>
+						<div class="entry-site">
+									网络营销方法，只不过是把营销平台换成了互联网，在互联网上投放本公司产品营销的广告来宣传自己的品牌、产品和服务，然后让客户直接进入自己的门户网站、服务网站或去现实的终端渠道购买自己的产品而已，所以营销的本质没有变。
+目前网络营销都有哪些新的营销方法呢?以下将给读者做详细介绍：
+第一种形式：搜索引擎营销方法
+搜索引擎营销是目前最主要的网站推广营销方法之一，尤其基于搜索结果的搜索引擎...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月05日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao" rel="category tag">网络营销</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1072.html#respond" title="《互联网时代的5大营销方法》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 93 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1072.html" rel="bookmark" title="共 1135字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-1074" class="post-1074 post type-post status-publish format-standard hentry category-weixin tag-182 tag-643">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/yidong/weixin/1074.html" rel="bookmark" title="详细阅读 最火的营销方式和工具——微信">最火的营销方式和工具——微信</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/yidong/weixin/1074.html" rel="bookmark" title="最火的营销方式和工具——微信">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2015/02/11.jpg" alt="最火的营销方式和工具——微信" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+一、你为什么要做微信营销?
+因为大家都在做微信营销吗?要知道所有人都在做同一件事情有时候也不一定是正确的，比如都站在船的一边。是因为觉得自己不在微信上做营销的话就会处于被动地位吗?如果你不弄懂为什么要做微信营销这个问题，那么即便做了微信营销，你也会处于被动地位。是因为你觉得微信这种独特的产品模式更适合做营销吗?那么微信与其他产品或者营销工具相比较，独特性体现在哪里呢?
+二、微信营...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2015年02月05日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/yidong/weixin" rel="category tag">微信运营</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/yidong/weixin/1074.html#respond" title="《最火的营销方式和工具——微信》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 88 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/yidong/weixin/1074.html" rel="bookmark" title="共 3752字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+							</div>
+	<nav id="pagenavi">
+<a class='page-numbers' href='http://www.shenwang001.com/blog/page/2?order=commented' title='上页'>上页</a><a class='page-numbers' href='http://www.shenwang001.com/blog/?order=commented' title='第 1 页'>1</a><a class='page-numbers' href='http://www.shenwang001.com/blog/page/2?order=commented' title='第 2 页'>2</a><span class='page-numbers current'>3</span><a class='page-numbers' href='http://www.shenwang001.com/blog/page/4?order=commented' title='第 4 页'>4</a><a class='page-numbers' href='http://www.shenwang001.com/blog/page/5?order=commented' title='第 5 页'>5</a><a class='page-numbers' href='http://www.shenwang001.com/blog/page/6?order=commented' title='第 6 页'>6</a><span class="pages">...</span><a class='page-numbers' href='http://www.shenwang001.com/blog/page/16?order=commented' title='最后一页'>16</a><a class='page-numbers' href='http://www.shenwang001.com/blog/page/4?order=commented' title='下页'>下页</a></nav>
+</div>
+<!-- #primary -->
+<div id="sidebar" class="widget-area">
+			<aside id="search-2" class="widget widget_search"><div id="searchbar">
+	<form method="get" id="searchform" action="http://www.shenwang001.com/blog/">
+		<div><input type="text" value="" name="s" id="s" placeholder="输入搜索内容" required />
+		<input type="submit" id="searchsubmit" value="搜索" />
+		</div>
+	</form>
+</div><div class="clear"></div></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title"><p><i class="icon-st"></i></p>近期文章</h3>		<ul>
+					<li>
+				<a href="http://www.shenwang001.com/blog/guanli/1304.html">高效需要规律，规律来自简单</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/wangluoyingxiao/1302.html">新手必看：教你提高宝贝转化率</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/wangluoyingxiao/1300.html">营销新趋势：品牌为了节日营销都联盟了</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/zhihui/1296.html">如何用 150 字写出一个欲罢不能的开头？</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/yidong/weixin/1293.html">微信加粉36计【干货】</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/sem/1291.html">网络营销与SEO、网络推广的关系【围观】</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/wangluoyingxiao/1283.html">拒绝免费帮忙设计——请你尊重设计，因为我靠它吃饭！</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/sem/1280.html">说SEO全部靠技术是混蛋，说不需要技术是扯淡！【围观】</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/yidong/weixin/1277.html">探寻&#8221;粉丝&#8221;的反商业本质</a>
+						</li>
+					<li>
+				<a href="http://www.shenwang001.com/blog/zhuanjia/1274.html">董明珠借势营销“任性”亮出格力手机 步步为营</a>
+						</li>
+				</ul>
+		<div class="clear"></div></aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title"><p><i class="icon-st"></i></p>近期评论</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">shenwang</span>发表在《<a href="http://www.shenwang001.com/blog/news/417.html#comment-28">双11京东金融推出“11元筹1.1折房”等房产众筹活动</a>》</li><li class="recentcomments"><span class="comment-author-link">理应</span>发表在《<a href="http://www.shenwang001.com/blog/news/417.html#comment-23">双11京东金融推出“11元筹1.1折房”等房产众筹活动</a>》</li></ul><div class="clear"></div></aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title"><p><i class="icon-st"></i></p>分类目录</h3>		<ul>
+	<li class="cat-item cat-item-4"><a href="http://www.shenwang001.com/blog/category/sem" >sem竞价推广</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.shenwang001.com/blog/category/zhuanjia" title="让网络营销高手论互联网，分析专家言论，让大家可以更快的了解互联网网络营销。">人物论点</a>
+</li>
+	<li class="cat-item cat-item-525"><a href="http://www.shenwang001.com/blog/category/guanli" >企业智慧管理</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://www.shenwang001.com/blog/category/jingyan" title="剖析实战互联网推广经验，可以帮助广大用户在互联网推广以及电子商务中可以更快的掌握技巧。">实战经验</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="http://www.shenwang001.com/blog/category/yidong/weixin" >微信运营</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="http://www.shenwang001.com/blog/category/yidong/weibo" >微博运营</a>
+</li>
+	<li class="cat-item cat-item-526"><a href="http://www.shenwang001.com/blog/category/zhihui" >智慧杂谈</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.shenwang001.com/blog/category/news" title="最热的互联网资讯，第一时间掌握互联网动态，了解互联网整体走势以及方向，给您一个最好的指导">最新资讯</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://www.shenwang001.com/blog/category/yidong" title="移动互联网是目前发展的大趋势,包括了微信\微博为主要媒体。">移动营销</a>
+</li>
+	<li class="cat-item cat-item-495"><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao" title="网络营销">网络营销</a>
+</li>
+		</ul>
+<div class="clear"></div></aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title"><p><i class="icon-st"></i></p>标签</h3><div class="tagcloud"><a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91' class='tag-link-33' title='16个话题' style="color:#fe2a77;font-size: 20.5pt;;">互联网</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e4%ba%a7%e5%93%81' class='tag-link-268' title='3个话题' style="color:#22ed0f;font-size: 10pt;;">互联网产品</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e5%88%9b%e4%b8%9a' class='tag-link-63' title='11个话题' style="color:#c39a0a;font-size: 18pt;;">互联网创业</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e6%80%9d%e7%bb%b4' class='tag-link-32' title='4个话题' style="color:#43a546;font-size: 11.666666666667pt;;">互联网思维</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e8%90%a5%e9%94%80' class='tag-link-24' title='5个话题' style="color:#360896;font-size: 13pt;;">互联网营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e9%87%91%e8%9e%8d' class='tag-link-248' title='3个话题' style="color:#632fb9;font-size: 10pt;;">互联网金融</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%ac%e4%b8%9c' class='tag-link-6' title='2个话题' style="color:#2e7ef1;font-size: 8pt;;">京东</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bc%81%e4%b8%9a%e7%ae%a1%e7%90%86' class='tag-link-532' title='3个话题' style="color:#c5dc76;font-size: 10pt;;">企业管理</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bc%98%e9%85%b7%e5%9c%9f%e8%b1%86' class='tag-link-105' title='4个话题' style="color:#d2c661;font-size: 11.666666666667pt;;">优酷土豆</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bd%99%e4%bd%b3%e6%96%87' class='tag-link-403' title='3个话题' style="color:#728c44;font-size: 10pt;;">余佳文</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%86%85%e5%ae%b9%e8%90%a5%e9%94%80' class='tag-link-94' title='3个话题' style="color:#78ec6f;font-size: 10pt;;">内容营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%88%98%e5%bc%ba%e4%b8%9c' class='tag-link-366' title='3个话题' style="color:#968518;font-size: 10pt;;">刘强东</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8c%bf%e5%90%8d%e7%a4%be%e4%ba%a4' class='tag-link-135' title='3个话题' style="color:#8bc5fd;font-size: 10pt;;">匿名社交</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8f%8c%e5%8d%81%e4%b8%80' class='tag-link-192' title='4个话题' style="color:#d8dc84;font-size: 11.666666666667pt;;">双十一</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8f%a4%e6%b0%b8%e9%94%b5' class='tag-link-106' title='3个话题' style="color:#38fbc;font-size: 10pt;;">古永锵</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%91%a8%e9%b8%bf%e7%a5%8e' class='tag-link-16' title='10个话题' style="color:#7da472;font-size: 17.333333333333pt;;">周鸿祎</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%93%81%e7%89%8c%e8%90%a5%e9%94%80' class='tag-link-493' title='9个话题' style="color:#34661e;font-size: 16.666666666667pt;;">品牌营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%b0%8f%e7%b1%b3' class='tag-link-210' title='4个话题' style="color:#558e6a;font-size: 11.666666666667pt;;">小米</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%bc%a0%e6%9c%9d%e9%98%b3' class='tag-link-27' title='2个话题' style="color:#48743a;font-size: 8pt;;">张朝阳</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1' class='tag-link-34' title='2个话题' style="color:#87916e;font-size: 8pt;;">微信</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e6%9c%8b%e5%8f%8b%e5%9c%88' class='tag-link-499' title='3个话题' style="color:#992dfa;font-size: 10pt;;">微信朋友圈</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e7%b2%89%e4%b8%9d' class='tag-link-703' title='3个话题' style="color:#57e302;font-size: 10pt;;">微信粉丝</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e8%90%a5%e9%94%80' class='tag-link-182' title='12个话题' style="color:#4ff24a;font-size: 18.5pt;;">微信营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e5%95%86%e8%90%a5%e9%94%80' class='tag-link-479' title='3个话题' style="color:#d163b;font-size: 10pt;;">微商营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e7%a4%be%e5%8c%ba' class='tag-link-54' title='4个话题' style="color:#378ce6;font-size: 11.666666666667pt;;">微社区</a>
+<a href='http://www.shenwang001.com/blog/tag/%e6%99%ba%e6%85%a7%e4%ba%ba%e7%94%9f' class='tag-link-533' title='3个话题' style="color:#403607;font-size: 10pt;;">智慧人生</a>
+<a href='http://www.shenwang001.com/blog/tag/%e6%9c%8b%e5%8f%8b%e5%9c%88' class='tag-link-588' title='3个话题' style="color:#101cac;font-size: 10pt;;">朋友圈</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e4%ba%92%e8%81%94' class='tag-link-88' title='6个话题' style="color:#cdb9d;font-size: 14.166666666667pt;;">移动互联</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e4%ba%92%e8%81%94%e7%bd%91' class='tag-link-55' title='3个话题' style="color:#c4a1c2;font-size: 10pt;;">移动互联网</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e8%90%a5%e9%94%80' class='tag-link-193' title='3个话题' style="color:#20193c;font-size: 10pt;;">移动营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%bd%91%e7%bb%9c%e6%8e%a8%e5%b9%bf' class='tag-link-190' title='4个话题' style="color:#40821e;font-size: 11.666666666667pt;;">网络推广</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%bd%91%e7%bb%9c%e8%90%a5%e9%94%80' class='tag-link-30' title='20个话题' style="color:#c2cc39;font-size: 22pt;;">网络营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%90%a5%e9%94%80%e6%96%b9%e6%b3%95' class='tag-link-41' title='4个话题' style="color:#43064c;font-size: 11.666666666667pt;;">营销方法</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%a7%86%e9%a2%91%e7%bd%91%e7%ab%99' class='tag-link-36' title='2个话题' style="color:#41c28;font-size: 8pt;;">视频网站</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%b0%b7%e6%ad%8c' class='tag-link-85' title='5个话题' style="color:#6717f;font-size: 13pt;;">谷歌</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%b4%be%e8%b7%83%e4%ba%ad' class='tag-link-43' title='3个话题' style="color:#790ee3;font-size: 10pt;;">贾跃亭</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%98%bf%e9%87%8c%e5%b7%b4%e5%b7%b4' class='tag-link-66' title='17个话题' style="color:#674be2;font-size: 21pt;;">阿里巴巴</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%9b%b7%e5%86%9b' class='tag-link-17' title='4个话题' style="color:#34f071;font-size: 11.666666666667pt;;">雷军</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a4%90%e9%a5%aeo2o' class='tag-link-112' title='3个话题' style="color:#3eeb59;font-size: 10pt;;">餐饮O2O</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a9%ac%e4%ba%91' class='tag-link-90' title='13个话题' style="color:#3a1244;font-size: 19.166666666667pt;;">马云</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a9%ac%e5%8c%96%e8%85%be' class='tag-link-351' title='3个话题' style="color:#a77cb6;font-size: 10pt;;">马化腾</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%ad%85%e6%97%8f' class='tag-link-150' title='3个话题' style="color:#b7d7c9;font-size: 10pt;;">魅族</a>
+<a href='http://www.shenwang001.com/blog/tag/iphone-6' class='tag-link-21' title='2个话题' style="color:#d0975d;font-size: 8pt;;">iPhone 6</a>
+<a href='http://www.shenwang001.com/blog/tag/o2o' class='tag-link-18' title='9个话题' style="color:#3342b4;font-size: 16.666666666667pt;;">O2O</a>
+<a href='http://www.shenwang001.com/blog/tag/seo%e4%bc%98%e5%8c%96' class='tag-link-212' title='5个话题' style="color:#90b44d;font-size: 13pt;;">seo优化</a></div>
+<div class="clear"></div></aside>						<div class="sidebar-roll">
+			<aside id="hot_post-4" class="widget widget_hot_post"><h3 class="widget-title"><p><i class="icon-st"></i></p>热门文章</h3>
+<div id="hot_post_widget">
+	<ul>
+	     
+	    <li><span class='li-icon li-icon-1'>1</span><a href="http://www.shenwang001.com/blog/zhuanjia/1274.html">董明珠借势营销“任性”亮出格力手机...</a></li><li><span class='li-icon li-icon-2'>2</span><a href="http://www.shenwang001.com/blog/sem/1254.html">百度实行全站安全加密 加速互联网H...</a></li><li><span class='li-icon li-icon-3'>3</span><a href="http://www.shenwang001.com/blog/zhihui/1227.html">广东的回南天来了，底裤不够用？地...</a></li><li><span class='li-icon li-icon-4'>4</span><a href="http://www.shenwang001.com/blog/sem/1280.html">说SEO全部靠技术是混蛋，说不需要...</a></li><li><span class='li-icon li-icon-5'>5</span><a href="http://www.shenwang001.com/blog/guanli/1240.html">“坏”领导才是大爱，有图有真相！</a></li><li><span class='li-icon li-icon-6'>6</span><a href="http://www.shenwang001.com/blog/yidong/weixin/1267.html">微信新规打击营销号？</a></li><li><span class='li-icon li-icon-7'>7</span><a href="http://www.shenwang001.com/blog/yidong/weibo/1270.html">解读90后大学生参与微博营销行为</a></li><li><span class='li-icon li-icon-8'>8</span><a href="http://www.shenwang001.com/blog/sem/1238.html">网站建设中需注意的有关谷歌SEO的...</a></li><li><span class='li-icon li-icon-9'>9</span><a href="http://www.shenwang001.com/blog/news/1259.html">12306图形验证码“逼疯”抢票软件</a></li><li><span class='li-icon li-icon-10'>10</span><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1225.html">一个新媒体营销人的6项修炼</a></li>	    			</ul>
+</div>
+
+<div class="clear"></div></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title"><p><i class="icon-st"></i></p>功能</h3>			<ul>
+						<li><a href="http://www.shenwang001.com/blog/wp-login.php">登录</a></li>
+			<li><a href="http://www.shenwang001.com/blog/feed">文章<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.shenwang001.com/blog/comments/feed">评论<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="https://cn.wordpress.org/" title="基于WordPress，一个优美、先进的个人信息发布平台。">WordPress.org</a></li>			</ul>
+<div class="clear"></div></aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title"><p><i class="icon-st"></i></p>关注我们,学习更多</h3>			<div class="textwidget"><center><img src="http://www.shenwang001.com/shenwang001/Images/ewm.png" height="186" width="186" alt="关注深网SEO,随时随地学"></center></div>
+		<div class="clear"></div></aside>		</div>
+	</div>
+<div class="clear"></div>
+<footer id="footer">
+	<div class="site-info">
+		<a href="http://www.shenwang001.com" target="_blank">深网网络旗下网站</a> Copyright &copy; 深网传媒  保留所有权利.&nbsp;&nbsp;
+		<span class="info-add">
+
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253242877'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1253242877' type='text/javascript'%3E%3C/script%3E"));</script>			粤ICP备12017982号		</span>
+	</div>
+	<!-- .site-info -->
+<div id="sidr" style="display: none;"><a id="simple-menu-s" href="#sidr"><i class="icon-close"></i></a><div class="menu-sem-container"><ul id="menu-sem-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-25"><a href="http://www.shenwang001.com/blog/">首页</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://www.shenwang001.com/blog/category/news">最新资讯</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-773"><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao">网络营销</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774"><a href="http://www.shenwang001.com/blog/category/yidong">移动营销</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://www.shenwang001.com/blog/category/jingyan">实战经验</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://www.shenwang001.com/blog/category/zhuanjia">人物论点</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="http://www.shenwang001.com/blog/category/sem">sem竞价推广</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="http://www.shenwang001.com/blog/category/guanli">企业智慧管理</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-879"><a href="http://www.shenwang001.com/blog/category/zhihui">智慧杂谈</a></li>
+</ul></div></div>
+
+<div id="login">
+	<h1>用户登录</h1>
+	<form action="http://www.shenwang001.com/blog/wp-login.php?redirect_to=http%3A%2F%2Fwww.shenwang001.com%2Fblog%2Fzhihui%2F1223.html" method="post" id="loginform">
+		<fieldset id="inputs">
+			<input id="username" type="text"  name="log" id="log" placeholder="名称" required>
+			<input id="password" type="password" name="pwd" id="pwd" placeholder="密码" required>
+		</fieldset>
+		<fieldset id="actions">
+		<input type="submit" id="submit" value="登录">
+		<input type="hidden" name="redirect_to" value="/blog/page/3?order=commented" />
+		<label><input type="checkbox" name="rememberme" id="modlogn_remember" value="yes"  checked="checked" alt="Remember Me" >记住登录信息</label>
+		</fieldset>
+	</form>
+</div>
+<ul id="scroll">
+	<li><a class="scroll_t" title="返回顶部"><i class="icon-scroll_t"></i></a></li>
+			<li><a href="#share" id="share-main" title="分享"><i class="icon-share"></i></a></li>
+	
+		<li><a class="scroll_b" title="转到底部"><i class="icon-scroll_b"></i></a></li>
+</ul>
+<div id="share">
+	<h4>分享到：</h4>
+	<div class="bdsharebuttonbox">
+		<a title="分享到QQ空间" href="#" class="icon-qzone" class="bds_qzone" data-cmd="qzone"></a>
+		<a title="分享到新浪微博" href="#" class="icon-tsina" class="bds_tsina" data-cmd="tsina"></a>
+		<a title="分享到腾讯微博" href="#" class="icon-tqq" class="bds_tqq" data-cmd="tqq"></a>
+		<a title="分享到人人网" href="#" class="icon-renren" class="bds_renren" data-cmd="renren"></a>
+		<a title="分享到微信" href="#" class="icon-weixin" class="bds_weixin" data-cmd="weixin"></a>
+		<a href="#" class="icon-more" class="bds_more" data-cmd="more"></a>
+	</div>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</footer>
+<!-- #footer -->
+</div><!-- #main -->
+</div><!-- #page -->
+<script type="text/javascript">
+    document.onkeydown = chang_page;function chang_page(e) {
+        var e = e || event,
+        keycode = e.which || e.keyCode;
+        if (keycode == 33 || keycode == 37) location = 'http://www.shenwang001.com/blog/page/2?order=commented';
+        if (keycode == 34 || keycode == 39) location = 'http://www.shenwang001.com/blog/page/4?order=commented';
+    }
+</script>
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/jquery.sidr.min.js?ver=1.2.1'></script>
+
+</body>
+</html>

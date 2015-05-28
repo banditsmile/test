@@ -1,0 +1,7 @@
+20150211 12:07:23|["login","ls","whoami","describe","redis","memcache"]
+20150211 12:07:34|["login","ls","whoami","describe","redis","memcache"]
+20150211 12:07:34|get aaa
+20150211 12:07:34|redis connect:1
+20150211 12:08:27|["login","ls","whoami","describe","redis","memcache"]
+20150211 12:09:25|["login","ls","whoami","describe","redis","memcache"]
+20150211 12:09:42|["login","ls","whoami","describe","redis","memcache"]

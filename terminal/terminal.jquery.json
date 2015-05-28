@@ -1,0 +1,26 @@
+{
+    "name": "php redis|memcache",
+    "title": "在线调用php redis|memcache 函数",
+    "description": "使用jQuery Terminal在线调用php redis|memcache函数 ",
+    "version": "0.8.8",
+    "keywords": [
+        "terminal", "emulator", "prompt", "console", "keyboard", "type", "rpc", "input", "ui", "php","redis","memcache"
+    ],
+    "author": {
+        "name": "bandit",
+        "email": "banditsmile@qq.com",
+        "url": "http://blog.icodeu.com"
+    },
+    "licenses": [{
+        "type": "LGPLv3",
+        "url": "http://www.gnu.org/licenses/lgpl.html"
+    }],
+    "homepage": "http://terminal.jcubic.pl/",
+    "bugs": "https://github.com/jcubic/jquery.terminal/issues",
+    "demo": "http://terminal.jcubic.pl/#demo",
+    "docs": "http://terminal.jcubic.pl/api_reference.php",
+    "download": "https://github.com/jcubic/jquery.terminal/releases",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

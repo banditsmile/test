@@ -1,0 +1,166 @@
+connect(host : string, [port : int = 6379], [timeout : float = 0.0]):bool
+psetex(key : string, ttl : int, value : string):bool
+sScan(key : string, iterator : int, [pattern : string = ''], [count : int = 0]):array|bool
+scan(iterator : int, [pattern : string = ''], [count : int = 0]):array|bool
+zScan(key : string, iterator : int, [pattern : string = ''], [count : int = 0]):array|bool
+hScan(key : string, iterator : int, [pattern : string = ''], [count : int = 0]):array
+client(command : string, [arg : string = '']):mixed
+slowlog(command : string):mixed
+open(host : string, [port : int = 6379], [timeout : float = 0.0]):void
+pconnect(host : string, [port : int = 6379], [timeout : float = 0.0]):bool
+popen(host : string, [port : int = 6379], [timeout : float = 0.0]):void
+close():void
+setOption(name : string, value : string):bool
+getOption(name : string):int
+ping():string
+get(key : string):bool|string
+set(key : string, value : string, [timeout : int = 0]):bool
+setex(key : string, ttl : int, value : string):bool
+setnx(key : string, value : string):bool
+del(key1 : array|int, [key2 = null], [key3 = null]):int
+delete(key1, [key2 = null], [key3 = null]):void
+multi():Redis
+exec():void
+discard():void
+watch(key : array|string):void
+unwatch():void
+subscribe(channels : array, callback : array|string):void
+psubscribe(patterns : array, callback : array|string):void
+publish(channel : string, message : string):int
+exists(key : string):bool
+incr(key : string):int
+incrByFloat(key : string, increment : float):float
+incrBy(key : string, value : int):int
+decr(key : string):int
+decrBy(key : string, value : int):int
+getMultiple(keys : array):array
+lPush(key : string, value1 : string, [value2 = null], [valueN = null]):int
+rPush(key : string, value1 : string, [value2 = null], [valueN = null]):int
+lPushx(key : string, value : string):int
+rPushx(key : string, value : string):int
+lPop(key : string):string
+rPop(key : string):string
+blPop(keys : array):array
+brPop(keys : array):array
+lLen(key : string):int
+lSize(key : string):void
+lIndex(key : string, index : int):String
+lGet(key : string, index : int):void
+lSet(key : string, index : int, value : string):BOOL
+lRange(key : string, start : int, end : int):array
+lGetRange(key : string, start : int, end : int):void
+lTrim(key : string, start : int, stop : int):array
+listTrim(key : string, start : int, stop : int):void
+lRem(key : string, value : string, count : int):int
+lRemove(key : string, value : string, count : int):void
+lInsert(key : string, position : int, pivot : string, value : string):int
+sAdd(key : string, value1 : string, [value2 = null], [valueN = null]):int
+sRem(key : string, member1 : string, [member2 = null], [memberN = null]):int
+sRemove(key : string, member1 : string, [member2 = null], [memberN = null]):void
+sMove(srcKey : string, dstKey : string, member : string):bool
+sIsMember(key : string, value : string):bool
+sContains(key : string, value : string):void
+sCard(key : string):int
+sPop(key : string):string
+sRandMember(key : string):string
+sInter(key1 : string, key2 : string, [keyN = null]):array
+sInterStore(dstKey : string, key1 : string, key2 : string, [keyN = null]):int
+sUnion(key1 : string, key2 : string, [keyN = null]):array
+sUnionStore(dstKey : string, key1 : string, key2 : string, [keyN = null]):int
+sDiff(key1 : string, key2 : string, [keyN = null]):array
+sDiffStore(dstKey : string, key1 : string, key2 : string, [keyN = null]):int
+sMembers(key : string):array
+sGetMembers(key : string):void
+getSet(key : string, value : string):string
+randomKey():string
+select(dbindex : int):bool
+move(key : string, dbindex : int):bool
+rename(srcKey : string, dstKey : string):bool
+renameKey(srcKey : string, dstKey : string):void
+renameNx(srcKey : string, dstKey : string):bool
+expire(key : string, ttl : int):bool
+pExpire(key : string, ttl):bool
+setTimeout(key : string, ttl : int):void
+expireAt(key : string, timestamp : int):bool
+pExpireAt(key : string, timestamp : int):bool
+keys(pattern : string):array
+getKeys(pattern : string):void
+dbSize():int
+auth(password : string):bool
+bgrewriteaof():bool
+slaveof([host : string = '127.0.0.1'], [port : int = 6379]):bool
+object([string : string = ''], [key : string = '']):string
+save():bool
+bgsave():bool
+lastSave():int
+type(key : string):int
+append(key : string, value : string):int
+getRange(key : string, start : int, end : int):string
+substr(key : string, start : int, end : int):void
+setRange(key : string, offset : int, value : string):string
+strlen(key : string):int
+getBit(key : string, offset : int):int
+setBit(key : string, offset : int, value : bool|int):int
+bitCount(key : string):int
+bitOp(operation : string, retKey : string, key1 : string, key2 : string, [key3 = null]):int
+flushDB():bool
+flushAll():bool
+sort(key : string, [option : array|null = null]):array
+info([option = null]):string
+resetStat():bool
+ttl(key : string):int
+pttl(key : string):int
+persist(key : string):bool
+mset(array : array):bool
+mget(array : array):array
+msetnx(array : array):int
+rpoplpush(srcKey : string, dstKey : string):string
+brpoplpush(srcKey : string, dstKey : string, timeout : int):string
+zAdd(key : string, score1 : float, value1 : string, [score2 : float|null = null], [value2 = null], [scoreN : float|null = null], [valueN = null]):int
+zRange(key : string, start : int, end : int, [withscores : bool|null = null]):array
+zRem(key : string, member1 : string, [member2 = null], [memberN = null]):int
+zDelete(key : string, member1 : string, [member2 = null], [memberN = null]):int
+zRevRange(key : string, start : int, end : int, [withscore : bool|null = null]):array
+zRangeByScore(key : string, start : int, end : int, [options : array = array()]):array
+zRevRangeByScore(key : string, start : int, end : int, [options : array = array()]):array
+zCount(key : string, start : string, end : string):int
+zRemRangeByScore(key : string, start : float|string, end : float|string):int
+zDeleteRangeByScore(key : string, start : float, end : float):void
+zRemRangeByRank(key : string, start : int, end : int):int
+zDeleteRangeByRank(key : string, start : int, end : int):void
+zCard(key : string):int
+zSize(key : string):void
+zScore(key : string, member : string):float
+zRank(key : string, member : string):int
+zRevRank(key : string, member : string):int
+zIncrBy(key : string, value : float, member : string):float
+zUnion(Output : string, ZSetKeys : array, [Weights : array = null], [aggregateFunction : string = 'SUM']):int
+zInter(Output : string, ZSetKeys : array, [Weights : array = null], [aggregateFunction : string = 'SUM']):int
+hSet(key : string, hashKey : string, value : string):int
+hSetNx(key : string, hashKey : string, value : string):bool
+hGet(key : string, hashKey : string):string
+hLen(key : string):int
+hDel(key : string, hashKey1 : string, [hashKey2 = null], [hashKeyN = null]):int
+hKeys(key : string):array
+hVals(key : string):array
+hGetAll(key : string):array
+hExists(key : string, hashKey : string):bool
+hIncrBy(key : string, hashKey : string, value : int):int
+hIncrByFloat(key : string, field : string, increment : float):float
+hMset(key : string, hashKeys : array):bool
+hMGet(key : string, hashKeys : array):array
+config(operation : string, key : string, [value : string]):array
+evaluate(script : string, [args : array = array()], [numKeys : int = 0]):void
+evalSha(scriptSha : string, [args : array = array()], [numKeys : int = 0]):mixed
+evaluateSha(scriptSha : string, [args : array = array()], [numKeys : int = 0]):void
+script(command : string, script : string):mixed
+getLastError():string
+clearLastError():bool
+_prefix(value : \The):string
+_unserialize(value : string):mixed
+dump(key : string):string
+restore(key : string, ttl : int, value : string):bool
+migrate(host : string, port : int, key : string, db : int, timeout : int):bool
+time():array
+echo()
+eval(script : string, [args : array = array()], [numKeys : int = 0])

@@ -1,0 +1,547 @@
+
+<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="shortcut icon" href="http://source.iteblog.com/pic/favicon.ico" type="image/x-icon" />
+<link rel='stylesheet' id='style-css'  href='http://source.iteblog.com/wp-content/themes/yusi2.0/style.css?_=a6c572' type='text/css' media='all' />
+<title>Google最新IP &#8211; 过往记忆</title>
+<script type='text/javascript' src='http://source.iteblog.com/wp-content/themes/yusi2.0/js/jquery-1.8.3.min.js?ver=1.0'></script>
+<link rel='shortlink' href='http://www.iteblog.com/?p=1219' />
+<meta name="keywords" content="Google最新IP">
+<meta name="description" content="作为程序开发员，研究者等很多东西都离不开搜索，虽然我们都可以用百度，但是百度搜索质量实在是太差了，有些根本搜索不到，特别是搜索英文！这样会浪费大量的时间。而最强大的搜索引擎 Google 又由于众所周知的原因无法在国内直接访问，为了帮助大家都使用上Google，我决定每天更新一些可用的Google IP，帮助大家少用百度。    注意：下面更新的IP在当日是可以用的，非当日可用性不可确认。请使用本博客发布的最新Google IP。由于工">
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<!--[if lt IE 9]><script src="http://source.iteblog.com/wp-content/themes/yusi2.0/js/html5.js"></script><![endif]-->
+<script>
+window._deel = {name: '过往记忆',url: 'http://www.iteblog.com/wp-content/themes/yusi2.0', ajaxpager: '', commenton: 1, roll: [1,11]};
+</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+</head>
+<body class="page page-id-1219 page-template-default">
+<header id="header" class="header">
+<div class="container-inner">
+ <div class="yusi-logo">
+    <a href="/">
+	 <h1>
+            <span class="yusi-mono">过往记忆</span>
+            <span class="yusi-bloger">专注于Hadoop、Spark、Hive、Flume、Hbase，QQ交流群：138615359</span>
+         </h1>
+    </a>
+  </div>
+</div>
+
+	<div id="nav-header" class="navbar">
+		
+		<ul class="nav">
+			<li id="menu-item-681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-681"><a href="http://www.iteblog.com/">首页</a></li>
+<li id="menu-item-859" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-859"><a href="http://www.iteblog.com/archives/category/hadoop">Hadoop</a></li>
+<li id="menu-item-1070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1070"><a href="http://www.iteblog.com/archives/category/spark">Spark</a></li>
+<li id="menu-item-1095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1095"><a href="http://www.iteblog.com/archives/category/hive">Hive</a></li>
+<li id="menu-item-963" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-963"><a href="http://www.iteblog.com/archives/category/hbase">Hbase</a></li>
+<li id="menu-item-962" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-962"><a href="http://www.iteblog.com/archives/category/flume">Flume</a></li>
+<li id="menu-item-861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-861"><a href="http://www.iteblog.com/archives/category/%E9%9D%A2%E8%AF%95%E9%A2%98">面试题</a>
+<ul class="sub-menu">
+	<li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="http://www.iteblog.com/archives/category/%e9%9d%a2%e8%af%95%e9%a2%98">面试题</a></li>
+	<li id="menu-item-294" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-294"><a href="http://www.iteblog.com/archives/category/datastructure">数据结构</a></li>
+	<li id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-154"><a href="http://www.iteblog.com/archives/category/algorithms">算法</a></li>
+</ul>
+</li>
+<li id="menu-item-122" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-122"><a href="http://www.iteblog.com/archives/category/%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8b">网络编程</a></li>
+<li id="menu-item-552" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-552"><a href="http://www.iteblog.com/archives/category/guava">Guava</a></li>
+<li id="menu-item-1236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1236"><a href="http://www.iteblog.com/learning-spark-table-of-contents">Learning Spark</a>
+<ul class="sub-menu">
+	<li id="menu-item-1237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1237"><a href="http://www.iteblog.com/learning-spark-table-of-contents/preface">Preface</a></li>
+	<li id="menu-item-1239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a href="http://www.iteblog.com/learning-spark-table-of-contents/introduction-to-data-analysis-with-spark">Chapter 1</a></li>
+</ul>
+</li>
+<li id="menu-item-334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-334"><a>常用工具</a>
+<ul class="sub-menu">
+	<li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="http://www.iteblog.com/%e5%9c%a8%e7%ba%bf%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%94%9f%e6%88%90">二维码生成</a></li>
+	<li id="menu-item-1170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1170"><a href="http://www.iteblog.com/json/index.html">Json格式化工具</a></li>
+	<li id="menu-item-927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-927"><a href="http://www.iteblog.com/centos%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">常用Linux系统下载地址</a>
+	<ul class="sub-menu">
+		<li id="menu-item-680" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680"><a href="http://www.iteblog.com/ubuntu-10-04-4-lts%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Ubuntu 10.04.4 LTS下载地址</a></li>
+		<li id="menu-item-786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-786"><a href="http://www.iteblog.com/fedora%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Fedora下载地址</a></li>
+		<li id="menu-item-925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-925"><a href="http://www.iteblog.com/centos%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">CentOS下载地址</a></li>
+	</ul>
+</li>
+	<li id="menu-item-662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a href="http://www.iteblog.com/http-content-type%e5%b8%b8%e7%94%a8%e4%b8%80%e8%a7%88%e8%a1%a8">HTTP CT常用一览表</a></li>
+	<li id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a href="http://www.iteblog.com/rgb%e9%a2%9c%e8%89%b2%e5%8f%82%e8%80%83">RGB颜色参考</a></li>
+	<li id="menu-item-932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-932"><a href="http://www.iteblog.com/%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e6%9f%a5%e8%af%a2%e6%8f%90%e4%ba%a4%e5%9c%b0%e5%9d%80">搜索引擎查询提交地址</a></li>
+	<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="http://www.iteblog.com/hadoop%e3%80%81hive%e7%ad%89%e8%bd%af%e4%bb%b6%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Hadoop、Hive等下载地址</a></li>
+	<li id="menu-item-998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a href="http://www.iteblog.com/linux%e5%b8%b8%e7%94%a8%e5%8e%8b%e7%bc%a9%e5%92%8c%e8%a7%a3%e5%8e%8b%e5%91%bd%e4%bb%a4">Linux常用压缩和解压命令</a></li>
+	<li id="menu-item-1209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1209"><a href="http://www.iteblog.com/linux%e5%90%8c%e6%ad%a5%e7%b3%bb%e7%bb%9f%e6%97%b6%e9%97%b4">Linux同步系统时间</a></li>
+	<li id="menu-item-1010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1010"><a href="http://www.iteblog.com/mysql%e4%b8%ad%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e5%87%bd%e6%95%b0">mysql中时间和日期函数</a></li>
+	<li id="menu-item-1108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1108"><a href="http://www.iteblog.com/mysql-binlog_basic_usage">MySQL binlog基本用法</a></li>
+	<li id="menu-item-1013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1013"><a href="http://www.iteblog.com/mysql%e6%af%8f%e5%8d%8a%e5%b0%8f%e6%97%b6%e5%b9%b3%e5%9d%87%e5%80%bc">mysql每半小时平均值</a></li>
+	<li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054"><a href="http://www.iteblog.com/first-steps-to-scala">First Steps to Scala</a></li>
+	<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1135"><a href="http://www.iteblog.com/java_get_file_absolute_path">Java获取工程路径的几种方法</a></li>
+	<li id="menu-item-1002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002"><a href="http://www.iteblog.com/git%e5%ae%89%e8%a3%85">Git安装</a></li>
+	<li id="menu-item-1115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a href="http://www.iteblog.com/tcpdump_usage">Tcpdump用法</a></li>
+	<li id="menu-item-1359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1359"><a href="http://www.iteblog.com/%e5%b9%bf%e5%91%8a%e8%81%94%e7%9b%9f%e5%a4%a7%e5%85%a8">广告联盟大全</a></li>
+	<li id="menu-item-1303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1303"><a href="http://www.iteblog.com/%e8%bd%ac%e8%bd%bdwordpress-%e6%96%87%e7%ab%a0%e6%9f%a5%e8%af%a2%e7%94%a8%e6%b3%95%e5%a4%a7%e5%85%a8">[转载]WordPress 文章查询用法大全</a></li>
+	<li id="menu-item-1196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1196"><a href="http://www.iteblog.com/ubuntu_install_sougou">ubuntu安装搜狗输入法</a></li>
+	<li id="menu-item-622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-622"><a href="http://www.iteblog.com/seo">SEO加速器</a></li>
+	<li id="menu-item-629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-629"><a href="http://www.iteblog.com/seo/tv.html">网络高清电视</a></li>
+	<li id="menu-item-1248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1248"><a href="http://www.iteblog.com/shield_ip">本站屏蔽的IP</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-350"><a href="http://www.iteblog.com/archives/category/%e5%85%8d%e8%b4%b9%e4%bb%a3%e7%90%86">免费代理</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1309"><a href="http://www.iteblog.com/the_latest_high_anonymous_proxy_server_ip">最新高匿名http代理</a></li>
+		<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0%e6%9c%80%e5%bf%abhttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新最快HTTP代理</a></li>
+		<li id="menu-item-409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-409"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0%e5%8c%bf%e5%90%8dhttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新匿名HTTP代理</a></li>
+		<li id="menu-item-947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="http://www.iteblog.com/%e9%80%8f%e6%98%8ehttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">透明http代理服务器</a></li>
+		<li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0socks5%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新SOCKS5代理</a></li>
+		<li id="menu-item-1311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1311"><a href="http://www.iteblog.com/us_proxy_server_address">美国代理服务器地址</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-860" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-860"><a href="http://www.iteblog.com/sample-page">关于我</a>
+<ul class="sub-menu">
+	<li id="menu-item-1068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1068"><a href="http://www.iteblog.com/%e6%94%af%e4%bb%98%e5%ae%9d%e8%b5%9e%e5%8a%a9%e4%bd%9c%e8%80%85">支付宝赞助作者</a></li>
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="http://www.iteblog.com/sample-page">关于我</a></li>
+	<li id="menu-item-1220" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1219 current_page_item menu-item-1220"><a href="http://www.iteblog.com/google-ip-discussion">Google最新IP</a></li>
+	<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="http://www.iteblog.com/recommend_book">程序员图书推荐</a></li>
+	<li id="menu-item-760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-760"><a href="http://www.iteblog.com/download/">客户端下载</a></li>
+	<li id="menu-item-1263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1263"><a href="http://www.iteblog.com/links">友情链接</a></li>
+	<li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-391"><a href="http://www.iteblog.com/%e5%8f%8b%e9%93%be%e7%94%b3%e8%af%b7">友链申请</a></li>
+	<li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="http://www.iteblog.com/iteblog_hadoop_all_articles">所有文章</a></li>
+</ul>
+</li>
+<!--
+<li style="float:right;">
+                    <div class="toggle-search"><i class="fa fa-search"></i></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='http://www.iteblog.com/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='search...';" onfocus="if(this.value=='search...')this.value='';" value="search..."></div></form></div></div>
+</li>-->
+		</ul>
+	</div>
+	</div>
+</header>
+<script type="text/javascript">
+function closereception(){
+    $(".QRcode").slideUp("normal");
+}
+//默认图片
+function errorImg(img, height, width){ 
+  //img.src="http://www.iteblog.com/wp-content/themes/yusi2.0/timthumb.php?src=http://www.iteblog.com/wp-content/themes/yusi2.0/img/pic/6.jpg&h="+height+"&w="+width+"&q=90&zc=1&ct=1"; 
+  img.src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/pic/8.jpg?imageView/1/w/"+width+"/h/" + height;
+  img.onerror=null; 
+}
+</script>
+<section class="container">
+<div class="speedbar">
+					<div class="pull-right">
+				<a href="http://www.iteblog.com/wp-login.php"><i class="fa fa-wordpress " style="color:#000;"></i></a><a href="http://www.iteblog.com/?iteblog=githublogin&r=http://www.iteblog.com/google-ip-discussion" ><i class="fa fa-github" style="color: #000;"></i></a><a href="http://www.iteblog.com/?iteblog=weibologin&r=http://www.iteblog.com/google-ip-discussion" ><i class="fa fa-weibo" style="color: #B13331;"></i></a><a href="http://www.iteblog.com/wp-login.php">登录</a>			</div>
+				<div class="toptip"><strong class="text-success"><i class="fa fa-volume-up"></i> </strong> <marquee onmouseover="this.stop()" onmouseout="this.start();" style="margin:-10px 0px -5px 29px;  width:75%">公告：<a href="http://xs.iteblog.com" target="_blank">最新免费小说</a>、<a href="http://www.iteblog.com/archives/1172" target="_blank">关于禁止推酷网站收录本博客文章</a> <font style="color:blue;">   Hadoop、Hive、Hbase、Flume等交流群：138615359（定期清人）、群149892483 （定期清人）</font>。博客无法注册，请联系wyphao.2007@163.com</marquee></div>
+</div>
+<div class="tongji"> 
+    <ol>
+        <li>文章总数：395 </li>
+        <li>浏览总数：2,255,011 </li>
+        <li>评论：2534 </li>
+        <li>分类目录：44 个</li>
+        <li>注册用户数：85</li>
+        <li>最后更新：2015年5月27日</li>
+    </ol>
+</div>
+<div class="QRcode"><div style="margin-bottom:-2px;z-index:5;text-align:right;"><a href="javascript::" onclick="closereception();" title="关闭"><i class="fa fa-times"></i></a></div>
+        <img src="http://source.iteblog.com/pic/weixin.jpg" width="150" height="150" data-bd-imgshare-binded="1"><br/>
+欢迎关注微信公共帐号：<br/><strong>iteblog_hadoop</strong>
+</div>
+
+	<div class="banner banner-site"><script type="text/javascript">BAIDU_CLB_fillSlot("u2068849");</script></div>
+<div class="pagewrapper clearfix">
+	<aside class="pagesidebar">
+		<ul class="pagesider-menu">
+			<li class="page_item page-item-924"><a href="http://www.iteblog.com/centos%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">CentOS下载地址</a></li><li class="page_item page-item-785"><a href="http://www.iteblog.com/fedora%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Fedora下载地址</a></li><li class="page_item page-item-1053"><a href="http://www.iteblog.com/first-steps-to-scala">First Steps to Scala</a></li><li class="page_item page-item-1001"><a href="http://www.iteblog.com/git%e5%ae%89%e8%a3%85">Git安装</a></li><li class="page_item page-item-1219 current_page_item"><a href="http://www.iteblog.com/google-ip-discussion">Google最新IP</a></li><li class="page_item page-item-934"><a href="http://www.iteblog.com/hadoop%e3%80%81hive%e7%ad%89%e8%bd%af%e4%bb%b6%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Hadoop、Hive等下载地址</a></li><li class="page_item page-item-660"><a href="http://www.iteblog.com/http-content-type%e5%b8%b8%e7%94%a8%e4%b8%80%e8%a7%88%e8%a1%a8">HTTP Content-Type常用一览表</a></li><li class="page_item page-item-1134"><a href="http://www.iteblog.com/java_get_file_absolute_path">Java获取工程路径的几种方法</a></li><li class="page_item page-item-1232 page_item_has_children"><a href="http://www.iteblog.com/learning-spark-table-of-contents">Learning Spark(目录)</a><ul class='children'><li class="page_item page-item-1238"><a href="http://www.iteblog.com/learning-spark-table-of-contents/introduction-to-data-analysis-with-spark">Chapter 1. Introduction to Data Analysis with Spark</a></li><li class="page_item page-item-1235"><a href="http://www.iteblog.com/learning-spark-table-of-contents/preface">Preface</a></li></ul></li><li class="page_item page-item-1208"><a href="http://www.iteblog.com/linux%e5%90%8c%e6%ad%a5%e7%b3%bb%e7%bb%9f%e6%97%b6%e9%97%b4">Linux同步系统时间</a></li><li class="page_item page-item-997"><a href="http://www.iteblog.com/linux%e5%b8%b8%e7%94%a8%e5%8e%8b%e7%bc%a9%e5%92%8c%e8%a7%a3%e5%8e%8b%e5%91%bd%e4%bb%a4">Linux常用压缩和解压命令</a></li><li class="page_item page-item-1107"><a href="http://www.iteblog.com/mysql-binlog_basic_usage">MySQL binlog基本用法</a></li><li class="page_item page-item-1009"><a href="http://www.iteblog.com/mysql%e4%b8%ad%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e5%87%bd%e6%95%b0">mysql中时间和日期函数</a></li><li class="page_item page-item-1012"><a href="http://www.iteblog.com/mysql%e6%af%8f%e5%8d%8a%e5%b0%8f%e6%97%b6%e5%b9%b3%e5%9d%87%e5%80%bc">mysql每半小时平均值</a></li><li class="page_item page-item-667"><a href="http://www.iteblog.com/rgb%e9%a2%9c%e8%89%b2%e5%8f%82%e8%80%83">RGB颜色参考</a></li><li class="page_item page-item-1114"><a href="http://www.iteblog.com/tcpdump_usage">Tcpdump命令的使用与示例</a></li><li class="page_item page-item-678"><a href="http://www.iteblog.com/ubuntu-10-04-4-lts%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80">Ubuntu 10.04.4 LTS下载地址</a></li><li class="page_item page-item-1195"><a href="http://www.iteblog.com/ubuntu_install_sougou">ubuntu安装搜狗输入法</a></li><li class="page_item page-item-1302"><a href="http://www.iteblog.com/%e8%bd%ac%e8%bd%bdwordpress-%e6%96%87%e7%ab%a0%e6%9f%a5%e8%af%a2%e7%94%a8%e6%b3%95%e5%a4%a7%e5%85%a8">[转载]WordPress 文章查询用法大全</a></li><li class="page_item page-item-1262"><a href="http://www.iteblog.com/links">友情链接</a></li><li class="page_item page-item-389"><a href="http://www.iteblog.com/%e5%8f%8b%e9%93%be%e7%94%b3%e8%af%b7">友链申请</a></li><li class="page_item page-item-284"><a href="http://www.iteblog.com/%e5%9c%a8%e7%ba%bf%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%94%9f%e6%88%90">在线二维码生成</a></li><li class="page_item page-item-1358"><a href="http://www.iteblog.com/%e5%b9%bf%e5%91%8a%e8%81%94%e7%9b%9f%e5%a4%a7%e5%85%a8">广告联盟大全</a></li><li class="page_item page-item-1103"><a href="http://www.iteblog.com/iteblog_hadoop_all_articles">所有文章</a></li><li class="page_item page-item-931"><a href="http://www.iteblog.com/%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e6%9f%a5%e8%af%a2%e6%8f%90%e4%ba%a4%e5%9c%b0%e5%9d%80">搜索引擎查询提交地址</a></li><li class="page_item page-item-1067"><a href="http://www.iteblog.com/%e6%94%af%e4%bb%98%e5%ae%9d%e8%b5%9e%e5%8a%a9%e4%bd%9c%e8%80%85">支付宝赞助作者</a></li><li class="page_item page-item-394"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0socks5%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新SOCKS5代理服务器</a></li><li class="page_item page-item-407"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0%e5%8c%bf%e5%90%8dhttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新匿名HTTP代理服务器</a></li><li class="page_item page-item-410"><a href="http://www.iteblog.com/%e6%9c%80%e6%96%b0%e6%9c%80%e5%bf%abhttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">最新最快HTTP代理服务器</a></li><li class="page_item page-item-1308"><a href="http://www.iteblog.com/the_latest_high_anonymous_proxy_server_ip">最新高匿名http代理服务器IP地址</a></li><li class="page_item page-item-1247"><a href="http://www.iteblog.com/shield_ip">本站屏蔽的IP</a></li><li class="page_item page-item-36"><a href="http://www.iteblog.com/recommend_book">程序员图书推荐</a></li><li class="page_item page-item-1310"><a href="http://www.iteblog.com/us_proxy_server_address">美国代理服务器地址</a></li><li class="page_item page-item-2"><a href="http://www.iteblog.com/sample-page">联系我</a></li><li class="page_item page-item-946"><a href="http://www.iteblog.com/%e9%80%8f%e6%98%8ehttp%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">透明http代理服务器</a></li>
+		</ul>
+	</aside>
+	<div class="pagecontent">
+		<header class="pageheader clearfix">
+			<h1 class="pull-left">
+				<a href="http://www.iteblog.com/google-ip-discussion">Google最新IP</a>
+			</h1>
+						<div class="pull-right"><!-- 百度分享 -->
+	<span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="tencentweibo fa fa-tencent-weibo" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a></div></div></div></span>			</div>
+		</header>
+		<script type="text/javascript">BAIDU_CLB_fillSlot("u2076093");</script>
+					<div class="article-content">
+				作者:<a target=_blank target="_blank" href="http://www.iteblog.com/sample-page" style="color: rgb(51, 153, 221); text-decoration: none;">过往记忆</a><span class="separator">&nbsp;|&nbsp;</span>新浪微博：<a target=_blank target="_blank" href="http://weibo.com/w397090770" rel="external nofollow"><span style="color: rgb(255, 0, 0);">左手牵右手TEL</span></a><span class="separator">&nbsp;|&nbsp;</span>
+可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明
+<strong style="color: rgb(255, 0, 0);">推酷网禁止转载本博客文章</strong><br />
+博客地址：<a target=_blank target="_blank" class="permalink" href="http://www.iteblog.com/">http://www.iteblog.com/</a><br />文章标题：<a target=_blank target="_blank" class="permalink" href="http://www.iteblog.com/archives/1040">《Google最新IP》</a><br/>本文链接：<a target=_blank target="_blank" class="permalink" href="http://www.iteblog.com/google-ip-discussion">http://www.iteblog.com/google-ip-discussion</a><br/>Hadoop、Hive、Hbase、Flume等QQ交流群：138615359（已满），请加入新群：149892483<br />
+
+<strong>本博客的微信公共帐号为：iteblog_hadoop，欢迎大家关注。
+如果你觉得本文对你有帮助，不妨分享一次，你的每次支持，都是对我最大的鼓励</strong><br /><br />
+<span style="color: #ff0000; font-weight:bold;width:100%">如果本文的内容对您的学习和工作有所帮助，不妨<a href="https://shenghuo.alipay.com/send/payment/fill.htm" target="_blank">支付宝赞助(wyphao.2007@163.com)</a>一下<a href="https://shenghuo.alipay.com/send/payment/fill.htm" target="_blank"><img src="http://source.iteblog.com/pic/alipay.jpg"/></a>
+</span>
+<br /><br />
+<span style="margin:5px auto;text-align:center;width:100%">
+<a href="http://www.iteblog.com/archives/1230"  style="font-size:30px; color:#FF0000" target="_blank">2014 Spark亚太峰会会议资料下载</a>、<a href="http://www.iteblog.com/archives/1273"  style="font-size:30px; color:#FF0000" title="Hadoop从入门到上手企业开发视频下载[70集]" target="_blank">《Hadoop从入门到上手企业开发视频下载[70集]》</a>、<a href="http://www.iteblog.com/archives/1295"  style="font-size:30px; color:#FF0000" title="炼数成金-Spark大数据平台视频百度网盘免费下载" target="_blank">《炼数成金-Spark大数据平台视频百度网盘免费下载》</a>、<a href="http://www.iteblog.com/archives/1293"  style="font-size:30px; color:#FF0000" title="Spark 1.X 大数据平台V2百度网盘下载[完整版]" target="_blank">《Spark 1.X 大数据平台V2百度网盘下载[完整版]》</a>、<a href="http://www.iteblog.com/archives/1330 "  style="font-size:30px; color:#FF0000" title="深入浅出Hive视频教程百度网盘免费下载" target="_blank">《深入浅出Hive视频教程百度网盘免费下载》</a>、<a href="http://xs.iteblog.com "  style="font-size:30px; color:#F60" title="最新小说" target="_blank">累了吧，来这里看小说</a>
+</span><br /><br /><p>　　作为程序开发员，研究者等很多东西都离不开搜索，虽然我们都可以用百度，但是百度搜索质量实在是太差了，有些根本搜索不到，特别是搜索英文！这样会浪费大量的时间。而最强大的搜索引擎 Google 又由于众所周知的原因无法在国内直接访问，为了帮助大家都使用上Google，我决定每天更新一些可用的Google IP，帮助大家少用百度。</p>
+<div class="note">
+　　<strong>注意</strong>：下面更新的IP在当日是可以用的，非当日可用性不可确认。请使用本博客发布的最新Google IP。由于工作有时很忙，来不及及时更新，请见谅。</p>
+<p>　　或者使用付费翻墙软件<a href="https://tuxingsun.net/share/3d95dw0b" target="_blank" style="color:red;text-align:center;font-weight:blod;">土行孙<br />
+<img src="http://source.iteblog.com/pic/txs.png"/></a>
+</div>
+<h2>2015年5月27日 更新</h2>
+<p>下面IP在2015年5月27日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+58.27.108.155
+209.116.186.218
+193.120.166.122
+74.125.107.89
+</pre>
+<h2>2015年5月26日 更新</h2>
+<p>下面IP在2015年5月26日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+58.123.102.110
+95.168.222.26
+74.125.107.89
+173.194.14.45
+</pre>
+<h2>2015年5月25日 更新</h2>
+<p>下面IP在2015年5月25日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+58.123.102.10
+209.116.186.218
+4.31.38.28
+118.174.27.112
+</pre>
+<h2>2015年5月22日 更新</h2>
+<p>下面IP在2015年5月22日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.14.51
+173.194.1.13
+74.125.107.89
+118.174.27.112
+</pre>
+<h2>2015年5月21日 更新</h2>
+<p>下面IP在2015年5月21日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+210.242.125.19
+74.125.107.89
+118.174.27.210
+118.174.27.112
+</pre>
+<h2>2015年5月20日 更新</h2>
+<p>下面IP在2015年5月20日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.14.51
+209.85.228.19
+173.194.14.153
+4.31.38.31
+</pre>
+<h2>2015年5月19日 更新</h2>
+<p>下面IP在2015年5月19日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.14.50
+173.194.14.51
+173.194.14.52
+173.194.14.53
+</pre>
+<h2>2015年5月15日 更新</h2>
+<p>下面IP在2015年5月15日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.1.16
+173.194.1.17
+173.194.1.18
+173.194.1.19
+</pre>
+<h2>2015年5月14日 更新</h2>
+<p>下面IP在2015年5月14日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+118.174.27.112
+173.194.1.13
+173.194.1.14
+173.194.1.19
+118.174.27.210
+</pre>
+<h2>2015年5月13日 更新</h2>
+<p>下面IP在2015年5月13日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+118.174.27.210
+173.194.14.51
+118.174.27.112
+210.242.125.10
+173.194.138.103
+</pre>
+<h2>2015年5月12日 更新</h2>
+<p>下面IP在2015年5月12日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+209.116.186.218
+</pre>
+<h2>2015年5月11日 更新</h2>
+<p>下面IP在2015年5月11日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.131.169
+173.194.131.168
+173.194.131.167
+173.194.131.166
+</pre>
+<h2>2015年5月10日 更新</h2>
+<p>下面IP在2015年5月10日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+74.125.107.89
+209.116.186.218
+209.85.228.19
+110.164.9.8
+</pre>
+<h2>2015年5月08日 更新</h2>
+<p>下面IP在2015年5月08日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.1.13
+173.194.1.14
+209.116.186.218
+202.152.192.151
+173.194.131.170
+173.194.138.103
+</pre>
+<h2>2015年5月06日 更新</h2>
+<p>下面IP在2015年5月06日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.1.15
+74.125.107.89
+64.233.162.83
+209.85.225.23
+</pre>
+<h2>2015年5月05日 更新</h2>
+<p>下面IP在2015年5月05日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.131.170
+173.194.131.171
+173.194.131.172
+173.194.131.173
+173.194.131.174
+173.194.131.175
+173.194.131.176
+173.194.131.177
+173.194.131.178
+173.194.131.179
+</pre>
+<h2>2015年5月04日 更新</h2>
+<p>下面IP在2015年5月04日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+173.194.138.103
+173.194.131.180
+173.194.131.181
+173.194.131.182
+173.194.131.183
+173.194.131.184
+173.194.131.185
+</pre>
+<h2>2015年4月30日 更新</h2>
+<p>下面IP在2015年4月30日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+119.75.213.61
+209.85.228.50
+118.174.27.112
+74.125.69.160
+209.116.186.218
+74.125.107.89
+79.101.110.148
+</pre>
+<h2>2015年4月29日 更新</h2>
+<p>下面IP在2015年4月29日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+118.174.27.112
+210.242.125.83
+74.125.69.160
+173.194.140.208
+203.210.4.28
+74.125.107.89
+</pre>
+<h2>2015年4月28日 更新</h2>
+<p>下面IP在2015年4月28日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+74.125.69.160
+209.85.228.22
+</pre>
+<h2>2015年4月27日 更新</h2>
+<p>下面IP在2015年4月27日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+118.174.27.112
+118.174.27.123
+118.174.27.210
+173.194.1.13
+173.194.1.15
+173.194.1.19
+</pre>
+<h2>2015年4月26日 更新</h2>
+<p>下面IP在2015年4月26日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+203.211.0.100
+203.211.0.101
+203.211.0.102
+203.211.0.103
+</pre>
+<h2>2015年4月25日 更新</h2>
+<p>下面IP在2015年4月25日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+95.173.210.40
+</pre>
+<h2>2015年4月24日 更新</h2>
+<p>下面IP在2015年4月24日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+91.213.30.156
+181.15.96.88
+64.233.183.163
+10.118.100.1
+209.85.228.42
+173.194.1.13
+95.168.222.25
+173.194.1.15
+</pre>
+<h2>2015年4月23日 更新</h2>
+<p>下面IP在2015年4月23日Google IP可访问。</p>
+<pre class="brush: java; title: ; notranslate" title="">
+74.125.107.89
+118.174.27.112
+209.85.228.22
+209.116.186.218
+202.152.192.181
+4.31.38.23
+210.242.125.83
+103.1.139.176
+</pre>
+<span style="margin-top: 15px; color:red; display:block;text-align:center;"><strong>本博客文章除特别声明，全部都是原创！<br/>
+尊重原创，转载请注明： 转载自<a href="http://www.iteblog.com/"  style="text-decoration: none;color:red">过往记忆（http://www.iteblog.com/）</a><br/>本文链接地址: <a href="http://www.iteblog.com/google-ip-discussion" style="text-decoration: none;color:red">《Google最新IP》（http://www.iteblog.com/google-ip-discussion）</a>
+</strong></span>			</div>
+		<script type="text/javascript">BAIDU_CLB_fillSlot("u2076093");</script>
+		<div id="respond" class="no_webshot">
+		<form action="http://www.iteblog.com/wp-comments-post.php" method="post" id="commentform">
+		
+		<div class="comt-title">
+			<div class="comt-avatar pull-left">
+				<img alt="" data-original="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;">			</div>
+			<div class="comt-author pull-left">
+			发表我的评论			</div>
+			<a id="cancel-comment-reply-link" class="pull-right" href="javascript:;">取消评论</a>
+		</div>
+		
+		<div class="comt">
+			<div class="comt-box">
+				<textarea placeholder="写点什么吧..." class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="6" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};" style="background:#F5FAFE url(/pic/comment-text.gif) no-repeat center bottom;background-position:center "></textarea>
+				<div class="comt-ctrl">
+					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
+					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='1219' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="eaedcb1a8e" /></p><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0;display:none;"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="225"/></p></div>
+					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
+					<div style="float:right;color:#f00;margin-top:5px;">本博客评论系统带有自动识别垃圾评论功能，请写一些有意义的评论，谢谢！</div>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0;display:none;"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+				</div>
+				
+			</div>
+
+												<div class="comt-comterinfo" id="comment-author-info" >
+					<!--<h4>Hi，您需要填写昵称和邮箱！</h4>
+						<ul>
+							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
+							<li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt" type="text" name="email" id="email" value="" tabindex="3" placeholder="邮箱"><span class="help-inline">邮箱 (必填)</span></li>
+							<li class="form-inline"><label class="hide" for="url">网址</label><input class="ipt" type="text" name="url" id="url" value="" tabindex="4" placeholder="网址"><span class="help-inline">网址</span></li>
+						</ul>-->
+			<ul class="iteblog-open">
+<li><a class="weibo" href="http://www.iteblog.com/?iteblog=weibologin&r=http://www.iteblog.com/google-ip-discussion">使用微博账号登录</a> </li></ul>
+					</div>
+									</div>
+
+		
+	</form>
+	</div>
+<div class="banner banner-comment"><div style="float:left;"><script type="text/javascript">BAIDU_CLB_fillSlot("u2068683");</script></div>
+<div style="float:left;"><script type="text/javascript">BAIDU_CLB_fillSlot("u2068693");</script></div></div><div id="postcomments">
+	<div id="comments">
+		<i class="fa fa-comments-o"></i> <b> (10)</b>个小伙伴在吐槽
+	</div>
+	<ol class="commentlist">
+		<li class="comment byuser comment-author-2809574673 even thread-even depth-1" id="comment-21838"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21838">授人以鱼不如授人以鱼，求技术贴！！！！！ <img data-original="http://source.iteblog.com/wp-content/themes/yusi2.0/img/smilies/icon_biggrin.gif" alt=":grin:" class="wp-smiley" /><div class="c-meta"><span class="c-author">happyleying</span>2015-04-27 14:32 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21838#respond' onclick='return addComment.moveForm("div-comment-21838", "21838", "respond", "1219")'>回复</a></div></pre></div><ul class="children">
+<li class="comment byuser comment-author-w397090770 bypostauthor odd alt depth-2" id="comment-21839"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21839">什么技术贴？？<div class="c-meta"><span class="c-author">w397090770</span>2015-04-27 14:41 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21839#respond' onclick='return addComment.moveForm("div-comment-21839", "21839", "respond", "1219")'>回复</a></div></pre></div><ul class="children">
+<li class="comment byuser comment-author-2809574673 even depth-3" id="comment-21840"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21840">如何找到google最新IP的方法啊？
+网上的nslookup g.cn这个方法不行的，你是怎么找到google最新IP的啊？<div class="c-meta"><span class="c-author">happyleying</span>2015-04-27 14:43 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21840#respond' onclick='return addComment.moveForm("div-comment-21840", "21840", "respond", "1219")'>回复</a></div></pre></div><ul class="children">
+<li class="comment byuser comment-author-w397090770 bypostauthor odd alt depth-4" id="comment-21841"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21841">呵呵，其实我这根本就没方法，我是从我网站后台浏览统计获取的，每天有一部分人通过Google进入我网站，然后我就把这部分IP抽出来分享给大家。<div class="c-meta"><span class="c-author">w397090770</span>2015-04-27 14:51 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21841#respond' onclick='return addComment.moveForm("div-comment-21841", "21841", "respond", "1219")'>回复</a></div></pre></div><ul class="children">
+<li class="comment byuser comment-author-2809574673 even depth-5" id="comment-21842"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21842">这方法不错！ <img data-original="http://source.iteblog.com/wp-content/themes/yusi2.0/img/smilies/icon_mrgreen.gif" alt=":mrgreen:" class="wp-smiley" /><div class="c-meta"><span class="c-author">happyleying</span>2015-04-27 14:53 </div></pre></div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment byuser comment-author-2722872084 odd alt thread-odd thread-alt depth-1" id="comment-21834"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21834">更新快点吧<div class="c-meta"><span class="c-author">维力Niman</span>2015-04-23 18:11 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21834#respond' onclick='return addComment.moveForm("div-comment-21834", "21834", "respond", "1219")'>回复</a></div></pre></div><ul class="children">
+<li class="comment byuser comment-author-w397090770 bypostauthor even depth-2" id="comment-21835"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-21835">今天更新8个可访问的Google IP。感谢你的支持。<div class="c-meta"><span class="c-author">w397090770</span>2015-04-23 19:07 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=21835#respond' onclick='return addComment.moveForm("div-comment-21835", "21835", "respond", "1219")'>回复</a></div></pre></div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-18317"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-18317">更新快点就好了<div class="c-meta"><span class="c-author">semoren</span>2015-01-30 20:24 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=18317#respond' onclick='return addComment.moveForm("div-comment-18317", "18317", "respond", "1219")'>回复</a></div></pre></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-16319"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-16319">更新要快呀<div class="c-meta"><span class="c-author">吴广学</span>2015-01-07 13:25 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=16319#respond' onclick='return addComment.moveForm("div-comment-16319", "16319", "respond", "1219")'>回复</a></div></pre></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-15560"><div class="c-avatar"><img alt="" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" class="avatar avatar-36 photo" height="36" width="36" src="http://source.iteblog.com/wp-content/themes/yusi2.0/img/default.png" style="display: block;"><pre class="c-main" id="div-comment-15560">赞<div class="c-meta"><span class="c-author">abc123</span>2014-12-27 20:00 <a class='comment-reply-link' href='/google-ip-discussion?replytocom=15560#respond' onclick='return addComment.moveForm("div-comment-15560", "15560", "respond", "1219")'>回复</a></div></pre></div></li><!-- #comment-## -->
+	</ol>
+	<div class="commentnav"	>
+			</div>
+</div>
+	</div>
+</div>
+</section>
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="copyright pull-left">
+         版权所有，保留一切权利 ·基于WordPress构建  © 2013-2015  ·  <a href='http://www.iteblog.com/sitemap.xml' target='_blank'>网站地图</a>  ·  <a href='http://www.iteblog.com/iteblog_hadoop_all_articles' target='_blank'>所有文章</a>  &nbsp;&nbsp;&nbsp;本主题基于欲思博客主题修改&nbsp;&nbsp;&nbsp; 京ICP备14057018号 &nbsp;&nbsp;&nbsp;本博客服务器由<img src="http://source.iteblog.com/pic/code.jpg" width="50" height="24"> <img src="http://source.iteblog.com/pic/txy_logo.jpg" width="50" height="24"> 赞助
+        </div>
+        <div class="trackcode pull-right">
+            <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe9e1d61340ff3d9495a8cca04ebdb49d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254868071'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254868071%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>        </div>
+    </div>
+</footer>
+
+<script type='text/javascript' src='http://source.iteblog.com/wp-content/plugins/akismet/_inc/form.js?ver=3.0.4'></script>
+<script type='text/javascript' src='http://source.iteblog.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/scripts/shCore.js?ver=2.1.364'></script>
+<script type='text/javascript' src='http://source.iteblog.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/scripts/shBrushJava.js?ver=2.1.364'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://source.iteblog.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/styles/shCore.css?ver=2.1.364";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://source.iteblog.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/styles/shThemeDefault.css?ver=2.1.364";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.clipboardSwf = 'http://source.iteblog.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/scripts/clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'show source';
+	SyntaxHighlighter.config.strings.viewSource = '查看源代码';
+	SyntaxHighlighter.config.strings.copyToClipboard = '复制到剪贴板';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation = '代码现在在你的剪贴板';
+	SyntaxHighlighter.config.strings.print = '打印';
+	SyntaxHighlighter.config.strings.help = '帮助';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = '无法找到Brush：';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush不能设置 html-script选项';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='http://source.iteblog.com/wp-content/themes/yusi2.0/js/jquery.js?ver=2.0'></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","youdao","xg","qingbiji"],"viewText":"分享到：","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","youdao","xg","qingbiji"]}};with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script><script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

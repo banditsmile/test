@@ -1,0 +1,23 @@
+connect(host : string, [port : int], [timeout : int = 1]):bool
+addserver(host : string, [port : int = 11211], [persistent : bool = true], [weight : int|null = null], [timeout : int = 1], [retry_interval : int = 15], [status : bool = true], [failure_callback : callable = null], [timeoutms : int]):bool
+setServerParams(host : string, [port : int = 11211], [timeout : int = 1], [retry_interval : int = 15], [status : bool = true], [failure_callback : callable]):bool
+setFailureCallback():void
+getserverstatus(host : string, [port : int = 11211]):int
+findserver():void
+getversion():bool|string
+add(key : string, var, [flag : int], [expire : int]):array|bool
+set(key : string, var, [flag : int], [expire : int]):bool
+replace(key : string, var, [flag : int], [expire : int]):bool
+cas():void
+append():void
+prepend():string
+get(key : array|string, [&flags : array|int]):array|string
+delete(key : string, [timeout : int = 0]):bool
+getstats([type : string], [slabid : int], [limit : int = 100]):array|bool
+getextendedstats([type : string], [slabid : int], [limit : int = 100]):array|bool
+setCompressThreshold(thresold : int, [min_saving : float = 0.2]):bool
+increment(key : string, [value : int = 1]):bool
+decrement(key : string, [value : int = 1]):int
+close():bool
+flush():bool
+pconnect(host : string, [port : int], [timeout : int = 1]):mixed

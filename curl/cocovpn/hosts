@@ -1,0 +1,16 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+42.121.85.26    blog.icodeu.com
+42.121.85.26    pma.icodeu.com
+127.0.0.1       google.local
+58.27.108.155    www.google.com
+209.116.186.218    google.com
+58.27.108.155	www.google.com
+209.116.186.218	google.com

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=yes">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>O2O | 深网传媒</title>
+<meta name="description" content="O2O" />
+<link rel="shortcut icon" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/favicon.png" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.shenwang001.com/blog/xmlrpc.php">
+<!--[if lt IE 9]><script src="http://www.shenwang001.com/blog/wp-content/themes/Ality/js/html5-css3.js"></script><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="http://www.shenwang001.com/blog/wp-content/themes/Ality/css/ie7/ie7.css" /><![endif]-->
+<!--[if lt IE 7]><script src="http://www.shenwang001.com/blog/wp-content/themes/Ality/js/ie6.js" type="text/javascript"></script><![endif]-->
+<link rel='stylesheet' id='style-css'  href='http://www.shenwang001.com/blog/wp-content/themes/Ality/style.css?ver=2014.11.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaqueries-css'  href='http://www.shenwang001.com/blog/wp-content/themes/Ality/css/mediaqueries.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/jquery.min.js?ver=1.10.1'></script>
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/script.js?ver=1.0'></script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body class="archive tag tag-o2o tag-18">
+<div id="page" class="page-site">
+	<div id="header-top">
+		<nav id="top-nav" class="main-nav">
+			<div class="home_h"><i class="icon-home_h"><a href="http://www.shenwang001.com/blog" title="返回首页"></a></i></div>
+			<div class="menu-%e9%a1%b6%e9%83%a8%e5%af%bc%e8%88%aa-container"><ul id="menu-%e9%a1%b6%e9%83%a8%e5%af%bc%e8%88%aa" class="menu"><li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="http://www.shenwang001.com/blog/about">关于我们</a></li>
+<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="http://www.shenwang001.com/blog/contact">联系我们</a></li>
+</ul></div>			<div class="clear"></div>
+		</nav>
+	</div>
+	<div id="simple-top">
+	<a id="simple-menu" href="#sidr"><i class="icon-simple-menu"></i></a>
+	</div>
+		<header id="header">
+			<div class="header-clear"></div>
+			<div class="main-header">
+				<hgroup class="logo-main">
+	<div class="title-main">
+		<h1 class="site-title"><a href="http://www.shenwang001.com/blog/" rel="home">深网传媒</a></h1>
+		<h2 id="site-description">互联网整合营销传播新媒体-为价值传播</h2>
+	</div>
+</hgroup>
+				<div id="set-main">
+	<div id="nav-search">
+		<a class="menu-search" href="#">搜索</a>
+	</div>
+	<div id="nav-login">
+		<a href="#login" class="flatbtn" id="login-main" >登录</a>	</div>
+</div>							</div>
+			<div class="clear"></div>
+			<nav id="site-nav" class="main-nav">
+				<div class="menu-sem-container"><ul id="menu-sem" class="menu"><li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25"><a href="http://www.shenwang001.com/blog/">首页</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://www.shenwang001.com/blog/category/news">最新资讯</a></li>
+<li id="menu-item-773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-773"><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao">网络营销</a></li>
+<li id="menu-item-774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774"><a href="http://www.shenwang001.com/blog/category/yidong">移动营销</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://www.shenwang001.com/blog/category/jingyan">实战经验</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://www.shenwang001.com/blog/category/zhuanjia">人物论点</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="http://www.shenwang001.com/blog/category/sem">sem竞价推广</a></li>
+<li id="menu-item-878" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="http://www.shenwang001.com/blog/category/guanli">企业智慧管理</a></li>
+<li id="menu-item-879" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-879"><a href="http://www.shenwang001.com/blog/category/zhihui">智慧杂谈</a></li>
+</ul></div>				<ul><li class="fill"></li></ul>
+			</nav>
+			<!-- #site-nav -->
+			<div class="clear"></div>
+		</header>
+		<!-- #header -->
+
+	<div id="main" class="wrapper">
+		<div id="search-main">
+			<div id="searchbar">
+	<form method="get" id="searchform" action="http://www.shenwang001.com/blog/">
+		<div><input type="text" value="" name="s" id="s" placeholder="输入搜索内容" required />
+		<input type="submit" id="searchsubmit" value="搜索" />
+		</div>
+	</form>
+</div>			<form action="http://www.baidu.com/baidu" target="_blank">
+	<input name=word class="swap_value" placeholder="百度站内搜索" required >
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="百度" />
+	<input name=tn type=hidden value="bds">
+	<input name=cl type=hidden value="3">
+	<input name=ct type=hidden value="2097152">
+	<input name=si type=hidden value="shenwang001.com/blog/">
+	<input name=si type=hidden value="">
+</form>		</div>
+
+		<nav class="crumbs">现在位置： <a title="返回首页" href="http://www.shenwang001.com/blog">首页</a> &gt; O2O &gt; 文章 </nav>
+				<div id="primary" class="site-content">
+		<div class="primary-site">
+							<article id="post-465" class="post-465 post type-post status-publish format-standard hentry category-jingyan tag-o2o">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/465.html" rel="bookmark" title="详细阅读 雕爷：三个O2O行业风生水起只靠三张图">雕爷：三个O2O行业风生水起只靠三张图</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/465.html" rel="bookmark" title="雕爷：三个O2O行业风生水起只靠三张图">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2014/11/1416278471548.jpg" alt="雕爷：三个O2O行业风生水起只靠三张图" />
+</a>
+				</figure>
+						<div class="entry-site">
+									&nbsp;
+
+这篇文章，过于干货，本打算发在《卖家刊》杂志，但你懂，阿芙已然六千万，但只差第一名50万元金额而已，雕爷无节操发了篇“该你还我稿费的时候了”软文，微博微信同步，然后，令人感动一幕出现了，好多同学，立即跑到阿芙天猫旗舰店疯狂购买，甚至有出现购买了2万元，然后留言“不用发货了，算帮雕爷拿第一的，反正我也不知道精油怎么用”……
+实话说，我很感动。很多平时看我文章，认为受益的家伙，少...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年11月18日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/465.html#respond" title="《雕爷：三个O2O行业风生水起只靠三张图》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 81 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/465.html" rel="bookmark" title="共 2611字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+												<div id="g-posts">
+	<div class="g-posts-main g-main" style="text-align: center;">
+		<a href="/" target="_blank"><img src="http://www.shenwang001.com/blog/wp-content/themes/Ality/img/gg/760.jpg" alt="深圳网站建设" /></a>	</div>
+</div>							
+					<article id="post-376" class="post-376 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-276 tag-277">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/376.html" rel="bookmark" title="详细阅读 最牛皮具店红谷一年销售12亿元？">最牛皮具店红谷一年销售12亿元？</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/376.html" rel="bookmark" title="最牛皮具店红谷一年销售12亿元？">
+<img class="home-thumb" src="http://upload.chinaz.com/2014/1104/1415091492691.jpg" alt="最牛皮具店红谷一年销售12亿元？" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+从零起步，12年发展到1000余家门店，年销售12亿元。行业不景气时，收购柯达200多家门店，李宁、安踏300多家门店。红谷，这个源自丽江束河的皮具品牌，在经济衰落期表现出极强的生存能力，它怎样炼成?
+
+红谷，这家拥有12年发展历史、传承了丽江束河皮匠文化的皮具店，称它为行业最牛，并不为过。
+2004年，柯达在传统冲印业全线溃退，红谷迅速出击，在全国接手200多家柯达门店，成为全国社区商业圈一方诸侯...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年11月04日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/376.html#respond" title="《最牛皮具店红谷一年销售12亿元？》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 93 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/376.html" rel="bookmark" title="共 3647字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-360" class="post-360 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-262 tag-263">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/360.html" rel="bookmark" title="详细阅读 小猪短租是如何做好“分享经济”的？">小猪短租是如何做好“分享经济”的？</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/360.html" rel="bookmark" title="小猪短租是如何做好“分享经济”的？">
+<img class="home-thumb" src="http://upload.chinaz.com/2014/1031/1414723853830.jpg" alt="小猪短租是如何做好“分享经济”的？" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+
+从常规做法来说，O2O无非是将已有的线下资源迅速扫到线上平台，由用户在线上做出决策、完成交易环节，再到线下去进行交付，供用户使用、体验。但 是在小猪短租看来，这个过程远没有这么简单。虽然在线短租行业属于O2O领域，但加上“分享经济”的标签后，又会有着很大的不同。
+众所周知，分享经济这种模式最早由Airbnb创造。在这种全新的经济模式中，人们将自己拥有的闲置资源分享出来供他人有偿使用。由此...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年10月31日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/360.html#respond" title="《小猪短租是如何做好“分享经济”的？》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 106 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/360.html" rel="bookmark" title="共 1784字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-318" class="post-318 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-wi-fi tag-221">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/318.html" rel="bookmark" title="详细阅读 看微飞如何利用Wi-Fi流量做买卖？">看微飞如何利用Wi-Fi流量做买卖？</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/318.html" rel="bookmark" title="看微飞如何利用Wi-Fi流量做买卖？">
+<img class="home-thumb" src="http://upload.chinaz.com/2014/1022/1413964963782.png" alt="看微飞如何利用Wi-Fi流量做买卖？" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+
+众所周知，智能手机上网特别耗费流量，而超出流量包的上网费用又比较昂贵。互联网的普及，家家户户都装上宽带，人们可以很自由的使用家中的Wi-Fi资源。一旦出门在外，需要上网时却又经常无Wi-Fi可用，这给很多手机用户造成了不便。
+虽然家家户户几乎都装上宽带，但都是加密的，陌生人无法共享资源。如果刨去白天上班和晚上睡觉的时间，每户Wi-Fi的实际利用率并不高，且每年的宽带费用也不低。现在，如果...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年10月24日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/318.html#respond" title="《看微飞如何利用Wi-Fi流量做买卖？》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 113 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/318.html" rel="bookmark" title="共 1286字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-279" class="post-279 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-30 tag-188">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/279.html" rel="bookmark" title="详细阅读 如何在O2O产业中生存？">如何在O2O产业中生存？</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/279.html" rel="bookmark" title="如何在O2O产业中生存？">
+<img class="home-thumb" src="http://upload.chinaz.com/2014/1017/1413514320402.jpg" alt="如何在O2O产业中生存？" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+
+阿芙精油、雕爷牛腩创始人雕爷（腾讯科技配图）
+近日，阿芙精油、雕爷牛腩创始人雕爷（孟醒）发表文章，分析了O2O产业的发展走向。
+雕爷列出了一个O2O商业模式成熟轴：
+最先成熟：纯信息导流，如大众点评，将线上的顾客通过信息手段，导流到线下实体店。
+正在成熟：以“饿了么”、“到家美食”等为代表的APP，将实体餐厅做的饭菜，端到顾客家中。
+最后成熟：如河狸家美甲，不一定非得和线下实体店合作，将线...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年10月17日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/279.html#respond" title="《如何在O2O产业中生存？》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 117 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/279.html" rel="bookmark" title="共 850字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-222" class="post-222 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-144 tag-143">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/222.html" rel="bookmark" title="详细阅读 大商集团运用O2O如何实现1700亿线下零售?">大商集团运用O2O如何实现1700亿线下零售?</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/222.html" rel="bookmark" title="大商集团运用O2O如何实现1700亿线下零售?">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2014/10/1412843711215_副本.png" alt="大商集团运用O2O如何实现1700亿线下零售?" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+对传统企业进行O2O改造是一项艰难的工作，传统巨头苏宁、万达也举步维艰。做O2O的传统企业，经常会掉入两种思维陷阱，要么太重线上，使得线下资源被浪费，造成“线下线上打架”。要么就仍是以线下为主，使得互联网体系难以融入公司体系。
+
+上市公司大商集团是中国最大的零售集团之一，主要业务集中于东北，目前也在进行O2O改革，这个改革主要由旗下的子公司天狗网推动。天狗网的CEO 刘思军是敦煌网联合创始...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年10月09日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/222.html#respond" title="《大商集团运用O2O如何实现1700亿线下零售?》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 98 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/222.html" rel="bookmark" title="共 3063字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-77" class="post-77 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-41 tag-40">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/77.html" rel="bookmark" title="详细阅读 O2O营销的痛点和方法&#8211;商家必知">O2O营销的痛点和方法&#8211;商家必知</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/77.html" rel="bookmark" title="O2O营销的痛点和方法&#8211;商家必知">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2014/09/1410833307729-300x200.jpg" alt="O2O营销的痛点和方法&#8211;商家必知" />
+</a>
+				</figure>
+						<div class="entry-site">
+									
+O2O火热之后，受过团购服务教育的商家表现出了极大的热情的原因主要有这三方面：一是能多挣钱的方式肯定要尝试，二是传统的本地生活服务业生意的确不好做，三是会借势营销的互联网人的炒作与宣传。于是乎，牛鬼蛇神都开始活跃起来，企图在中间捞上一票，有做微信公众号开发的，有做微信营销培训的，有做微信代运营的，有做微信营销的……这里面骗钱的骗子 或忽悠占多数，这绝对是再正确不过的大实话，但无可...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年09月16日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/77.html#respond" title="《O2O营销的痛点和方法&#8211;商家必知》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 99 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/77.html" rel="bookmark" title="共 3361字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-65" class="post-65 post type-post status-publish format-standard hentry category-news tag-o2o tag-34 tag-35">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/news/65.html" rel="bookmark" title="详细阅读 微信“刷卡”来了！">微信“刷卡”来了！</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/news/65.html" rel="bookmark" title="微信“刷卡”来了！">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2014/09/1410743871561-300x175.jpg" alt="微信“刷卡”来了！" />
+</a>
+				</figure>
+						<div class="entry-site">
+									微信支付又有了新的动作。今天晚些时候，微信在其“钱包”模块中加入了一项“刷卡”功能。
+
+如上图所示，它与“转账”和“钱包”两个功能并列。现在这个功能还需要用户手动开通，当你开通后，微信会提示该功能将会在9月15日正式启用，目前支持这一刷卡服务的商户一共有9家，分别是DQ冰雪皇后、国大药房、天虹、壹加壹、卜蜂莲花(华南)、好邻居、爱婴室、民生百货以及国大365。
+之后，每当点击进入刷卡功能，屏幕上...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年09月15日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/news" rel="category tag">最新资讯</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/news/65.html#respond" title="《微信“刷卡”来了！》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 110 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/news/65.html" rel="bookmark" title="共 662字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+					<article id="post-42" class="post-42 post type-post status-publish format-standard hentry category-jingyan tag-o2o tag-19 tag-20">
+	<section class="content" onMouseOut="this.className='content'" onMouseOver="this.className='content-m'">
+				<header class="entry-header">
+			<div class="title-heavy"></div>
+			<h2 class="entry-title"><a href="http://www.shenwang001.com/blog/jingyan/42.html" rel="bookmark" title="详细阅读 通过国外购物来看O2O线下渠道变革">通过国外购物来看O2O线下渠道变革</a></h2>
+		</header>
+		<!-- .entry-header -->
+		<div class="entry-content">
+							<figure class="thumbnail">
+					<a href="http://www.shenwang001.com/blog/jingyan/42.html" rel="bookmark" title="通过国外购物来看O2O线下渠道变革">
+<img class="home-thumb" src="http://www.shenwang001.com/blog/wp-content/uploads/2014/09/1410490366333-300x200.jpg" alt="通过国外购物来看O2O线下渠道变革" />
+</a>
+				</figure>
+						<div class="entry-site">
+									    互联网风口上的小米，线上营销只是赚了个噱头，而70%的销量来自线下渠道；乐视，这个全新的电视娱乐业颠覆者，也正在大力拓展线下渠道——寻找超级合伙人；再比如阿里、顺丰、京东开始了对最后一公里的争夺；腾讯、万达、百度联手开始了O2O布局。这凸显了移动互联网时代线下场所的重要性，更显示出企业们对020战略落地之线下渠道的重视。
+未来的商业世界，属于懂得互联网的传统企业。
+互联网不仅是一种思...								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="entry-meta">
+				<span class="meta-site">
+					<span class="date"><i class="icon-date"></i>2014年09月13日</span>
+					<span class="cat"><i class="icon-cat"></i><a href="http://www.shenwang001.com/blog/category/jingyan" rel="category tag">实战经验</a></span>
+					<span class="comment"><i class="icon-comment"></i><a href="http://www.shenwang001.com/blog/jingyan/42.html#respond" title="《通过国外购物来看O2O线下渠道变革》上的评论">暂无评论</a></span>
+					<span class="views"><i class="icon-views"></i>阅读 184 views 次</span>									</span>
+				<span class="entry-more"><a href="http://www.shenwang001.com/blog/jingyan/42.html" rel="bookmark" title="共 4214字 阅读全文">阅读全文</a></span>
+			</div>
+			<!-- .entry-meta -->
+		</div>
+		<!-- .entry-content -->
+	</section>
+	<!-- #content -->
+</article>
+
+
+
+			
+							</div>
+	</div>
+<!-- #primary -->
+<div id="sidebar" class="widget-area">
+					<aside id="search-3" class="widget widget_search"><div id="searchbar">
+	<form method="get" id="searchform" action="http://www.shenwang001.com/blog/">
+		<div><input type="text" value="" name="s" id="s" placeholder="输入搜索内容" required />
+		<input type="submit" id="searchsubmit" value="搜索" />
+		</div>
+	</form>
+</div><div class="clear"></div></aside><aside id="related_post-2" class="widget widget_related_post"><h3 class="widget-title"><p><i class="icon-st"></i></p>相关文章</h3>
+<div id="related_post_widget">
+	<ul>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/465.html"><i class="icon-li"></i>雕爷：三个O2O行业风生水起只靠三张图</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/376.html"><i class="icon-li"></i>最牛皮具店红谷一年销售12亿元？</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/360.html"><i class="icon-li"></i>小猪短租是如何做好“分享经济”的？</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/318.html"><i class="icon-li"></i>看微飞如何利用Wi-Fi流量做买卖？</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/279.html"><i class="icon-li"></i>如何在O2O产业中生存？</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/222.html"><i class="icon-li"></i>大商集团运用O2O如何实现1700亿线下零售?</a></li>
+				<li><a href="http://www.shenwang001.com/blog/jingyan/77.html"><i class="icon-li"></i>O2O营销的痛点和方法&#8211;商家必知</a></li>
+				<li><a href="http://www.shenwang001.com/blog/news/65.html"><i class="icon-li"></i>微信“刷卡”来了！</a></li>
+				<li><i class="icon-li"></i><a href="http://www.shenwang001.com/blog/jingyan/1062.html">一个公众号运营者的感悟之内容篇</a></li>
+				<li><i class="icon-li"></i><a href="http://www.shenwang001.com/blog/jingyan/925.html">教你从这五点做好网站用户体验</a></li>
+			</ul>
+</div>
+
+<div class="clear"></div></aside><aside id="hot_post-3" class="widget widget_hot_post"><h3 class="widget-title"><p><i class="icon-st"></i></p>热门文章</h3>
+<div id="hot_post_widget">
+	<ul>
+	     
+	    <li><span class='li-icon li-icon-1'>1</span><a href="http://www.shenwang001.com/blog/zhuanjia/1165.html">用移动互联网防治雾霾——马化腾</a></li><li><span class='li-icon li-icon-2'>2</span><a href="http://www.shenwang001.com/blog/zhihui/1171.html">问答之间的人生智慧</a></li><li><span class='li-icon li-icon-3'>3</span><a href="http://www.shenwang001.com/blog/sem/1155.html">剖析常见的6个SEO问题</a></li><li><span class='li-icon li-icon-4'>4</span><a href="http://www.shenwang001.com/blog/sem/1163.html">如何做新网站的SEO优化</a></li><li><span class='li-icon li-icon-5'>5</span><a href="http://www.shenwang001.com/blog/yidong/weixin/1160.html">让你的朋友圈营销做得更好（转）</a></li><li><span class='li-icon li-icon-6'>6</span><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1157.html">谷歌发展运营商会怎样变革互联网？</a></li><li><span class='li-icon li-icon-7'>7</span><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1138.html">如何打造一场《穹顶之下》式的成功...</a></li><li><span class='li-icon li-icon-8'>8</span><a href="http://www.shenwang001.com/blog/yidong/1149.html">移动互联网带来的指尖生活</a></li><li><span class='li-icon li-icon-9'>9</span><a href="http://www.shenwang001.com/blog/sem/1168.html">合格网络推广员需要掌握哪些技能（...</a></li><li><span class='li-icon li-icon-10'>10</span><a href="http://www.shenwang001.com/blog/yidong/weixin/1153.html">微信朋友圈礼仪规范，你做到几条？...</a></li>	    			</ul>
+</div>
+
+<div class="clear"></div></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud"><h3 class="widget-title"><p><i class="icon-st"></i></p>标签</h3><div class="tagcloud"><a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91' class='tag-link-33' title='16个话题' style="color:#f49ddb;font-size: 20.5pt;;">互联网</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e4%ba%a7%e5%93%81' class='tag-link-268' title='3个话题' style="color:#8c118f;font-size: 10pt;;">互联网产品</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e5%88%9b%e4%b8%9a' class='tag-link-63' title='11个话题' style="color:#a905cd;font-size: 18pt;;">互联网创业</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e6%80%9d%e7%bb%b4' class='tag-link-32' title='4个话题' style="color:#2ed39e;font-size: 11.666666666667pt;;">互联网思维</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e8%90%a5%e9%94%80' class='tag-link-24' title='5个话题' style="color:#e2a6d5;font-size: 13pt;;">互联网营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%92%e8%81%94%e7%bd%91%e9%87%91%e8%9e%8d' class='tag-link-248' title='3个话题' style="color:#d05f56;font-size: 10pt;;">互联网金融</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%ba%ac%e4%b8%9c' class='tag-link-6' title='2个话题' style="color:#73063d;font-size: 8pt;;">京东</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bc%81%e4%b8%9a%e7%ae%a1%e7%90%86' class='tag-link-532' title='3个话题' style="color:#7e4459;font-size: 10pt;;">企业管理</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bc%98%e9%85%b7%e5%9c%9f%e8%b1%86' class='tag-link-105' title='4个话题' style="color:#5a6ea1;font-size: 11.666666666667pt;;">优酷土豆</a>
+<a href='http://www.shenwang001.com/blog/tag/%e4%bd%99%e4%bd%b3%e6%96%87' class='tag-link-403' title='3个话题' style="color:#e3fa3;font-size: 10pt;;">余佳文</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%86%85%e5%ae%b9%e8%90%a5%e9%94%80' class='tag-link-94' title='3个话题' style="color:#9fee65;font-size: 10pt;;">内容营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%88%98%e5%bc%ba%e4%b8%9c' class='tag-link-366' title='3个话题' style="color:#c039c1;font-size: 10pt;;">刘强东</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8c%bf%e5%90%8d%e7%a4%be%e4%ba%a4' class='tag-link-135' title='3个话题' style="color:#275f47;font-size: 10pt;;">匿名社交</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8f%8c%e5%8d%81%e4%b8%80' class='tag-link-192' title='4个话题' style="color:#3ab00b;font-size: 11.666666666667pt;;">双十一</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%8f%a4%e6%b0%b8%e9%94%b5' class='tag-link-106' title='3个话题' style="color:#82e45d;font-size: 10pt;;">古永锵</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%91%a8%e9%b8%bf%e7%a5%8e' class='tag-link-16' title='10个话题' style="color:#9cc8b;font-size: 17.333333333333pt;;">周鸿祎</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%93%81%e7%89%8c%e8%90%a5%e9%94%80' class='tag-link-493' title='9个话题' style="color:#650fbe;font-size: 16.666666666667pt;;">品牌营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%b0%8f%e7%b1%b3' class='tag-link-210' title='4个话题' style="color:#726e9b;font-size: 11.666666666667pt;;">小米</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%bc%a0%e6%9c%9d%e9%98%b3' class='tag-link-27' title='2个话题' style="color:#906338;font-size: 8pt;;">张朝阳</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1' class='tag-link-34' title='2个话题' style="color:#af101;font-size: 8pt;;">微信</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e6%9c%8b%e5%8f%8b%e5%9c%88' class='tag-link-499' title='3个话题' style="color:#a3662a;font-size: 10pt;;">微信朋友圈</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e7%b2%89%e4%b8%9d' class='tag-link-703' title='3个话题' style="color:#d9fe45;font-size: 10pt;;">微信粉丝</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e4%bf%a1%e8%90%a5%e9%94%80' class='tag-link-182' title='12个话题' style="color:#cf7b63;font-size: 18.5pt;;">微信营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e5%95%86%e8%90%a5%e9%94%80' class='tag-link-479' title='3个话题' style="color:#c54f8d;font-size: 10pt;;">微商营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e5%be%ae%e7%a4%be%e5%8c%ba' class='tag-link-54' title='4个话题' style="color:#5d775a;font-size: 11.666666666667pt;;">微社区</a>
+<a href='http://www.shenwang001.com/blog/tag/%e6%99%ba%e6%85%a7%e4%ba%ba%e7%94%9f' class='tag-link-533' title='3个话题' style="color:#442e66;font-size: 10pt;;">智慧人生</a>
+<a href='http://www.shenwang001.com/blog/tag/%e6%9c%8b%e5%8f%8b%e5%9c%88' class='tag-link-588' title='3个话题' style="color:#475f44;font-size: 10pt;;">朋友圈</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e4%ba%92%e8%81%94' class='tag-link-88' title='6个话题' style="color:#8d98e1;font-size: 14.166666666667pt;;">移动互联</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e4%ba%92%e8%81%94%e7%bd%91' class='tag-link-55' title='3个话题' style="color:#935ea3;font-size: 10pt;;">移动互联网</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%a7%bb%e5%8a%a8%e8%90%a5%e9%94%80' class='tag-link-193' title='3个话题' style="color:#2d8513;font-size: 10pt;;">移动营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%bd%91%e7%bb%9c%e6%8e%a8%e5%b9%bf' class='tag-link-190' title='4个话题' style="color:#4e924e;font-size: 11.666666666667pt;;">网络推广</a>
+<a href='http://www.shenwang001.com/blog/tag/%e7%bd%91%e7%bb%9c%e8%90%a5%e9%94%80' class='tag-link-30' title='20个话题' style="color:#87fc7e;font-size: 22pt;;">网络营销</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%90%a5%e9%94%80%e6%96%b9%e6%b3%95' class='tag-link-41' title='4个话题' style="color:#b996a2;font-size: 11.666666666667pt;;">营销方法</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%a7%86%e9%a2%91%e7%bd%91%e7%ab%99' class='tag-link-36' title='2个话题' style="color:#f7981c;font-size: 8pt;;">视频网站</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%b0%b7%e6%ad%8c' class='tag-link-85' title='5个话题' style="color:#b6d01d;font-size: 13pt;;">谷歌</a>
+<a href='http://www.shenwang001.com/blog/tag/%e8%b4%be%e8%b7%83%e4%ba%ad' class='tag-link-43' title='3个话题' style="color:#9c3d78;font-size: 10pt;;">贾跃亭</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%98%bf%e9%87%8c%e5%b7%b4%e5%b7%b4' class='tag-link-66' title='17个话题' style="color:#c7f773;font-size: 21pt;;">阿里巴巴</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%9b%b7%e5%86%9b' class='tag-link-17' title='4个话题' style="color:#29d65b;font-size: 11.666666666667pt;;">雷军</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a4%90%e9%a5%aeo2o' class='tag-link-112' title='3个话题' style="color:#1a81d2;font-size: 10pt;;">餐饮O2O</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a9%ac%e4%ba%91' class='tag-link-90' title='13个话题' style="color:#226614;font-size: 19.166666666667pt;;">马云</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%a9%ac%e5%8c%96%e8%85%be' class='tag-link-351' title='3个话题' style="color:#3815ff;font-size: 10pt;;">马化腾</a>
+<a href='http://www.shenwang001.com/blog/tag/%e9%ad%85%e6%97%8f' class='tag-link-150' title='3个话题' style="color:#ba7037;font-size: 10pt;;">魅族</a>
+<a href='http://www.shenwang001.com/blog/tag/iphone-6' class='tag-link-21' title='2个话题' style="color:#e29fd6;font-size: 8pt;;">iPhone 6</a>
+<a href='http://www.shenwang001.com/blog/tag/o2o' class='tag-link-18' title='9个话题' style="color:#5f7546;font-size: 16.666666666667pt;;">O2O</a>
+<a href='http://www.shenwang001.com/blog/tag/seo%e4%bc%98%e5%8c%96' class='tag-link-212' title='5个话题' style="color:#f52042;font-size: 13pt;;">seo优化</a></div>
+<div class="clear"></div></aside>				<div class="sidebar-roll">
+			<aside id="hot_post-4" class="widget widget_hot_post"><h3 class="widget-title"><p><i class="icon-st"></i></p>热门文章</h3>
+<div id="hot_post_widget">
+	<ul>
+	     
+	    <li><span class='li-icon li-icon-1'>1</span><a href="http://www.shenwang001.com/blog/zhuanjia/1274.html">董明珠借势营销“任性”亮出格力手机...</a></li><li><span class='li-icon li-icon-2'>2</span><a href="http://www.shenwang001.com/blog/sem/1254.html">百度实行全站安全加密 加速互联网H...</a></li><li><span class='li-icon li-icon-3'>3</span><a href="http://www.shenwang001.com/blog/zhihui/1227.html">广东的回南天来了，底裤不够用？地...</a></li><li><span class='li-icon li-icon-4'>4</span><a href="http://www.shenwang001.com/blog/sem/1280.html">说SEO全部靠技术是混蛋，说不需要...</a></li><li><span class='li-icon li-icon-5'>5</span><a href="http://www.shenwang001.com/blog/guanli/1240.html">“坏”领导才是大爱，有图有真相！</a></li><li><span class='li-icon li-icon-6'>6</span><a href="http://www.shenwang001.com/blog/yidong/weixin/1267.html">微信新规打击营销号？</a></li><li><span class='li-icon li-icon-7'>7</span><a href="http://www.shenwang001.com/blog/yidong/weibo/1270.html">解读90后大学生参与微博营销行为</a></li><li><span class='li-icon li-icon-8'>8</span><a href="http://www.shenwang001.com/blog/sem/1238.html">网站建设中需注意的有关谷歌SEO的...</a></li><li><span class='li-icon li-icon-9'>9</span><a href="http://www.shenwang001.com/blog/news/1259.html">12306图形验证码“逼疯”抢票软件</a></li><li><span class='li-icon li-icon-10'>10</span><a href="http://www.shenwang001.com/blog/wangluoyingxiao/1225.html">一个新媒体营销人的6项修炼</a></li>	    			</ul>
+</div>
+
+<div class="clear"></div></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title"><p><i class="icon-st"></i></p>功能</h3>			<ul>
+						<li><a href="http://www.shenwang001.com/blog/wp-login.php">登录</a></li>
+			<li><a href="http://www.shenwang001.com/blog/feed">文章<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.shenwang001.com/blog/comments/feed">评论<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="https://cn.wordpress.org/" title="基于WordPress，一个优美、先进的个人信息发布平台。">WordPress.org</a></li>			</ul>
+<div class="clear"></div></aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title"><p><i class="icon-st"></i></p>关注我们,学习更多</h3>			<div class="textwidget"><center><img src="http://www.shenwang001.com/shenwang001/Images/ewm.png" height="186" width="186" alt="关注深网SEO,随时随地学"></center></div>
+		<div class="clear"></div></aside>		</div>
+	</div>
+<div class="clear"></div>
+<footer id="footer">
+	<div class="site-info">
+		<a href="http://www.shenwang001.com" target="_blank">深网网络旗下网站</a> Copyright &copy; 深网传媒  保留所有权利.&nbsp;&nbsp;
+		<span class="info-add">
+
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253242877'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1253242877' type='text/javascript'%3E%3C/script%3E"));</script>			粤ICP备12017982号		</span>
+	</div>
+	<!-- .site-info -->
+<div id="sidr" style="display: none;"><a id="simple-menu-s" href="#sidr"><i class="icon-close"></i></a><div class="menu-sem-container"><ul id="menu-sem-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25"><a href="http://www.shenwang001.com/blog/">首页</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://www.shenwang001.com/blog/category/news">最新资讯</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-773"><a href="http://www.shenwang001.com/blog/category/wangluoyingxiao">网络营销</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774"><a href="http://www.shenwang001.com/blog/category/yidong">移动营销</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://www.shenwang001.com/blog/category/jingyan">实战经验</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://www.shenwang001.com/blog/category/zhuanjia">人物论点</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="http://www.shenwang001.com/blog/category/sem">sem竞价推广</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="http://www.shenwang001.com/blog/category/guanli">企业智慧管理</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-879"><a href="http://www.shenwang001.com/blog/category/zhihui">智慧杂谈</a></li>
+</ul></div></div>
+
+<div id="login">
+	<h1>用户登录</h1>
+	<form action="http://www.shenwang001.com/blog/wp-login.php?redirect_to=http%3A%2F%2Fwww.shenwang001.com%2Fblog%2Fjingyan%2F465.html" method="post" id="loginform">
+		<fieldset id="inputs">
+			<input id="username" type="text"  name="log" id="log" placeholder="名称" required>
+			<input id="password" type="password" name="pwd" id="pwd" placeholder="密码" required>
+		</fieldset>
+		<fieldset id="actions">
+		<input type="submit" id="submit" value="登录">
+		<input type="hidden" name="redirect_to" value="/blog/tag/o2o" />
+		<label><input type="checkbox" name="rememberme" id="modlogn_remember" value="yes"  checked="checked" alt="Remember Me" >记住登录信息</label>
+		</fieldset>
+	</form>
+</div>
+<ul id="scroll">
+	<li><a class="scroll_t" title="返回顶部"><i class="icon-scroll_t"></i></a></li>
+			<li><a href="#share" id="share-main" title="分享"><i class="icon-share"></i></a></li>
+	
+		<li><a class="scroll_b" title="转到底部"><i class="icon-scroll_b"></i></a></li>
+</ul>
+<div id="share">
+	<h4>分享到：</h4>
+	<div class="bdsharebuttonbox">
+		<a title="分享到QQ空间" href="#" class="icon-qzone" class="bds_qzone" data-cmd="qzone"></a>
+		<a title="分享到新浪微博" href="#" class="icon-tsina" class="bds_tsina" data-cmd="tsina"></a>
+		<a title="分享到腾讯微博" href="#" class="icon-tqq" class="bds_tqq" data-cmd="tqq"></a>
+		<a title="分享到人人网" href="#" class="icon-renren" class="bds_renren" data-cmd="renren"></a>
+		<a title="分享到微信" href="#" class="icon-weixin" class="bds_weixin" data-cmd="weixin"></a>
+		<a href="#" class="icon-more" class="bds_more" data-cmd="more"></a>
+	</div>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</footer>
+<!-- #footer -->
+</div><!-- #main -->
+</div><!-- #page -->
+<script type="text/javascript">
+    document.onkeydown = chang_page;function chang_page(e) {
+        var e = e || event,
+        keycode = e.which || e.keyCode;
+        if (keycode == 33 || keycode == 37) location = 'http://www.shenwang001.com/blog/tag/o2o';
+        if (keycode == 34 || keycode == 39) location = 'http://www.shenwang001.com/blog/tag/o2o/page/2';
+    }
+</script>
+<script type='text/javascript' src='http://www.shenwang001.com/blog/wp-content/themes/Ality/js/jquery.sidr.min.js?ver=1.2.1'></script>
+
+</body>
+</html>

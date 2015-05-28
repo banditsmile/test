@@ -1,0 +1,76 @@
+﻿/*Reset*/
+@import "elements.less";
+/*清除内外边距*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,/* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li,/* list elements 列表元素 */
+pre,/*text formatting elements 文本格式元素 */
+form,fieldset,legend,input,button,textarea,/*form elements 表单元素*/
+th,td{/*table elements 表格元素*/
+    margin:0;padding:0;
+}
+
+h1{font-size:18px;}/*18px/12px = 1.5*/
+h2{font-size:14px;font-weight:normal;}
+h3{font-size:14px;}/*与正文字号相同*/
+h4,h5,h6{ font-size:100%;}
+
+/* 重置列表元素 */
+ol,ul{list-style:none;}
+
+address,caption,cite,dfn,em,var{font-style:normal;}/*将斜体扶正*/
+code,kbd,samp,pre,tt{font-family: "Courier New", Courier, monospace;}/* 统一等宽字体 */
+small{ font-size: 12px; }/*小于12px的中文很难阅读让small正常化*/
+caption,th{text-align:left;}
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/*添加空字符清除融合*/
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+
+/*清除边线*/
+fieldset,img{border:0;}/*img搭车：让链接里的 img 无边框*/
+abbr,acronym{border:0;font-variant:normal;}
+:focus{outline:0;}
+
+/* 重置表格元素 */
+table{}/*border-collapse:collapse;border-spacing:0;合并边线,边线空间至零*/
+/* 重置 hr */
+hr{border: none;height:1px;}
+
+/*For IE6\IE7*/
+input,button,textarea,select{*font-size:100%;}/*使得表单元素在ie下能继承字体大小*/
+legend{color:#ededed;}
+
+/*html5 display-role reset for older browsers*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html{overflow-y:scroll;}
+
+
+/*Generic Classes*/
+/*设置默认字体*/
+body,
+button,input,select,textarea{/* for ie */
+    font:12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;/*用 ascii 字符表示，使得在任何编码下都无问题*/
+}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+/*Hides from IE-mac*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+
+.l{float:left;}
+.r{float:right;}
+ 
+
+.shadow{background:#fff;/*box-shadow:0 0 8px rgba(0,0,0,0.75);*/}
+.radius{border:1px solid #e6e6e6;border-radius:0 0 5px 5px;box-shadow:0 1px 3px rgba(0,0,0,0.75);}
+#bridgehead{left:-9px !important}
