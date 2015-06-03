@@ -5,14 +5,8 @@
  * Date: 2015/3/22
  * Time: 0:09
  */
-$config=array(
-	'username'=>'webtronics',
-	'password'=>'liaoba.3501@',
-	'host' => '10.1.2.116',
-	'port' => 56822,
-	'base_path' =>'/home/webtronics/htdocs/www/liaoba_boss/',
-	'file_mod' =>0755
-);
+include_once '../config.php';
+$config= $host_116;
 
 $config_local = array(
 	'base_path' =>'/var/www/mosheng/boss/',
