@@ -6,8 +6,8 @@
  * Time: 22:13
  */
 define('ENVIRONMENT', 'development');
-define('APP_PATH',dirname(__FILE__));
-define('SYS_PATH',realpath(dirname(__FILE__).'/../system'));
+define('APP_PATH',realpath(dirname(__FILE__)).'/application');
+define('SYS_PATH',realpath(dirname(__FILE__).'/system'));
 define('EXT','.php');
 if (defined('ENVIRONMENT')) {
 	switch (ENVIRONMENT){
@@ -23,4 +23,11 @@ if (defined('ENVIRONMENT')) {
 	}
 }
 
-include '../../config.php';
+include APP_PATH.'/config/config.php';
+include APP_PATH.'/config/constants.php';
+
+include SYS_PATH.'/library/DatabaseConnection.php';
+
+include SYS_PATH.'/helpers/common.php';
+
+

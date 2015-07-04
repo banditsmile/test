@@ -25,9 +25,20 @@ function json_output($status=0,$message='',$data=array()){
 	exit(json_encode(array('errno'=>$status,'message'=>$message,'data'=>$data)));
 }
 
-$username = get_post('username');
-$password = get_post('password');
-$users = include './config/users.php';
-if(empty($username)||empty($password) || !isset($users[$username]) ||$password!==$users[$username][1]){
-	json_output(401,'验证失败');
+function login(){
+	$username = get_post('username');
+	$password = get_post('password');
+	$users = include './config/users.php';
+	if(empty($username)||empty($password) || !isset($users[$username]) ||$password!==$users[$username][1]){
+		json_output(401,'验证失败');
+	}
+}
+
+function auth(){
+	if(isset($_SESSION['username'])){
+		return array('username'=>$_SESSION['username'],'group'=>$_SESSION['group']);
+	}else{
+		$user_info = login();
+	}
+
 }
