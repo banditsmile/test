@@ -1,0 +1,120 @@
+<html>
+<head><title>Image Filter v1.0</title></head>
+<body>
+<!--
+                           Image Filter v 1.0
+                          http://www.SysTurn.com
+
+//   This program is free software; you can redistribute it and/or modify
+//   it under the terms of the ISLAMIC RULES and GNU Lesser General Public
+//   License either version 2, or (at your option) any later version.
+//
+//   ISLAMIC RULES should be followed and respected if they differ
+//   than terms of the GNU LESSER GENERAL PUBLIC LICENSE
+//
+//   This program is distributed in the hope that it will be useful,
+//   but WITHOUT ANY WARRANTY; without even the implied warranty of
+//   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//   GNU General Public License for more details.
+//
+//   You should have received a copy of the license with this software;
+//   If not, please contact support @ S y s T u r n .com to receive a copy.
+
+-->
+<pre>
+
+What is this ?
+==============
+This class is a nudity filter for images. It tests whether
+an image is nude or not. Currently It works with PNG, GIF
+and JPG true colors pictures.
+
+
+How does it work ?
+===================
+The idea of this class is to scan the image pixel by pixel
+and test if the color of each pixel is between a human skin
+color range, then it returns the percent of found pixels to
+the number of pixels in the picture.
+Before scanning we divide the picture into shapes;
+
+    ---------------------------------
+    |               1               |
+    |   -------------------------   |
+    |   |       |       |       |   |
+    |   |   ----|       |----   |   |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    | 1 | 2 | 3 |   4   | 3 | 2 | 1 |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    |   |   |   |       |   |   |   |
+    |   --------|       |--------   |
+    |           |       |           |
+    ---------------------------------
+
+As long as you go into the middle of the picture, the color score
+will be higher.
+The idea behind this calculation; that almost all human pictures
+are centered and focusing on the person who is in the picture.
+
+
+Ideas for better scanning
+=========================
+- After marking a pixel as "skin" we see how many pixels meet together to
+  create a "piece" of skin. But this calculation will take much memory and time.
+  
+- Instead of using one big color range, we split it into small ranges,
+  Including the African skin colors range. But this will take much memory and time also.
+  
+- The class still needs a better color comparison to make sure that
+  colors like the "Yellow" for example (which comes between the min and max
+  color values of the human skin colors) will not be counted. I think this
+  can be done if we compare Red, Green, and Blue values for the pixel color
+  with the Red, Green, and Blue values for the min and max colors.
+
+
+How to use this ?
+=================
+create an object from the class and call the ->GetScore() method giving
+it the image file path, it will return the score in percentage value.
+In my tests, When it says 30% or higher you should suspect the picture.
+
+$filter = new ImageFilter;
+echo 'My picture score is: ' . $filter->GetScore('mypicture.jpg');
+
+For debugging, you can call the other fucntion ->GetScoreAndFill()
+This will do the same as ->GetScore() but also will create a new picture
+from the input picture and fill matched pixels with a new color.
+
+$filter->GetScoreAndFill('mypicture.jpg', 'mypicture_filled.jpg');
+
+
+Limitations
+===========
+- The success rate will not be high when using this class as it now,
+  but I just wanted to share the idea cause I believe that in open source
+  world, you will find thousands helping you to complete the job better
+  than finishing it by only yourself.
+  
+- No calculations for African skin colors.
+
+- No calculations for non true colors pictures (e.g. 256 colors).
+
+- No calculations for animated GIF pictures
+
+
+IMPORTANT NOTE
+==============
+PLEASE DO NOT TEST THIS CLASS WITH PORN PICTURES!
+THE MAIN PURPOSE OF THIS CLASS IS TO PREVENT THIS KIND OF PICTURES.
+TO TEST THIS CLASS YOU CAN USE BABES PICTURES. AN EXAMPLE OF THESE
+PICTURES THAT YOU CAN USE FOR TESTING, CAN BE FOUND AT:
+<a href="http://systurn.com/ImageFilter/example_images/">http://systurn.com/ImageFilter/example_images/</a>
+
+</pre>
+</body>
+</html>
