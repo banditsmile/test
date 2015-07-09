@@ -70,8 +70,9 @@ class ftp_manager extends connection_manager{
 	}
 
 	public function get_list($dir_name){
+		$dir_path = rtrim($this->config['base_path'],'/').'/'.ltrim($dir_name,'/');
 		$this->check_connect();
-		$list = ftp_nlist($this->session,$dir_name);
+		$list = ftp_nlist($this->session,$dir_path);
 		return $list;
 	}
 }
