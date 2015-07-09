@@ -262,7 +262,7 @@ class ALIOSS{
 
 	/**
 	 * 默认构造函数
-	 * @param string $access_id (Optional)
+	 * @param string $_access_id (Optional)
 	 * @param string $access_key (Optional)
 	 * @param string $hostname (Optional)
 	 * @throws OSS_Exception
@@ -1286,13 +1286,13 @@ class ALIOSS{
 
 		//file
 		$this->is_empty($file, OSS_FILE_PATH_IS_NOT_ALLOWED_EMPTY);
-
+		
 		if($this->chk_chinese($file)){
 			$file = iconv('utf-8','gbk',$file);
 		}
 		
 		$options[self::OSS_FILE_UPLOAD] = $file;
-
+		
 		if(!file_exists($options[self::OSS_FILE_UPLOAD])){
 			throw new OSS_Exception($options[self::OSS_FILE_UPLOAD].OSS_FILE_NOT_EXIST);
 		}
@@ -2035,18 +2035,13 @@ class ALIOSS{
 		$bucket = $options['bucket']; unset($options['bucket']);
 		
 		$directory = $options['directory']; unset($options['directory']);
-		echo '-------------',PHP_EOL;
-		echo $directory,PHP_EOL;
-		echo '-------------',PHP_EOL;
 		if($this->chk_chinese($directory)){
-			//$directory = iconv('utf-8','gbk',$directory);
-		}
-		echo '-------------',PHP_EOL;
-		echo $directory,PHP_EOL;
-		echo '-------------',PHP_EOL;
+			$directory = iconv('utf-8','gbk',$directory);
+		}		
+		
 		//判断是否目录
 		if(!is_dir($directory)){
-			throw new OSS_Exception($directory.' is not a directory...,pls check it');
+			throw new OSS_Exception($dir.' is not a directory...,pls check it');
 		}
 				
 		$object = '';
@@ -2070,7 +2065,8 @@ class ALIOSS{
 		}
 		
 		//read directory
-		$file_list_array = $this->read_dir($directory,$exclude,$recursive);
+		$file_list_array = $this->read_dir($directory,$exclude,$recursive);		
+		
 		if(!$file_list_array){
 			throw new OSS_Exception($directory.' is empty...');
 		}
@@ -2336,7 +2332,7 @@ class ALIOSS{
 		if(ALI_DISPLAY_LOG){
 			echo $msg."\n<br/>";
 		}
-
+		
 		if(ALI_LOG){
 			if(!error_log(date('Y-m-d H:i:s')." : ".$msg."\n", 3,$log_name)){
 				throw new OSS_Exception(OSS_WRITE_LOG_TO_FILE_FAILED);
@@ -2477,18 +2473,14 @@ class ALIOSS{
 	 * 读取目录
 	 * @param string $dir (Required) 目录名
 	 * @param boolean $recursive (Optional) 是否递归，默认为false
-	 * @param string $exclude Optional 需要忽略的文件名
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-05
 	 * @return array
 	 */
-	private  function read_dir($dir, $exclude = ".svn", $recursive = false){
+	private  function read_dir($dir, $exclude = ".|..|.svn", $recursive = false){
 		static $file_list_array = array();
-		static $base_path = '';
-		empty($base_path) and $base_path=$dir;
 		
 		$exclude_array = explode("|", $exclude);
-		$exclude_array = array_unique(array_merge($exclude_array,array('.','..')));
 		//读取目录
 		if($handle = opendir($dir)){
 			while ( false !== ($file = readdir($handle))){						
@@ -2499,7 +2491,7 @@ class ALIOSS{
 					}else{
 						$file_list_array[] = array(
 							'path' => $new_file,
-							'file' => ltrim(str_replace($base_path,'',$new_file),'/')
+							'file' => $file,
 						);
 					}
 				}
