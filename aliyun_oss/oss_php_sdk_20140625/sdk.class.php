@@ -162,10 +162,10 @@ class ALIOSS{
 
 	//OBJECT GROUP
 	const OSS_OBJECT_GROUP = 'x-oss-file-group';
-	
+
 	//Multi Part
 	const OSS_MULTI_PART = 'uploads';
-	
+
 	//Multi Delete
 	const OSS_MULTI_DELETE = 'delete';
 
@@ -193,8 +193,8 @@ class ALIOSS{
     const OSS_CORS_ALLOWED_HEADER='AllowedHeader';
     const OSS_CORS_EXPOSE_HEADER='ExposeHeader';
     const OSS_CORS_MAX_AGE_SECONDS='MaxAgeSeconds';
-    
-    
+
+
     const OSS_OPTIONS_ORIGIN = 'Origin';
     const OSS_OPTIONS_REQUEST_METHOD = 'Access-Control-Request-Method';
     const OSS_OPTIONS_REQUEST_HEADERS = 'Access-Control-Request-Headers';
@@ -211,32 +211,32 @@ class ALIOSS{
 	 * 是否开启debug模式
 	 */
 	private $debug_mode = true;
-	
+
 	/**
 	 * 最大重试次数
 	 */
 	private $max_retries = 3;
-	
+
 	/**
 	 * 已经重试次数
 	 */
-	private   $redirects = 0;	
-	
+	private   $redirects = 0;
+
 	/**
 	 * 虚拟地址
 	 */
 	private $vhost;
-	
+
 	/**
 	 * 路径表现方式
 	 */
 	private $enable_domain_style = false;
-	
+
 	/**
 	 * 请求URL
 	 */
 	private  $request_url;
-	
+
 	/**
 	 * OSS API ACCESS ID
 	 */
@@ -251,7 +251,7 @@ class ALIOSS{
 	 * hostname
 	 */
 	private $hostname;
-	
+
 	/**
 	 * port number
 	 */
@@ -305,7 +305,7 @@ class ALIOSS{
 
 	/*%******************************************************************************************************%*/
 	//属性
-	
+
 	/**
 	 * 设置debug模式
 	 * @param boolean $debug_mode (Optional)
@@ -316,7 +316,7 @@ class ALIOSS{
 	public function set_debug_mode($debug_mode = true){
 		$this->debug_mode = $debug_mode;
 	}
-	
+
 	/**
 	 * 设置最大尝试次数
 	 * @param int $max_retries
@@ -327,7 +327,7 @@ class ALIOSS{
 	public function set_max_retries($max_retries = 3){
 		$this->max_retries = $max_retries;
 	}
-	
+
 	/**
 	 * 获取最大尝试次数
 	 * @author xiaobing.meng@alibaba-inc.com
@@ -348,13 +348,13 @@ class ALIOSS{
 	 */
 	public function set_host_name($hostname, $port = null){
 		$this->hostname = $hostname;
-		
+
 		if($port){
 			$this->port = $port;
 			$this->hostname .= ':'.$port;
 		}
 	}
-	
+
 	/**
 	 * 设置vhost地址
 	 * @author xiaobing.meng@alibaba-inc.com
@@ -365,11 +365,11 @@ class ALIOSS{
 	public function set_vhost($vhost){
 		$this->vhost = $vhost;
 	}
-	
+
 	/**
 	 * 设置路径形式，如果为true,则启用三级域名，如bucket.oss.aliyuncs.com
 	 * @author xiaobing.meng@alibaba-inc.com
-	 * @param boolean $enable_domain_style 
+	 * @param boolean $enable_domain_style
 	 * @since 2012-06-11
 	 * @return void
 	 */
@@ -377,7 +377,7 @@ class ALIOSS{
 		$this->enable_domain_style = $enable_domain_style;
 	}
 
-	
+
 	/*%******************************************************************************************************%*/
 	//请求
 
@@ -391,25 +391,25 @@ class ALIOSS{
 	public function auth($options){
 		//开始记录LOG
 		$msg = "---LOG START---------------------------------------------------------------------------\n";
-		
+
 		//验证Bucket,list_bucket时不需要验证
 		if(!( ('/' == $options[self::OSS_OBJECT]) && ('' == $options[self::OSS_BUCKET]) && ('GET' == $options[self::OSS_METHOD])) && !$this->validate_bucket($options[self::OSS_BUCKET])){
 			throw new OSS_Exception('"'.$options[self::OSS_BUCKET].'"'.OSS_BUCKET_NAME_INVALID);
 		}
-	
+
 		//验证Object
 		if(isset($options[self::OSS_OBJECT]) && !$this->validate_object($options[self::OSS_OBJECT])){
 			throw  new OSS_Exception($options[self::OSS_OBJECT].OSS_OBJECT_NAME_INVALID);
 		}
-		
+
 		//Object编码为UTF-8
 		if($this->is_gb2312($options[self::OSS_OBJECT])){
 			$options[self::OSS_OBJECT] = iconv('GB2312', "UTF-8",$options[self::OSS_OBJECT]);
 		}elseif($this->check_char($options[self::OSS_OBJECT],true)){
 			$options[self::OSS_OBJECT] = iconv('GBK', "UTF-8",$options[self::OSS_OBJECT]);
-		}	
+		}
 
-		
+
 		//验证ACL
 		if(isset($options[self::OSS_HEADERS][self::OSS_ACL]) && !empty($options[self::OSS_HEADERS][self::OSS_ACL])){
 			if(!in_array(strtolower($options[self::OSS_HEADERS][self::OSS_ACL]), self::$OSS_ACL_TYPES)){
@@ -417,25 +417,25 @@ class ALIOSS{
 			}
 		}
 
-				
+
 		//定义scheme
 		$scheme = $this->use_ssl ? 'https://' : 'http://';
-		
+
 		if($this->enable_domain_style){
 			$hostname = $this->vhost ? $this->vhost : (($options[self::OSS_BUCKET] =='')?$this->hostname:($options[self::OSS_BUCKET].'.').$this->hostname);
 		}else{
 			$hostname = (isset($options[self::OSS_BUCKET]) && ''!==$options[self::OSS_BUCKET])?$this->hostname.'/'.$options[self::OSS_BUCKET]:$this->hostname;
 		}
 
-		
+
 		//请求参数
 		$resource = '';
 		$sub_resource = '';
 		$signable_resource = '';
 		$query_string_params = array();
 		$signable_query_string_params = array();
-		$string_to_sign = '';		
-		
+		$string_to_sign = '';
+
 		$headers = array (
 			self::OSS_CONTENT_MD5 => '',
 			self::OSS_CONTENT_TYPE => isset($options[self::OSS_CONTENT_TYPE])?$options[self::OSS_CONTENT_TYPE]:'application/x-www-form-urlencoded',
@@ -452,60 +452,60 @@ class ALIOSS{
 			$query_string_params = array_merge($query_string_params,$options[self::OSS_QUERY_STRING]);
 		}
 		$query_string = $this->to_query_string($query_string_params);
-	
+
 		$signable_list = array(
 			'partNumber',
-			'uploadId',			
+			'uploadId',
 		);
-		
+
 		foreach ($signable_list as $item){
 			if(isset($options[$item])){
-				$signable_query_string_params[$item] = $options[$item]; 
+				$signable_query_string_params[$item] = $options[$item];
 			}
 		}
 		$signable_query_string = $this->to_query_string($signable_query_string_params);
-		
+
 		//合并 HTTP headers
 		if (isset ( $options [self::OSS_HEADERS] )) {
 			$headers = array_merge ( $headers, $options [self::OSS_HEADERS] );
 		}
-		
+
 		//生成请求URL
 		$conjunction = '?';
-		
+
 		$non_signable_resource = '';
 
 		if (isset($options[self::OSS_SUB_RESOURCE])){
 			$signable_resource .= $conjunction . $options[self::OSS_SUB_RESOURCE];
 			$conjunction = '&';
-		}	
+		}
 
 		if($signable_query_string !== ''){
 			$signable_query_string = $conjunction.$signable_query_string;
 			$conjunction = '&';
 		}
-		
+
 		if($query_string !== ''){
 			$non_signable_resource .= $conjunction . $query_string;
-			$conjunction = '&';			
+			$conjunction = '&';
 		}
-		
+
 		$this->request_url = 	 $scheme . $hostname . $signable_resource . $signable_query_string . $non_signable_resource;
 
 		$msg .= "--REQUEST URL:----------------------------------------------\n".$this->request_url."\n";
-		
+
 		//创建请求
 		$request = new RequestCore($this->request_url);
-		 
+
 		// Streaming uploads
 		if (isset($options[self::OSS_FILE_UPLOAD])){
 			if (is_resource($options[self::OSS_FILE_UPLOAD])){
-				$length = null; 
+				$length = null;
 
 				if (isset($options[self::OSS_CONTENT_LENGTH])){
 					$length = $options[self::OSS_CONTENT_LENGTH];
 				}elseif (isset($options[self::OSS_SEEK_TO])){
-					
+
 					$stats = fstat($options[self::OSS_FILE_UPLOAD]);
 
 					if ($stats && $stats[self::OSS_SIZE] >= 0){
@@ -521,7 +521,7 @@ class ALIOSS{
 			}else{
 				$request->set_read_file($options[self::OSS_FILE_UPLOAD]);
 
-				$length = $request->read_stream_size; 
+				$length = $request->read_stream_size;
 
 				if (isset($options[self::OSS_CONTENT_LENGTH])){
 					$length = $options[self::OSS_CONTENT_LENGTH];
@@ -544,7 +544,7 @@ class ALIOSS{
 
 		if (isset($options[self::OSS_SEEK_TO])){
 			$request->set_seek_position((integer) $options[self::OSS_SEEK_TO]);
-		}	
+		}
 
 		if (isset($options[self::OSS_FILE_DOWNLOAD])){
 			if (is_resource($options[self::OSS_FILE_DOWNLOAD])){
@@ -552,26 +552,26 @@ class ALIOSS{
 			}else{
 				$request->set_write_file($options[self::OSS_FILE_DOWNLOAD]);
 			}
-		}		
-		
-		
+		}
+
+
 		if(isset($options[self::OSS_METHOD])){
 			$request->set_method($options[self::OSS_METHOD]);
-			$string_to_sign .= $options[self::OSS_METHOD] . "\n";			
+			$string_to_sign .= $options[self::OSS_METHOD] . "\n";
 		}
-		
+
 		if (isset ( $options [self::OSS_CONTENT] )) {
 			$request->set_body ( $options [self::OSS_CONTENT] );
 			if ($headers[self::OSS_CONTENT_TYPE] === 'application/x-www-form-urlencoded'){
 				$headers[self::OSS_CONTENT_TYPE] = 'application/octet-stream';
-			}			
-			
+			}
+
 			$headers[self::OSS_CONTENT_LENGTH] = strlen($options [self::OSS_CONTENT]);
 			$headers[self::OSS_CONTENT_MD5] = $this->hex_to_base64(md5($options[self::OSS_CONTENT]));
 		}
 
 		uksort($headers, 'strnatcasecmp');
-		
+
 		foreach ( $headers as $header_key => $header_value ) {
 			$header_value = str_replace ( array ("\r", "\n" ), '', $header_value );
 			if ($header_value !== '') {
@@ -587,15 +587,15 @@ class ALIOSS{
 				$string_to_sign .= $header_value . "\n";
 			}elseif (substr(strtolower($header_key), 0, 6) === self::OSS_DEFAULT_PREFIX){
 				$string_to_sign .= strtolower($header_key) . ':' . $header_value . "\n";
-			}			
+			}
 		}
-	
+
 		$string_to_sign .= '/' . $options[self::OSS_BUCKET];
 		$string_to_sign .=  $this->enable_domain_style ? ($options[self::OSS_BUCKET]!=''? ($options[self::OSS_OBJECT]=='/'?'/':'') :'' ) : '';
 		$string_to_sign .= rawurldecode($signable_resource) . urldecode($signable_query_string);
 
 		$msg .= "STRING TO SIGN:----------------------------------------------\n".$string_to_sign."\n";
-		
+
 		$signature = base64_encode(hash_hmac('sha1', $string_to_sign, $this->access_key, true));
 		$request->add_header('Authorization', 'OSS ' . $this->access_id . ':' . $signature);
 
@@ -603,27 +603,27 @@ class ALIOSS{
 			return $this->request_url . $conjunction . self::OSS_URL_ACCESS_KEY_ID.'=' . $this->access_id . '&'.self::OSS_URL_EXPIRES.'=' . $options[self::OSS_PREAUTH] . '&'.self::OSS_URL_SIGNATURE.'=' . rawurlencode($signature);
 		}elseif (isset($options[self::OSS_PREAUTH])){
 			return $this->request_url;
-		}		
-		
+		}
+
 		if ($this->debug_mode){
 			$request->debug_mode = $this->debug_mode;
 		}
 
 		$msg .= "REQUEST HEADERS:----------------------------------------------\n".serialize($request->request_headers)."\n";
-		
+
 		$request->send_request();
 
 		$response_header = $request->get_response_header();
 		$response_header['x-oss-request-url'] = $this->request_url;
 		$response_header['x-oss-redirects'] = $this->redirects;
 		$response_header['x-oss-stringtosign'] = $string_to_sign;
-		$response_header['x-oss-requestheaders'] = $request->request_headers;				
-		
+		$response_header['x-oss-requestheaders'] = $request->request_headers;
+
 		$msg .= "RESPONSE HEADERS:----------------------------------------------\n".serialize($response_header)."\n";
-		
+
 		$data =  new ResponseCore ( $response_header , $request->get_response_body (), $request->get_response_code () );
-	
-		if((integer)$request->get_response_code() === 400 /*Bad Request*/ || (integer)$request->get_response_code() === 500 /*Internal Error*/ || (integer)$request->get_response_code() === 503 /*Service Unavailable*/){	
+
+		if((integer)$request->get_response_code() === 400 /*Bad Request*/ || (integer)$request->get_response_code() === 500 /*Internal Error*/ || (integer)$request->get_response_code() === 503 /*Service Unavailable*/){
 		   if($this->redirects <= $this->max_retries ){
 		   		//设置休眠
 		   		$delay = (integer) (pow(4, $this->redirects) * 100000);
@@ -632,13 +632,13 @@ class ALIOSS{
 		   		$data = $this->auth($options);
 		   }
 		}
-		
+
 		$msg .= "RESPONSE DATA:----------------------------------------------\n".serialize($data)."\n";
 		$msg .= date('Y-m-d H:i:s').":---LOG END---------------------------------------------------------------------------\n";
 		//add log
 		$this->log($msg);
-		
-		$this->redirects = 0;	
+
+		$this->redirects = 0;
 		return $data;
 	}
 
@@ -788,7 +788,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Get Bucket's Logging
 	 * @param string $bucket (Required)
@@ -852,11 +852,11 @@ class ALIOSS{
 		$logging_enabled_part->addChild('TargetBucket', $target_bucket);
 		$logging_enabled_part->addChild('TargetPrefix', $target_prefix);
 
-		$options[self::OSS_CONTENT] = $xml->asXML();		
+		$options[self::OSS_CONTENT] = $xml->asXML();
 		echo	$xml->asXML();
 		return $this->auth($options);
 	}
-	
+
      /**
 	 * Delete Bucket's Logging
 	 * @param string $bucket (Required)
@@ -885,7 +885,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Set Bucket's Website
 	 * @param string $bucket (Required)
@@ -918,15 +918,15 @@ class ALIOSS{
 		$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><WebsiteConfiguration></WebsiteConfiguration>');
 		$index_document_part=$xml->addChild('IndexDocument');
 		$error_document_part=$xml->addChild('ErrorDocument');
-		
+
 		$index_document_part->addChild('Suffix', $index_document);
 		$error_document_part->addChild('Key', $error_document);
 
-		$options[self::OSS_CONTENT] = $xml->asXML();		
+		$options[self::OSS_CONTENT] = $xml->asXML();
 		echo	$xml->asXML();
 		return $this->auth($options);
 	}
-	
+
      /**
 	 * Get Bucket's Website
 	 * @param string $bucket (Required)
@@ -955,7 +955,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Delete Bucket's Website
 	 * @param string $bucket (Required)
@@ -984,7 +984,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Set Bucket's Cors
 	 * @param string $bucket (Required)
@@ -1013,30 +1013,30 @@ class ALIOSS{
 		$options[self::OSS_CONTENT_TYPE] = 'application/xml';
 
 		$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><CORSConfiguration></CORSConfiguration>');
-		
+
 		foreach ($cors_rules as $cors_rule){
 			$cors_rule_part = $xml->addChild('CORSRule');
-			
-			foreach ($cors_rule[self::OSS_CORS_ALLOWED_ORIGIN] as $value){	
+
+			foreach ($cors_rule[self::OSS_CORS_ALLOWED_ORIGIN] as $value){
 				$cors_rule_part->addChild(self::OSS_CORS_ALLOWED_ORIGIN, $value);
 			}
-			
-			foreach ($cors_rule[self::OSS_CORS_ALLOWED_HEADER] as $value){	
+
+			foreach ($cors_rule[self::OSS_CORS_ALLOWED_HEADER] as $value){
 				$cors_rule_part->addChild(self::OSS_CORS_ALLOWED_HEADER, $value);
 			}
-			
-			foreach ($cors_rule[self::OSS_CORS_ALLOWED_METHOD] as $value){	
+
+			foreach ($cors_rule[self::OSS_CORS_ALLOWED_METHOD] as $value){
 				$cors_rule_part->addChild(self::OSS_CORS_ALLOWED_METHOD, $value);
 			}
-			
-			foreach ($cors_rule[self::OSS_CORS_EXPOSE_HEADER] as $value){	
+
+			foreach ($cors_rule[self::OSS_CORS_EXPOSE_HEADER] as $value){
 				$cors_rule_part->addChild(self::OSS_CORS_EXPOSE_HEADER, $value);
 			}
-			
-			$cors_rule_part->addChild(self::OSS_CORS_MAX_AGE_SECONDS, $cors_rule[self::OSS_CORS_MAX_AGE_SECONDS]);
-		}	
 
-		$options[self::OSS_CONTENT] = $xml->asXML();		
+			$cors_rule_part->addChild(self::OSS_CORS_MAX_AGE_SECONDS, $cors_rule[self::OSS_CORS_MAX_AGE_SECONDS]);
+		}
+
+		$options[self::OSS_CONTENT] = $xml->asXML();
 		return $this->auth($options);
 	}
      /**
@@ -1067,7 +1067,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Delete Bucket's Cors
 	 * @param string $bucket (Required)
@@ -1096,7 +1096,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
      /**
 	 * Options Object
 	 * @param string $bucket (Required)
@@ -1166,7 +1166,7 @@ class ALIOSS{
 		self::OSS_MAX_KEYS => isset($options[self::OSS_MAX_KEYS])?$options[self::OSS_MAX_KEYS]:self::OSS_MAX_KEYS_VALUE,
 		self::OSS_MARKER => isset($options[self::OSS_MARKER])?$options[self::OSS_MARKER]:'',
 		);
-				
+
 		$response = $this->auth ( $options );
 
 		return $response;
@@ -1234,7 +1234,7 @@ class ALIOSS{
 		//内容校验
 		$this->validate_content($options);
 
-			
+
 		$objArr = explode('/', $object);
 		$basename = array_pop($objArr);
 		$extension = explode ( '.', $basename );
@@ -1244,13 +1244,13 @@ class ALIOSS{
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_METHOD] = self::OSS_HTTP_PUT;
 		$options[self::OSS_OBJECT] = $object;
-		
+
 		if(!isset($options[self::OSS_LENGTH])){
 			$options[self::OSS_CONTENT_LENGTH] = strlen($options[self::OSS_CONTENT]);
 		}else{
 			$options[self::OSS_CONTENT_LENGTH] = $options[self::OSS_LENGTH];
 		}
-		
+
 		if(!isset($options[self::OSS_CONTENT_TYPE]) && isset($content_type) && !empty($content_type) ){
 			$options[self::OSS_CONTENT_TYPE] = $content_type;
 		}
@@ -1286,36 +1286,36 @@ class ALIOSS{
 
 		//file
 		$this->is_empty($file, OSS_FILE_PATH_IS_NOT_ALLOWED_EMPTY);
-		
+
 		if($this->chk_chinese($file)){
-			$file = iconv('utf-8','gbk',$file);
+			//$file = iconv('utf-8','gbk',$file);
 		}
-		
+
 		$options[self::OSS_FILE_UPLOAD] = $file;
-		
+
 		if(!file_exists($options[self::OSS_FILE_UPLOAD])){
 			throw new OSS_Exception($options[self::OSS_FILE_UPLOAD].OSS_FILE_NOT_EXIST);
 		}
-		
+
 		$filesize = filesize($options[self::OSS_FILE_UPLOAD]);
 		$partsize = 1024 * 1024 ; //默认为 1M
-		
-		
+
+
 		$extension = explode ( '.', $file );
 		$extension = array_pop ( $extension );
 		$content_type = MimeTypes::get_mimetype(strtolower($extension));
-				
+
 		$options[self::OSS_METHOD] = self::OSS_HTTP_PUT;
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_OBJECT] = $object;
 		$options[self::OSS_CONTENT_TYPE] = $content_type;
 		$options[self::OSS_CONTENT_LENGTH] = $filesize;
-				
+
 		$response = $this->auth($options);
 		return $response;
 	}
-	
-	
+
+
 	/**
 	 * 拷贝Object
 	 * @param string $bucket (Required)
@@ -1419,7 +1419,7 @@ class ALIOSS{
 
 		return $response;
 	}
-	
+
 	/**
 	 * 批量删除objects
 	 * @param string $bucket(Required)
@@ -1444,15 +1444,15 @@ class ALIOSS{
 		if(!is_array($objects) || !$objects){
 			throw new OSS_Exception('The ' . __FUNCTION__ . ' method requires the "objects" option to be set as an array.');
 		}
-		
+
 		$options[self::OSS_METHOD] = self::OSS_HTTP_POST;
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_OBJECT] = '/';
 		$options[self::OSS_SUB_RESOURCE] = 'delete';
 		$options[self::OSS_CONTENT_TYPE] = 'application/xml';
-		
+
 		$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><Delete></Delete>');
-		
+
 		// Quiet mode?
 		if (isset($options['quiet'])){
 			$quiet = 'false';
@@ -1464,16 +1464,16 @@ class ALIOSS{
 
 			$xml->addChild('Quiet', $quiet);
 		}
-				
+
 		// Add the objects
 		foreach ($objects as $object){
 			$xobject = $xml->addChild('Object');
-			$object = $this->s_replace($object);		
+			$object = $this->s_replace($object);
 			$xobject->addChild('Key', $object);
-		}		
+		}
 
-		$options[self::OSS_CONTENT] = $xml->asXML();		
-			
+		$options[self::OSS_CONTENT] = $xml->asXML();
+
 		return $this->auth($options);
 	}
 
@@ -1499,7 +1499,7 @@ class ALIOSS{
 
 		//object
 		$this->is_empty($object,OSS_OBJECT_IS_NOT_ALLOWED_EMPTY);
-		
+
 		if(isset($options[self::OSS_FILE_DOWNLOAD]) && $this->chk_chinese($options[self::OSS_FILE_DOWNLOAD])){
 			$options[self::OSS_FILE_DOWNLOAD] = iconv('utf-8','gbk',$options[self::OSS_FILE_DOWNLOAD]);
 		}
@@ -1507,22 +1507,22 @@ class ALIOSS{
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_METHOD] = self::OSS_HTTP_GET;
 		$options[self::OSS_OBJECT] = $object;
-		
+
 		if(isset($options['lastmodified'])){
 			$options[self::OSS_HEADERS][self::OSS_IF_MODIFIED_SINCE] = $options['lastmodified'];
             unset($options['lastmodified']);
 		}
-		
+
 		if(isset($options['etag'])){
 			$options[self::OSS_HEADERS][self::OSS_IF_NONE_MATCH] = $options['etag'];
             unset($options['etag']);
 		}
-		
+
 		if(isset($options['range'])){
 			$options[self::OSS_HEADERS][self::OSS_RANGE] = 'bytes=' . $options['range'];
             unset($options['range']);
 		}
-		
+
 		return $this->auth ( $options );
 	}
 
@@ -1561,7 +1561,7 @@ class ALIOSS{
 
 	/*%******************************************************************************************************%*/
 	//Multi Part相关操作	
-	
+
 	/**
 	 * 计算文件可以分成多少个part，以及每个part的长度以及起始位置
 	 * 方法必须在 <upload_part()>中调用
@@ -1569,20 +1569,20 @@ class ALIOSS{
 	 * @param integer $filesize (Required) 文件大小
 	 * @param integer $part_size (Required) part大小,默认5M
 	 * @return array An array 包含 key-value 键值对. Key 为 `seekTo` 和 `length`.
-	 */	
+	 */
 	public function get_multipart_counts($filesize, $part_size = 5242880 ){
 		$i = 0;
 		$sizecount = $filesize;
 		$values = array();
 
-		if((integer)$part_size <= 5242880){ 
+		if((integer)$part_size <= 5242880){
 			$part_size = 5242880;	//5M
 		}elseif ((integer)$part_size > 524288000){
 			$part_size = 524288000; //500M
 		}else{
 			$part_size = 52428800; //50M
-		}		
-		
+		}
+
 		while ($sizecount > 0)
 		{
 			$sizecount -= $part_size;
@@ -1593,9 +1593,9 @@ class ALIOSS{
 			$i++;
 		}
 
-		return $values;		
+		return $values;
 	}
-	
+
 	/**
 	 * 初始化multi-part upload，并且返回uploadId
 	 * @param string $bucket (Required) Bucket名称
@@ -1628,9 +1628,9 @@ class ALIOSS{
 
 		$response = $this->auth ( $options );
 
-		return $response;		
+		return $response;
 	}
-	
+
 	/**
 	 * 上传part
 	 * @param string $bucket (Required) Bucket名称
@@ -1656,19 +1656,19 @@ class ALIOSS{
 		if (!isset($options[self::OSS_FILE_UPLOAD]) || !isset($options['partNumber'])){
 			throw new OSS_Exception('The `fileUpload` and `partNumber` options are both required in ' . __FUNCTION__ . '().');
 		}
-						
+
 		$options[self::OSS_METHOD] = self::OSS_HTTP_PUT;
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_OBJECT] = $object;
-		$options[self::OSS_UPLOAD_ID] = $upload_id;	
-		
+		$options[self::OSS_UPLOAD_ID] = $upload_id;
+
 		if(isset($options[self::OSS_LENGTH])){
 			$options[self::OSS_CONTENT_LENGTH] =  $options[self::OSS_LENGTH];
 		}
 
 		return $this->auth($options);
 	}
-	
+
 	/**
 	 * list part
 	 * @param string $bucket (Required) Bucket名称
@@ -1676,7 +1676,7 @@ class ALIOSS{
 	 * @param string $upload_id (Required) uploadId
 	 * @param array $options (Optional) Key-Value数组，其中可以包括以下的key
 	 * @return ResponseCore
-	 */	
+	 */
 	public function list_parts($bucket, $object, $upload_id, $options = null){
 		//options
 		$this->validate_options($options);
@@ -1702,11 +1702,11 @@ class ALIOSS{
 				$options[self::OSS_QUERY_STRING][$param] = $options[$param];
 				unset($options[$param]);
 			}
-		}	
+		}
 
 		return $this->auth($options);
 	}
-	
+
 	/**
 	 * 中止上传mulit-part upload
 	 * @param string $bucket (Required) Bucket名称
@@ -1714,7 +1714,7 @@ class ALIOSS{
 	 * @param string $upload_id (Required) uploadId
 	 * @param array $options (Optional) Key-Value数组，其中可以包括以下的key
 	 * @return ResponseCore
-	 */	
+	 */
 	public function abort_multipart_upload($bucket, $object, $upload_id, $options = NULL){
 		//options
 		$this->validate_options($options);
@@ -1733,10 +1733,10 @@ class ALIOSS{
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_OBJECT] = $object;
 		$options[self::OSS_UPLOAD_ID] = $upload_id;
-		
+
 		return $this->auth($options);
 	}
-	
+
 	/**
 	 * 完成multi-part上传
 	 * @param string $bucket (Required) Bucket名称
@@ -1745,7 +1745,7 @@ class ALIOSS{
 	 * @param string $parts xml格式文件
 	 * @param array $options (Optional) Key-Value数组，其中可以包括以下的key
 	 * @return ResponseCore
-	 */	
+	 */
 	public function complete_multipart_upload($bucket, $object, $upload_id, $parts, $options = NULL){
 		//options
 		$this->validate_options($options);
@@ -1759,14 +1759,14 @@ class ALIOSS{
 
 		//object
 		$this->is_empty($object,OSS_OBJECT_IS_NOT_ALLOWED_EMPTY);
-		
+
 		$options[self::OSS_METHOD] = self::OSS_HTTP_POST;
 		$options[self::OSS_BUCKET] = $bucket;
 		$options[self::OSS_OBJECT] = $object;
 		$options[self::OSS_UPLOAD_ID] = $upload_id;
 		$options[self::OSS_CONTENT_TYPE] = 'application/xml';
 
-		
+
 		if(is_string($parts)){
 			$options[self::OSS_CONTENT] = $parts;
 		}else if($parts instanceof SimpleXMLElement){
@@ -1789,15 +1789,15 @@ class ALIOSS{
 				}
 			}
 
-			$options[self::OSS_CONTENT] = $xml->asXML();			
+			$options[self::OSS_CONTENT] = $xml->asXML();
 		}
-	
-		return $this->auth($options);		
+
+		return $this->auth($options);
 	}
-	
+
 	/**
 	 * 列出multipart上传
-	 * @param string $bucket (Requeired) bucket 
+	 * @param string $bucket (Requeired) bucket
 	 * @param array $options (Optional) 关联数组
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-05
@@ -1825,10 +1825,10 @@ class ALIOSS{
 				unset($options[$param]);
 			}
 		}
-				
+
 		return $this->auth($options);
 	}
-	
+
 	/**
 	 * multipart上传统一封装，从初始化到完成multipart，以及出错后中止动作
 	 * @param unknown_type $bucket
@@ -1836,7 +1836,7 @@ class ALIOSS{
 	 * @param unknown_type $options
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-05
-	 * @return ResponseCore 
+	 * @return ResponseCore
 	 */
 	public function create_mpu_object($bucket, $object, $options = null){
 		//options
@@ -1856,16 +1856,16 @@ class ALIOSS{
 			$options[self::OSS_CONTENT_LENGTH] = $options[self::OSS_LENGTH];
 			unset($options[self::OSS_LENGTH]);
 		}
-		
+
 		if(isset($options[self::OSS_FILE_UPLOAD])){
 			if($this->chk_chinese($options[self::OSS_FILE_UPLOAD])){
 				$options[self::OSS_FILE_UPLOAD] = mb_convert_encoding($options[self::OSS_FILE_UPLOAD],'UTF-8');
-			}			
+			}
 		}
-		
+
 		if(!isset($options[self::OSS_FILE_UPLOAD])){
 			throw new OSS_Exception('The `fileUpload` option is required in ' . __FUNCTION__ . '().');
-		}elseif (is_resource($options[self::OSS_FILE_UPLOAD])){					
+		}elseif (is_resource($options[self::OSS_FILE_UPLOAD])){
 			$upload_position = isset($options[self::OSS_SEEK_TO]) ? (integer) $options[self::OSS_SEEK_TO] : ftell($options[self::OSS_FILE_UPLOAD]);
 			$upload_filesize = isset($options[self::OSS_CONTENT_LENGTH]) ? (integer) $options[self::OSS_CONTENT_LENGTH] : null;
 
@@ -1875,7 +1875,7 @@ class ALIOSS{
 				if ($stats && $stats[self::OSS_SIZE] >= 0){
 					$upload_filesize = $stats[self::OSS_SIZE] - $upload_position;
 				}
-			}			
+			}
 		}else{
 			$upload_position = isset($options[self::OSS_SEEK_TO]) ? (integer) $options[self::OSS_SEEK_TO] : 0;
 
@@ -1888,13 +1888,13 @@ class ALIOSS{
 				if ($upload_filesize !== false){
 					$upload_filesize -= $upload_position;
 				}
-			}			
+			}
 		}
-		
+
 		if ($upload_position === false || !isset($upload_filesize) || $upload_filesize === false || $upload_filesize < 0){
 			throw new OSS_Exception('The size of `fileUpload` cannot be determined in ' . __FUNCTION__ . '().');
 		}
-		
+
 		// 处理partSize
 		if (isset($options[self::OSS_PART_SIZE])){
 			// 小于5M
@@ -1913,7 +1913,7 @@ class ALIOSS{
 		// 如果上传的文件小于partSize,则直接使用普通方式上传
 		if ($upload_filesize < $options[self::OSS_PART_SIZE] && !isset($options['uploadId'])){
 			return $this->upload_file_by_file($bucket, $object, $options[self::OSS_FILE_UPLOAD]);
-		}	
+		}
 
 		// 初始化multipart
 		if (isset($options['uploadId'])){
@@ -1921,13 +1921,13 @@ class ALIOSS{
 		}else{
 			//初始化
 			$upload = $this->initiate_multipart_upload($bucket, $object);
-			
+
 			if (!$upload->isOK()){
 				throw new OSS_Exception('Init multi-part upload failed...');
 			}
 			$xml = new SimpleXmlIterator($upload->body);
 			$uploadId = (string)$xml->UploadId;
-		}		
+		}
 
 		// 或的分片
 		$pieces = $this->get_multipart_counts($upload_filesize, (integer) $options[self::OSS_PART_SIZE]);
@@ -1942,39 +1942,39 @@ class ALIOSS{
 				self::OSS_LENGTH => (integer) $piece[self::OSS_LENGTH],
 			));
 		}
-		
+
 		$upload_parts = array();
 		$upload_part_result = true;
-		
+
 		foreach ($response_upload_part as $i=>$response){
 			$upload_part_result = $upload_part_result && $response->isOk();
 		}
-		
+
 		if(!$upload_part_result){
 			throw new OSS_Exception('any part upload failed...,pls try again');
 		}
-		
+
 		foreach ($response_upload_part as $i=>$response){
 			$upload_parts[] = array(
 				'PartNumber' => ($i + 1),
 			    'ETag' => (string) $response->header['etag']
-			);		
+			);
 		}
-				
+
 		return $this->complete_multipart_upload($bucket, $object, $uploadId, $upload_parts);
 	}
-	
-	
+
+
 	/**
 	 * 通过Multi-Part方式上传整个目录，其中的object默认为文件名
-	 * @param string $bucket (Required) 
+	 * @param string $bucket (Required)
 	 * @param string $dir  (Required) 必选
 	 * @param boolean $recursive (Optional) 是否递归，如果为true，则递归读取所有目录，默认为不递归读取
 	 * @param string $exclude 需要过滤的文件
 	 * @param array $options (Optional) 关联数组
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-05
-	 * @return ResponseCore 
+	 * @return ResponseCore
 	 */
 	public function create_mtu_object_by_dir($bucket, $dir, $recursive = false, $exclude = ".|..|.svn", $options = null){
 		//options
@@ -1986,26 +1986,26 @@ class ALIOSS{
 		if($this->chk_chinese($dir)){
 			$dir = iconv('utf-8','gbk',$dir);
 		}
-		
+
 		//判断是否目录
 		if(!is_dir($dir)){
 			throw new OSS_Exception($dir.' is not a directory...,pls check it');
 		}
-		
+
 		$file_list_array = $this->read_dir($dir,$exclude,$recursive);
-				
+
 		if(!$file_list_array){
 			throw new OSS_Exception($dir.' is empty...');
 		}
-		
+
 		$index = 1;
-		
+
 		foreach ($file_list_array as $item){
 			$options = array(
 				self::OSS_FILE_UPLOAD => $item['path'],
 				self::OSS_PART_SIZE => 5242880,
-			);			
-			
+			);
+
 			echo $index++.". ";
 			$response = $this->create_mpu_object($bucket, $item['file'],$options);
 			if($response->isOK()){
@@ -2016,7 +2016,7 @@ class ALIOSS{
 			}
 		}
 	}
-	
+
 	/**
 	 * 通过multi-part方式上传目录(优化版)
 	 * $options = array(
@@ -2031,31 +2031,30 @@ class ALIOSS{
 		if((NULL == $options) || !isset($options['bucket']) || empty($options['bucket']) || !isset($options['directory']) ||empty($options['directory']) ) {
 			throw new OSS_Exception('Bad Request',400);
 		}
-		
+
 		$bucket = $options['bucket']; unset($options['bucket']);
-		
+
 		$directory = $options['directory']; unset($options['directory']);
 		if($this->chk_chinese($directory)){
-			$directory = iconv('utf-8','gbk',$directory);
-		}		
-		
+			//$directory = iconv('utf-8','gbk',$directory);
+		}
 		//判断是否目录
 		if(!is_dir($directory)){
-			throw new OSS_Exception($dir.' is not a directory...,pls check it');
+			throw new OSS_Exception($directory.' is not a directory...,pls check it');
 		}
-				
+
 		$object = '';
 		if(isset($options['object'])){
 			$object = $options['object'];
-			unset($options['object']);	
+			unset($options['object']);
 		}
-		
+
 		$exclude = '.|..|.svn';
 		if (isset($options['exclude']) && !empty($options['exclude'])){
 			$exclude = $options['exclude'];
 			unset($options['exclude']);
 		}
-		
+
 		$recursive = false;
 		if(isset($options['recursive']) && !empty($options['recursive'])){
 			if(in_array($options['recursive'],array(true,false))){
@@ -2063,22 +2062,22 @@ class ALIOSS{
 			}
 			unset($options['recursive']);
 		}
-		
+
 		//read directory
-		$file_list_array = $this->read_dir($directory,$exclude,$recursive);		
-		
+		$file_list_array = $this->read_dir($directory,$exclude,$recursive);
+
 		if(!$file_list_array){
 			throw new OSS_Exception($directory.' is empty...');
 		}
-		
+
 		$index = 1;
-		
+
 		foreach ($file_list_array as $item){
 			$options = array(
 				self::OSS_FILE_UPLOAD => $item['path'],
 				self::OSS_PART_SIZE => 5242880,
-			);			
-			
+			);
+
 			echo $index++.". ";
 			$response = $this->create_mpu_object($bucket, (!empty($object)?$object.'/':'').$item['file'],$options);
 			if($response->isOK()){
@@ -2087,10 +2086,10 @@ class ALIOSS{
 				echo "Upload file {".$item['path']." } failed..\n";
 				continue;
 			}
-		}		
+		}
 	}
-	
-		
+
+
 	/*%******************************************************************************************************%*/
 	//Object Group相关操作
 
@@ -2321,7 +2320,7 @@ class ALIOSS{
 		}else{
 			$log_path = dirname(__FILE__).DIRECTORY_SEPARATOR.'logs'.DIRECTORY_SEPARATOR;
 		}
-		
+
 		//检测日志目录是否存在
 		if(!file_exists($log_path)){
 			throw new OSS_Exception(OSS_LOG_PATH_NOT_EXIST);
@@ -2332,7 +2331,7 @@ class ALIOSS{
 		if(ALI_DISPLAY_LOG){
 			echo $msg."\n<br/>";
 		}
-		
+
 		if(ALI_LOG){
 			if(!error_log(date('Y-m-d H:i:s')." : ".$msg."\n", 3,$log_name)){
 				throw new OSS_Exception(OSS_WRITE_LOG_TO_FILE_FAILED);
@@ -2353,7 +2352,7 @@ class ALIOSS{
 	 */
 	public function to_query_string($options = array()){
 		$temp = array();
-		
+
 		foreach ($options as $key => $value){
 			if (is_string($key) && !is_array($value)){
 				$temp[] = rawurlencode($key) . '=' . rawurlencode($value);
@@ -2362,7 +2361,7 @@ class ALIOSS{
 
 		return implode('&', $temp);
 	}
-	
+
 	/**
 	 * 转化十六进制的数据为base64
 	 *
@@ -2386,7 +2385,7 @@ class ALIOSS{
 		$replace = array('&lt;','&gt;','&amp;','&apos;','&quot;');
 		return str_replace($search, $replace, $subject);
 	}
-	
+
 	/**
 	 * 替换控制字符，诸如&#26; 替换为%1A
 	 * @param unknown $invalid_xml_chars
@@ -2402,10 +2401,10 @@ class ALIOSS{
 			'%0E','%0F','%10','%11','%12','%13','%14','%15','%16','%17','%18','%19','%1A',
 			'%1B','%1C','%1D','%1E','%1F','%7F'
 		);
-		
+
 		return str_replace($search, $replace, $subject);
 	}
-	
+
 	/**
 	 * 检测是否含有中文
 	 * @param string $subject
@@ -2416,41 +2415,41 @@ class ALIOSS{
 	private function chk_chinese($str){
 		return preg_match('/[\x80-\xff]./', $str);
 	}
-	
+
 	/**
 	 * 检测是否GB2312编码
-	 * @param string $str 
+	 * @param string $str
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-20
 	 * @return boolean false UTF-8编码  TRUE GB2312编码
 	 */
-	function is_gb2312($str)  {  
-	    for($i=0; $i<strlen($str); $i++) {  
-	        $v = ord( $str[$i] );  
-	        if( $v > 127) {  
-	            if( ($v >= 228) && ($v <= 233) ){  
-	                if( ($i+2) >= (strlen($str) - 1)) return true;  // not enough characters  
-	                $v1 = ord( $str[$i+1] );  
-	                $v2 = ord( $str[$i+2] );  
-	                if( ($v1 >= 128) && ($v1 <=191) && ($v2 >=128) && ($v2 <= 191) )  
-	                    return false;   //UTF-8编码  
-	                else  
-	                    return true;    //GB编码  
-	            }  
-	        }  
-	    }  
-	} 
+	function is_gb2312($str)  {
+	    for($i=0; $i<strlen($str); $i++) {
+	        $v = ord( $str[$i] );
+	        if( $v > 127) {
+	            if( ($v >= 228) && ($v <= 233) ){
+	                if( ($i+2) >= (strlen($str) - 1)) return true;  // not enough characters
+	                $v1 = ord( $str[$i+1] );
+	                $v2 = ord( $str[$i+2] );
+	                if( ($v1 >= 128) && ($v1 <=191) && ($v2 >=128) && ($v2 <= 191) )
+	                    return false;   //UTF-8编码
+	                else
+	                    return true;    //GB编码
+	            }
+	        }
+	    }
+	}
 
 
 	/**
 	 * 检测是否GBK编码
-	 * @param string $str 
+	 * @param string $str
 	 * @param boolean $gbk
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-06-04
-	 * @return boolean 
-	 */	
-	private function check_char($str, $gbk = true){ 
+	 * @return boolean
+	 */
+	private function check_char($str, $gbk = true){
 	    for($i=0; $i<strlen($str); $i++) {
 	        $v = ord( $str[$i] );
 	        if( $v > 127){
@@ -2473,37 +2472,41 @@ class ALIOSS{
 	 * 读取目录
 	 * @param string $dir (Required) 目录名
 	 * @param boolean $recursive (Optional) 是否递归，默认为false
+	 * @param string $exclude Optional 需要忽略的文件名
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2012-03-05
 	 * @return array
 	 */
-	private  function read_dir($dir, $exclude = ".|..|.svn", $recursive = false){
+	private  function read_dir($dir, $exclude = ".svn", $recursive = false){
 		static $file_list_array = array();
-		
+		static $base_path = '';
+		empty($base_path) and $base_path=$dir;
+
 		$exclude_array = explode("|", $exclude);
+		$exclude_array = array_unique(array_merge($exclude_array,array('.','..')));
 		//读取目录
 		if($handle = opendir($dir)){
-			while ( false !== ($file = readdir($handle))){						
+			while ( false !== ($file = readdir($handle))){
 				if(!in_array(strtolower($file),$exclude_array)){
-					$new_file = $dir.'/'.$file;					
+					$new_file = $dir.'/'.$file;
 					if(is_dir($new_file) && $recursive){
 						$this->read_dir($new_file,$exclude,$recursive);
 					}else{
 						$file_list_array[] = array(
 							'path' => $new_file,
-							'file' => $file,
+							'file' => ltrim(str_replace($base_path,'',$new_file),'/')
 						);
 					}
 				}
 			}
-			
-			closedir($handle);			
-		}			
-		
+
+			closedir($handle);
+		}
+
 		return $file_list_array;
 	}
-	
-	
+
+
 	/**
 	 * 转化object数组为固定个xml格式
 	 * @param string $bucket (Required)
@@ -2586,7 +2589,7 @@ class ALIOSS{
 	 * @throws OSS_Exception
 	 * @author xiaobing.meng@alibaba-inc.com
 	 * @since 2011-12-27
-	 * @return boolean 
+	 * @return boolean
 	 */
 	private function validate_options($options){
 		//$options
@@ -2664,5 +2667,5 @@ class ALIOSS{
 		}
 
 		$options [self::OSS_HEADERS] [$key] = $value;
-	} 	
+	}
 }
