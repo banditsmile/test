@@ -1,0 +1,14 @@
+{
+	"cookiefile":	"/var/www/test/baidu_pcs_ui/.pcs/default.cookie",
+	"captchafile":	"/var/www/test/baidu_pcs_ui/.pcs/captcha.gif",
+	"workdir":	"/",
+	"list_page_size":	20,
+	"list_sort_name":	"name",
+	"list_sort_direction":	"asc",
+	"secure_method":	"plaintext",
+	"secure_key":	"",
+	"secure_enable":	false,
+	"timeout_retry":	true,
+	"max_thread":	1,
+	"max_speed_per_thread":	0
+}
