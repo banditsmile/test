@@ -5,16 +5,18 @@
  * Date: 15/6/30
  * Time: 下午11:11
  */
+error_reporting(E_ALL);
+ini_set('display_errors','1');
 define('BASE_PATH',realpath(dirname(__FILE__)));
-define('SMARTY_DIR',BASE_PATH.'/libs/smarty/');
+include BASE_PATH.'/baidu_pcs.php';
 
-include SMARTY_DIR.'/Smarty.class.php';
+$baidu_pcs = new baidu_pcs();
 
 
-$smarty = new Smarty();
-$smarty->setTemplateDir(BASE_PATH.'/template_c');
+echo "<pre>";
+echo $baidu_pcs->who(),PHP_EOL;
+$list = $baidu_pcs->get_list('/2015-2');
 
-$smarty->assign('public_path',BASE_PATH.'/public');
-$smarty->assign('body_name','body.html');
-
-$smarty->display('index.html');
+var_dump($list[0]);
+$body = 'main';
+//include BASE_PATH.'/templates/index.php';

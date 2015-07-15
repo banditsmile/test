@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zeroClipboard 入门</title>
+    <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery.tipsy/1.0.2/jquery.tipsy.js"></script>
+    <script>
+        $(document).ready(function() {
+            //ZeroClipboard.setMoviePath('assets/ZeroClipboard.swf');
+            var clip = new ZeroClipboard($('#button'));
+            clip.on('load', function(client, args) {
+                $(client.htmlBridge).tipsy();
+            });
+
+            clip.on('noflash wrongflash', function(client, args) {
+                $('#button').hide();
+            });
+
+            clip.on('complete', function(client, args) {
+                var b = $(client.htmlBridge);
+                b.prop('title', $(this).attr('trigger-title'));
+                b.tipsy('show');
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div id="copy" data-clipboard-text="这里是用于复制的内容，CodePlayer">aaaaaaaaaaaaaa</div>
+<td id="button" trigger-title="Done" title="Copy to clipboard">复制</td>
+<textarea cols="20" rows="4" placeholder="粘贴到这里"></textarea>
+</body>
+</html>

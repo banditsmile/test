@@ -5,7 +5,6 @@
  * Date: 15/6/30
  * Time: 下午11:11
  */
-define('BASE_PATH',realpath(dirname(__FILE__)));
 class baidu_pcs_sdk{
 	public function __construct(){
 
@@ -35,7 +34,7 @@ class baidu_pcs extends baidu_pcs_sdk{
 			$context[trim($o_array[0],": ")]=trim($o_array[1]);
 		}
 		if(empty($key)){
-			if(isst($context[$key])){
+			if(isset($context[$key])){
 				return $context[$key];
 			}else{
 				return false;
@@ -142,10 +141,12 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$command = 'pcs list %s';
 		$command = sprintf($command,$path);
 		$result = exec($command,$output,$result);
+		$this->set_context('list_page_size',$page_size);
 		if($result !==0){
 			return false;
 		}
 		$output = array_slice($output,3,-3);//去前三行和后三行的描述信息
+		var_dump($output);
 		$list = array();
 		foreach($output as $out){
 			$row = explode(" ",$out);
@@ -193,6 +194,3 @@ function json_output($status,$message='',$data=array()){
 	echo json_encode(array('errno'=>$status,'msg'=>$message,'data'=>$data));
 	exit();
 }
-$baidu_pcs = new baidu_pcs();
-echo "<pre>";
-var_dump($baidu_pcs->context());
