@@ -16,7 +16,7 @@
     ZeroClipboard.setDefaults({moviePath: 'assets/ZeroClipboard.swf'});
 
     $(document).ready(function() {
-      $('td').each(function(i, e) {
+      $('td:not(.baidu_disk)').each(function(i, e) {
         var content = $(e).html();
         if(content.indexOf('http') == 0) {
           var url = content;
@@ -24,6 +24,14 @@
           $(e).html(content);
         }
       });
+	$('td.baidu_disk').each(function(i, e) {
+		var content = $(e).html();
+		if(content.indexOf('http') == 0) {
+			var url = content;
+			content = '<button class="zeroclipboard-button" data-clipboard-text="' + url + '" trigger-title="Done" title="Copy to clipboard">Copy</button> ';
+			$(e).html(content);
+		}
+	});
 
       var clip = new ZeroClipboard($('.zeroclipboard-button'));
       clip.on('load', function(client, args) {
@@ -89,15 +97,16 @@
  <span>$ </span>vagrant up
 </pre>
 
-  <table id="dataTable" class="stripe cell-border row-border" width="100%">
+  <table id="dataTable" class="stripe cell-border row-border" width="100%" style="table-layout:fixed;">
     <thead>
-    <tr><th>Name</th><th>Provider</th><th>URL</th><th></th><th>Size (MB)</th></tr>
+    <tr><th width="25%">Name</th><th width="10%" >Provider</th><th width="50%">URL</th><th width="5%"></th><th width="10%">Size (MB)</th></tr>
     </thead>
     <tbody>
     <?php
     include 'simple_html_dom/simple_html_dom.php';
     $html = file_get_html('./index.html');
     $j = 0;
+	$url_array=array();
     foreach($html->find('#dataTable tr') as $tr){
       if($j++ ==0){
         continue;
@@ -108,11 +117,15 @@
         $i++;
         $tr_str .= $td->outertext.PHP_EOL;
         if($i==3){
-          $tr_str.='<td></td>'.PHP_EOL;
+			$url = $td->innertext;
+			$url_array[md5(trim($url))]=array(0=>$url);
+          $tr_str.='<td class="baidu_disk">http://www.baidu.com</td>'.PHP_EOL;
         }
       }
       $tr_str.='</tr>'.PHP_EOL;
       echo $tr_str;
+		$url_str = var_export($url_array,true);
+		//file_put_contents('url.php','<?php '.PHP_EOL.'return '.$url_str.';');
     }
     ?>
     </tbody>
