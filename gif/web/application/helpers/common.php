@@ -6,7 +6,9 @@
  * Time: 22:14
  */
 function get_post($key){
+	var_dump($_GET);
 	if(isset($_GET[$key])){
+		var_dump($_GET);
 		return $_GET[$key];
 	}elseif(isset($_POST[$key])){
 		return $_POST[$key];
