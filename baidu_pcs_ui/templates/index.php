@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>baidu_pcs_ui</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
 
@@ -16,6 +16,8 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="public/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="public/js/jquery.isloading.js"></script>
 </head>
 <body>
 <!-- Fixed navbar -->
@@ -65,7 +67,8 @@
                 <li><a href="release.html">审核发布</a></li>
             </ul>
         </div>
-        <?php include BASE_PATH.'/templates/'.$body.'.php';?>
+        <div class="col-md-10" id="page_content">
+        </div>
     </div>
 </div>
 <footer>
@@ -73,5 +76,32 @@
         <p>页脚</p>
     </div>
 </footer>
+<script>
+    var base_path = '/';
+    $(document).ajaxSend(function(event, jqxhr, settings) {
+        $.isLoading({ text: "Loading" });
+    });
+    $(document).ajaxComplete(function() {
+        $.isLoading( "hide" );
+    });
+
+
+    function get_list(path){
+        $.ajax({
+            url:'http://test.centos65.home/baidu_pcs_ui/index.php',
+            data:{action:'get_list',path:path},
+            success:function(data){
+                $('#page_content').html(data);
+                $('#base_path').html(base_path);
+            },
+            dataType:'html'
+        })
+    }
+
+
+    $(document).ready(function(){
+        get_list();
+    });
+</script>
 </body>
 </html>

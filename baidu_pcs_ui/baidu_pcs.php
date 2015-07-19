@@ -30,10 +30,15 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$result = exec($command,$output,$return);
 		$context = array();
 		foreach($output as $o){
-			$o_array = explode("\t",$o);
-			$context[trim($o_array[0],": ")]=trim($o_array[1]);
+			$o = str_replace(array("\""," ","{","}",","),'',$o);
+			$o = trim($o,"\t");
+			if(strlen($o)){
+				$o_array = explode("\t",$o);
+				$context[trim($o_array[0],": ")]= isset($o_array[1]) ? trim($o_array[1]) : '';
+			}
+
 		}
-		if(empty($key)){
+		if(!empty($key)){
 			if(isset($context[$key])){
 				return $context[$key];
 			}else{
@@ -124,35 +129,36 @@ class baidu_pcs extends baidu_pcs_sdk{
 		}
 		$meta = array();
 		foreach($output as $o){
-			$o_array = explode("\t",$o);
+			$o_array = explode("\t",trim($o));
 			$meta[trim($o_array[0],": ")]=trim($o_array[1]);
 		}
 		return $meta;
 	}
 
 	public function get_list($path){
-		$meta = $this->meta($path);
-		if(empty($meta) or ($meta['Is Dir']==="No")){
-			return false;
+		if($path !='' and $path !='/'){
+			$meta = $this->meta($path);
+			if(empty($meta) or ($meta['Is Dir']==="No")){
+				return false;
+			}
 		}
 
 		$page_size = $this->context('list_page_size');
 		$this->set_context('list_page_size',9999);
 		$command = 'pcs list %s';
 		$command = sprintf($command,$path);
-		$result = exec($command,$output,$result);
+		$result = exec($command,$output,$return);
 		$this->set_context('list_page_size',$page_size);
-		if($result !==0){
+
+		if($return !==0){
 			return false;
 		}
-		$output = array_slice($output,3,-3);//去前三行和后三行的描述信息
-		var_dump($output);
+		$output = array_slice($output,3,-4);//去前三行和后三行的描述信息
 		$list = array();
 		foreach($output as $out){
-			$row = explode(" ",$out);
+			$row = array_filter(explode(" ",$out),function($a){ return strlen($a)>0;});
 			$a = array();
-			list($a['type'],$a['size'],$a['date'],$a['time'])=$row;
-			$a['name'] = implde(" ",array_slice($row,4));
+			list($a['type'],$a['size'],$a['date'],$a['time'],$a['name'])=array_values($row);
 			$list[]=$a;
 		}
 		return $list;
@@ -185,12 +191,3 @@ class baidu_pcs extends baidu_pcs_sdk{
 	}
 }
 
-function get_post($key){
-	return isset($_get[$key])?$_GET[$key]:(isset($_POST[$key]) ?$_POST[$key]:'');
-}
-
-function json_output($status,$message='',$data=array()){
-	header('Content-type: application/json');
-	echo json_encode(array('errno'=>$status,'msg'=>$message,'data'=>$data));
-	exit();
-}

@@ -5,18 +5,13 @@
  * Date: 15/6/30
  * Time: 下午11:11
  */
-error_reporting(E_ALL);
-ini_set('display_errors','1');
-define('BASE_PATH',realpath(dirname(__FILE__)));
-include BASE_PATH.'/baidu_pcs.php';
+include 'common.php';
+include 'controller.php';
 
-$baidu_pcs = new baidu_pcs();
+$controller_name = 'baidu_pcs_controller';
+$action = get_post('action');
+empty($action) and $action='index';
 
+$controller = new $controller_name();
 
-echo "<pre>";
-echo $baidu_pcs->who(),PHP_EOL;
-$list = $baidu_pcs->get_list('/2015-2');
-
-var_dump($list[0]);
-$body = 'main';
-//include BASE_PATH.'/templates/index.php';
+call_user_func_array(array($controller,$action),array());
