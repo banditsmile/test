@@ -1,8 +1,8 @@
 <!--网页主体-->
-<div ><span style="padding-right: 5px">当前位置:</span><span id="base_path"></span></div>
+<div ><span style="padding-right: 5px">当前位置:</span><span id="base_path"></span><span id="tips" style="float:right">aaa</span></div>
 <table class="table table-striped table-bordered" id="list_table">
 	<thead>
-	<th><input type="checkbox" name="check_all"></th><th>文件名</th><th>大小</th><th>修改日期</th>
+	<th><input type="checkbox" name="check_all"></th><th>文件名</th><th>大小</th><th>修改日期</th><th>操作</th>
 	</thead>
 	<tbody>
 
@@ -18,6 +18,11 @@
 		</td>
 		<td><?php echo $item['size'];?></td>
 		<td><?php echo $item['date'];?></td>
+		<td>
+			<?php if($item['type']!='d'):?>
+				<button type="button" class="list-group-item download" data="<?php echo $item['name'];?>">下载</button>
+			<?php endif;?>
+		</td>
 	</tr>
 	<?php endforeach;?>
 	</tbody>
@@ -56,6 +61,12 @@
 				base_path = path = base_path+'/'+path;
 			}
 			get_list(path);
-		})
+		});
+
+		$('.download').click(function(){
+			var file = $(this).attr('data');
+			file = base_path+'/'+file;
+			download(file,'');
+		});
 	})
 </script>

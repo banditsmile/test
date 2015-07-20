@@ -15,9 +15,13 @@ class baidu_pcs extends baidu_pcs_sdk{
 		parent::__construct();
 	}
 
+	static public function instance(){
+		return new baidu_pcs();
+	}
 	public function init(){
 
 	}
+
 	public function index(){
 		$result = exec('pcs list',$output,$return);
 		$shell_result = shell_exec('pcs list');
@@ -174,8 +178,14 @@ class baidu_pcs extends baidu_pcs_sdk{
 	public function download($from,$to,$force=false){
 		$force = $force?' -f':'';
 		$status_file = time().'_'.rand(1,100).'.log';//通过该文件可以获取下载状态
-		$command = "pcs download %s %s >  %s &";
-		$command = sprintf($command,$force,$from,$to);
+		$status_file = DOWN_STATUS.'/'.$status_file;
+
+		if(!is_writable($status_file) || !is_writable(substr($to,strrpos($to,'/')+1))){
+			return false;
+		}
+
+		$command = "pcs download %s %s %s >  %s &";
+		$command = sprintf($command,$force,$from,$to,$status_file);
 		$proc = proc_open($command,array(),$pipes,null);
 		if(!is_resource($proc)){
 			return false;
@@ -184,7 +194,9 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$down_info = array(
 			'command'=>$proc_status['command'],
 			'pid'=>$proc_status['pid'],//用来停止下载
-			'progress'=>$status_file
+			'progress'=>$status_file,
+			'from'=>$from,
+			'to'=>$to,
 		);
 		proc_close($proc);
 		return $down_info;

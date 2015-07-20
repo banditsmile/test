@@ -95,7 +95,18 @@
                 $('#base_path').html(base_path);
             },
             dataType:'html'
-        })
+        });
+    }
+
+    function download(file,path){
+        $.ajax({
+            url:'http://test.centos65.home/baidu_pcs_ui/index.php',
+            data:{action:'download',path:path,'file':file},
+            success:function(data){
+                console.log(data);
+            },
+            dataType:'json'
+        });
     }
 
 
