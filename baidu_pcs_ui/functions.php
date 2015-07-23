@@ -33,3 +33,10 @@ if(!function_exists('array_column')){
 		return $result;
 	}
 }
+
+function log_debug($message){
+	is_string($message) or $message=json_encode($message);
+	$message = date('H:i:s').' --> '.$message.PHP_EOL;
+	$log_file = LOG_PATH.'/'.date('Ymd').'.php';
+	return file_put_contents($log_file,$message,FILE_APPEND);
+}

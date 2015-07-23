@@ -84,7 +84,7 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$username = trim(get_post('username'));
 		$password = trim(get_post('password'));
 		if(empty($username) || empty($password)){
-			return json_output(101,'用户名或密码不能为空');
+			return false;
 		}
 
 		$command = 'pcs login --username=%s --password=%s';
@@ -93,9 +93,9 @@ class baidu_pcs extends baidu_pcs_sdk{
 		if($return===0){
 			$result_array=explode(' ',$result);
 			$uid = array_pop($result_array);
-			return json_output(0,'uid '.$uid);
+			return $uid;
 		}else{
-			return json_output(101,'登陆失败');
+			return false;
 		}
 	}
 
@@ -103,9 +103,9 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$command = 'pcs logout';
 		$result = exec($command,$output,$return);
 		if($return === 0){
-			return json_output(0,'登出成功');
+			return true;
 		}else{
-			return json_output(101,'登出失败');
+			return false;
 		}
 
 	}
@@ -126,7 +126,8 @@ class baidu_pcs extends baidu_pcs_sdk{
 
 	public function meta($path){
 		$command = 'pcs meta %s';
-		$command = sprintf($command,$path);
+		$command = sprintf($command,escapeshellarg($path));
+		log_debug($command);
 		$result = exec($command,$output,$return);
 		if($return !==0){
 			return false;
@@ -150,7 +151,7 @@ class baidu_pcs extends baidu_pcs_sdk{
 		$page_size = $this->context('list_page_size');
 		$this->set_context('list_page_size',9999);
 		$command = 'pcs list %s';
-		$command = sprintf($command,$path);
+		$command = sprintf($command,escapeshellarg($path));
 		$result = exec($command,$output,$return);
 		$this->set_context('list_page_size',$page_size);
 
@@ -176,18 +177,22 @@ class baidu_pcs extends baidu_pcs_sdk{
 	 * @desc 下载文件并返回下载状态信息
 	 */
 	public function download($from,$to,$force=false){
+		log_debug(array($from,$to));
 		$force = $force?' -f':'';
 		$status_file = time().'_'.rand(1,100).'.log';//通过该文件可以获取下载状态
 		$status_file = DOWN_STATUS.'/'.$status_file;
 
-		if(!is_writable($status_file) || !is_writable(substr($to,strrpos($to,'/')+1))){
+		if(!is_writable(DOWN_STATUS) || !is_writable(substr($to,0,strrpos($to,'/')+1))){
+			log_debug('status file'.DOWN_STATUS.' or download dir not writeable '.substr($to,0,strrpos($to,'/')+1));
 			return false;
 		}
 
 		$command = "pcs download %s %s %s >  %s &";
-		$command = sprintf($command,$force,$from,$to,$status_file);
+		$command = sprintf($command,$force,escapeshellarg($from),escapeshellarg($to),$status_file);
+		log_debug($command);
 		$proc = proc_open($command,array(),$pipes,null);
 		if(!is_resource($proc)){
+			log_debug('cmd execute failed '.$command);
 			return false;
 		}
 		$proc_status = proc_get_status($proc);

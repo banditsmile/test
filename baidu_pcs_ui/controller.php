@@ -21,7 +21,7 @@ class baidu_pcs_controller extends base_controller{
 	}
 
 	public function index(){
-		return include BASE_PATH.'/templates/index.php';
+		return $this->render('list_body');
 	}
 
 
@@ -45,7 +45,7 @@ class baidu_pcs_controller extends base_controller{
 	}
 
 	public function download(){
-		$file = trim(get_post('file'),'/ ');
+		$file = rtrim(get_post('file'),'/ ');
 		$path = trim(get_post('path'));
 
 		//检查网盘是否存在该文件
@@ -77,7 +77,6 @@ class baidu_pcs_controller extends base_controller{
 		}else{
 			return json_output(104,'下载失败请重试');
 		}
-
 	}
 
 	/**
@@ -96,11 +95,38 @@ class baidu_pcs_controller extends base_controller{
 		}else{
 			$info = array();
 		}
+		$data['status']=0;//开始下载
 		$info[md5($data['from'])]=$data;
 		$info_str = '<?php'.PHP_EOL;
 		$info_str .= 'return '.PHP_EOL;
 		$info_str .=var_export($info,true);
 		$info_str .=';';
 		return file_put_contents($info_file,$info_str);
+	}
+
+	public function download_status(){
+		$down_status = include BASE_PATH.'/data/download.php';
+		$down_list = array();
+		foreach($down_status as $status){
+			if($status['status']==1 or is_file($status['to'])){
+				$status['status']=1;//下载完成
+			}else{
+				$status['info']=file_get_contents($status['progress']);
+			}
+			$down_list[]=$status;
+		}
+		$this->render('download_body',array('down_list'=>$down_list));
+	}
+
+	public function download_info(){
+
+	}
+
+	public function render($template,$data=array()){
+		include BASE_PATH.'/templates/header.php';
+		extract($data);
+		include BASE_PATH.'/templates/'.$template.'.php';
+		include BASE_PATH.'/templates/footer.php';
+		return true;
 	}
 }
