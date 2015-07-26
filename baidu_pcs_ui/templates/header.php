@@ -61,8 +61,8 @@
         <!--左侧导航栏-->
         <div class="col-md-2">
             <ul>
-                <li><a href="submit.html">提交更新</a></li>
-                <li><a href="records.html">所有更新</a></li>
+                <li><a href="<?php echo site_url(array());?>">文件列表</a></li>
+                <li><a href="<?php echo site_url(array('action'=>'download_status'));?>">下载状态</a></li>
                 <li><a href="rollback.html">回滚记录</a></li>
                 <li><a href="release.html">审核发布</a></li>
             </ul>

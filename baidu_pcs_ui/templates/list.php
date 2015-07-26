@@ -1,8 +1,8 @@
 <!--网页主体-->
-<div ><span style="padding-right: 5px">当前位置:</span><span id="base_path"></span><span id="tips" style="float:right">aaa</span></div>
+
 <table class="table table-striped table-bordered" id="list_table">
 	<thead>
-	<th><input type="checkbox" name="check_all"></th><th>文件名</th><th>大小</th><th>修改日期</th><th>操作</th>
+	<th><input type="checkbox" name="check_all"/></th><th>文件名</th><th>大小</th><th>修改日期</th><th>操作</th>
 	</thead>
 	<tbody>
 

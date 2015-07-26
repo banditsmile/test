@@ -13,6 +13,7 @@ define('BASE_PATH',realpath(dirname(__FILE__)));
 define('DOWN_PATH','/data/hdd/public/baidu');
 define('DOWN_STATUS',BASE_PATH.'/data/down_status');
 define('LOG_PATH',BASE_PATH.'/logs');
+define('BASE_URL','');
 
 
 include BASE_PATH.'/baidu_pcs.php';
