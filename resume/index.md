@@ -18,7 +18,6 @@
  - 技术博客：http://blog.icodeu.com
 
  - 期望职位：PHP高级程序员
- - 期望薪资：税前月薪12k~15k
  - 期望城市：深圳
 
 ---
@@ -26,6 +25,8 @@
 # 工作经历
 
 ## 深圳市微话科技有限公司 （ 2014年9月 ~  ）
+
+### 陌声项目
 
 ### 微话项目
 我在项目中负责server端接口的开发。我在项目中推荐使用memcache缓存减轻数据库的访问压力，使用分库分表提高了数据库的查询效率。通过项目我学会了通过slowquery来记录慢查询。
@@ -71,8 +72,8 @@
 
 - Web开发：PHP/javascript
 - Web框架：CodeIgniter
-- 前端框架：dwz/JQuery
-- 数据库相关：MySQL/PDO/Memcache/Redis
+- 前端框架：JQuery
+- 数据库相关：MySQ/Memcache/Redis
 - 版本管理、文档和自动化部署工具：Svn/Git
 
 ---
