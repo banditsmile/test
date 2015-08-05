@@ -5,6 +5,9 @@
  * Date: 15/6/30
  * Time: 下午11:11
  */
+
+ini_set('display_errors','On');
+error_reporting(E_ALL);
 include 'common.php';
 include 'controller.php';
 
