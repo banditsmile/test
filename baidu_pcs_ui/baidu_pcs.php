@@ -173,38 +173,56 @@ class baidu_pcs extends baidu_pcs_sdk{
 	 * @param $from
 	 * @param $to
 	 * @param bool|false $force
+	 * @param $status_file
 	 * @return array|bool
 	 * @desc 下载文件并返回下载状态信息
 	 */
-	public function download($from,$to,$force=false){
-		log_debug(array($from,$to));
+	public function download($from,$to,$force=false,$status_file=''){
 		$force = $force?' -f':'';
-		$status_file = time().'_'.rand(1,100).'.log';//通过该文件可以获取下载状态
-		$status_file = DOWN_STATUS.'/'.$status_file;
+		if(empty($status_file)){
+			$status_file = time().'_'.rand(1,100).'.log';//通过该文件可以获取下载状态
+			$status_file = DOWN_STATUS.'/'.$status_file;
+		}
+
+		$pid_file = BASE_PATH.'/data/pid.txt';
 
 		if(!is_writable(DOWN_STATUS) || !is_writable(substr($to,0,strrpos($to,'/')+1))){
 			log_debug('status file'.DOWN_STATUS.' or download dir not writeable '.substr($to,0,strrpos($to,'/')+1));
 			return false;
 		}
 
-		$command = "pcs download %s %s %s >  %s &";
-		$command = sprintf($command,$force,escapeshellarg($from),escapeshellarg($to),$status_file);
-		log_debug($command);
-		$proc = proc_open($command,array(),$pipes,null);
-		if(!is_resource($proc)){
+		$command = "pcs download %s %s %s >  %s 2>&1 & echo $! > %s";
+		$command = sprintf($command,$force,escapeshellarg($from),escapeshellarg($to),$status_file,$pid_file);
+		$retult = exec($command,$output,$return);
+		if($return !==0){
 			log_debug('cmd execute failed '.$command);
 			return false;
 		}
-		$proc_status = proc_get_status($proc);
+		if(is_file($pid_file)){
+			$pid = file_get_contents($pid_file);
+			unlink($pid_file);
+		}else{
+			$pid=0;
+		}
 		$down_info = array(
-			'command'=>$proc_status['command'],
-			'pid'=>$proc_status['pid'],//用来停止下载
+			'command'=>$command,
+			'pid'=>$pid,//用来停止下载
 			'progress'=>$status_file,
 			'from'=>$from,
 			'to'=>$to,
+			'status'=>0,
 		);
-		proc_close($proc);
 		return $down_info;
+	}
+	public function kill($pid){
+		$command = "kill %d";
+		$command = sprintf($command,$pid);
+		$result = exec($command,$output,$return);
+		if($return===0){
+			return true;
+		}else{
+			return false;
+		}
 	}
 }
 

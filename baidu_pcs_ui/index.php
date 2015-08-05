@@ -11,6 +11,11 @@ error_reporting(E_ALL);
 include 'common.php';
 include 'controller.php';
 
+//@todo 自动获取站点根目录
+if(empty(BASE_URL)){
+    define(BASE_PATH,'');
+}
+
 $controller_name = 'baidu_pcs_controller';
 $action = get_post('action');
 empty($action) and $action='index';
