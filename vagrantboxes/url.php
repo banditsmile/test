@@ -3,41 +3,42 @@ return array (
   'd7fffc215d4db5708114d2e9007bf8bb' => 
   array (
     0 => 'https://atlas.hashicorp.com/ARTACK/boxes/debian-jessie',
+      1 => 'http://pan.baidu.com/s/1mgvNqY0'
   ),
   'f6453176396f7961961923bf19d9bb41' => 
   array (
     0 => 'https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box',
-    1=>'/software/开发工具/vagrant/boxes/'
+    1=>'http://pan.baidu.com/s/1qWoT9nu'
   ),
   '30591454b416333998ac18752b0c773e' => 
   array (
     0 => 'https://github.com/holms/vagrant-centos7-box/releases/download/7.1.1503.001/CentOS-7.1.1503-x86_64-netboot.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>''
   ),
   '2b4d8efe2ad2ac3f80c3967c5706a341' => 
   array (
     0 => 'https://github.com/holms/vagrant-jessie-box/releases/download/Jessie-v0.1/Debian-jessie-amd64-netboot.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1eQi2wfS'
   ),
   'ec7be855fe5b3a265aa724f51ff4269c' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/3523744/boxes/debian-8.1-amd64-lxc-puppet/debian-8.1-lxc-puppet.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>''
   ),
   '7fca21ac60c4ccd4c7395652ba747e65' => 
   array (
     0 => 'http://static.gender-api.com/debian-8-jessie-rc2-x64-slim.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1jGw7vQe'
   ),
   'effa656d9d6aeebefb9c397955e36add' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/29173892/vagrant-boxes/debian7.3.0-vbox4.3.6-puppet3.4.1.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>''
   ),
   'e9cc5ab253c38a2b25e73e9435ba40ed' => 
   array (
     0 => 'https://github.com/jose-lpa/veewee-openbsd/releases/download/v0.5.5/openbsd55.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1dDlSk0p'
   ),
   '191b2dd866b3d38dda1824d04fc6fc92' => 
   array (
@@ -46,47 +47,47 @@ return array (
   '710375545a2289e15f0810cd43e87ad9' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/12089300/VirtualBox/openbsd53_amd64_vagrant12.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>''
   ),
   '0a1b419680977a481f322b17df24ebac' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/12089300/VirtualBox/openbsd53_amd64.box',
-      1=>'1106452115'
+      1=>'http://pan.baidu.com/s/1jGISbEA'
   ),
   '573d9cc3588a1967f7cc7030e5bd85d4' => 
   array (
     0 => 'http://ergonlogic.com/files/boxes/aegir-current.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1ntqv7b7'
   ),
   '42126e7b9a89d4594b77ba15a8e72608' => 
   array (
     0 => 'http://ergonlogic.com/files/boxes/debian-current.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1sj9Qna1'
   ),
   'b8606d8e18e04ad395afb0158ebc7e4f' => 
   array (
     0 => 'http://ergonlogic.com/files/boxes/debian-LAMP-current.box',
-      1=>'/software/开发工具/vagrant/boxes/'
+      1=>'http://pan.baidu.com/s/1mgy5fZU'
   ),
   'e6fed4de4bf194092075858971639d20' => 
   array (
     0 => 'http://download.appscale.com/download/AppScale%201.12.0%20VirtualBox%20Image',
-      1=>'1106452115'
+      1=>'http://pan.baidu.com/s/1ufMz0'
   ),
   '9e0fd73f2789eb8b3fbc03d30812ab20' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/31112574/arch64-20130801.box',
-      1=>'1106452115'
+      1=>'http://pan.baidu.com/s/1c08oMFe'
   ),
   'c1a6b43ed772c755d5a3e4e0eaa5b7de' => 
   array (
     0 => 'https://googledrive.com/host/0B_BLFE4aPn5zUVpyaHdLanVnMTg/vagrant-archlinux-2013-8.box',
-      1=>'1106452115'
+      1=>''
   ),
   '73bd5227b53b90e191c744032a54ac34' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/9213047/arch64_2013-07-28.box',
-      1=>'1106452115'
+      1=>''
   ),
   'f2b49ccdf4b6966d01d44eb529159037' => 
   array (
@@ -95,36 +96,37 @@ return array (
   'db0baf105593220c8e730e6afc84d4df' => 
   array (
     0 => 'http://iweb.dl.sourceforge.net/project/flowboard-vagrant-boxes/arch64-2013-07-26-minimal.box',
-      1=>'百度网盘找不到地址,转用uc下载'
+      1=>''
   ),
   '2bbe733920a1394b16859e765b1a1504' => 
   array (
     0 => 'http://iweb.dl.sourceforge.net/project/flowboard-vagrant-boxes/arch64-2013-07-26-chef.box',
-      1=>'百度网盘找不到地址,转用uc下载'
+      1=>''
   ),
   'a0c2f08be9556e9cbcade941e7c4fafb' => 
   array (
     0 => 'http://iweb.dl.sourceforge.net/project/vagrantarchlinx/2011.08.19/archlinux_2011.08.19.box',
-      1=>'百度网盘找不到地址,转用uc下载'
+      1=>''
   ),
   '61ac7a86890a8793c585c79178601270' => 
   array (
     0 => 'http://vagrant.srijn.net/archlinux-x64-2014-01-07.box',
-      1=>'http://pan.baidu.com/s/1mg1Rtuo'
+      1=>'http://pan.baidu.com/s/1ntrH6Dr'
   ),
   'babf95afdde410c88ba82f25b0515323' => 
   array (
     0 => 'https://downloads.sourceforge.net/project/vagrant-archlinux/vagrant-archlinux.box',
-      1=>'942342802'
+      1=>'http://pan.baidu.com/s/1nt7W7QL'
   ),
   '7e238d845eee5233c05f5e9bca3a7f3e' => 
   array (
     0 => 'https://dl.dropboxusercontent.com/u/6750592/Arch_Linux_2013.11_x64.box',
-      1=>'942342802'
+      1=>''
   ),
   '213e4ca33c84a6603e5592ac1970286f' => 
   array (
     0 => 'http://yum.mnxsolutions.com/vagrant/centos_56_32.box',
+      1=>'http://pan.baidu.com/s/1bn9CQOB'
   ),
   '113e8bbcfcfb8ad93776d4a31f61173c' => 
   array (
@@ -200,7 +202,8 @@ return array (
   ),
   '54130fb3bf072cb6240843e86f255d7c' => 
   array (
-    0 => 'https://dl.dropboxusercontent.com/s/srw2tqh58507wik/CentOS7.box',
+      0 => 'https://dl.dropboxusercontent.com/s/srw2tqh58507wik/CentOS7.box',
+      1=>'http://pan.baidu.com/s/1c0xz5W8',
   ),
   '3e3546c7f490c41193afdedacacd3a43' => 
   array (
@@ -217,6 +220,7 @@ return array (
   '2506dd6f0b4308fe880d607c05150e7d' => 
   array (
     0 => 'http://dl.dropbox.com/u/937870/VMs/squeeze64.box',
+      1=>'http://pan.baidu.com/s/1nt48JsX'
   ),
   '3e46f3df9fd8a7d2cbd981f4774b2a62' => 
   array (
@@ -257,6 +261,7 @@ return array (
   '593d2411571f696704779813a8fc7e64' => 
   array (
     0 => 'http://downloads.shadoware.org/wheezy64.box',
+      1=>'http://pan.baidu.com/s/1c0z10lE'
   ),
   '625760abe8d2cb8f13843db88359eca1' => 
   array (
@@ -465,6 +470,7 @@ return array (
   '2ce1ca8ea9da0cd58fbbfc3badbd2e4b' => 
   array (
     0 => 'http://vagrantboxes.devopslive.org/windows-7-enterprise-i386.box',
+      1=>'http://pan.baidu.com/s/1qWzcVIO'
   ),
   '0c407c638d0cda748654c1edaa148376' => 
   array (
@@ -781,10 +787,12 @@ return array (
   'e39af4ed894aeed8f38fde8e0cce2753' => 
   array (
     0 => 'http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210-nocm.box',
+      1=>'http://pan.baidu.com/s/1qW7Qyvi'
   ),
   'bf7cadb61ac7320cc2c41c407cf009ed' => 
   array (
     0 => 'http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box',
+      1=>'http://pan.baidu.com/s/12TpyY'
   ),
   '2f53819fa2d093fee34ac814dbbce325' => 
   array (
@@ -865,6 +873,7 @@ return array (
   'd7807ac6000aaaea7cb5a3dda34dd7b5' => 
   array (
     0 => 'http://grahamc.com/vagrant/ubuntu-12.04.2-i386-chef-11-omnibus.box',
+      1=>'http://pan.baidu.com/s/1jG4ENpO'
   ),
   '103f484ec02bee80bb7396be3614bc0f' => 
   array (
@@ -877,18 +886,22 @@ return array (
   '1a925f1398bbe43227678c75e0a8111f' => 
   array (
     0 => 'http://files.vagrantup.com/lucid32.box',
+      1=>'http://pan.baidu.com/s/1dDDC55B'
   ),
   '51db1aaec3b64aba34272d0c9f19b716' => 
   array (
     0 => 'http://files.vagrantup.com/lucid64.box',
+      1=>'http://pan.baidu.com/s/1dDpVTFN'
   ),
   'e0856e580fb196f3f1ae5a733b3df3df' => 
   array (
     0 => 'http://files.vagrantup.com/precise32.box',
+      1=>'http://pan.baidu.com/s/1oaitS'
   ),
   'a1826991ebec9c1c97c0c2d423ff1b9f' => 
   array (
     0 => 'http://files.vagrantup.com/precise64.box',
+      1=>'http://pan.baidu.com/s/1pJopEDP'
   ),
   'fceebc9f7b3dae39567a029155bbfd65' => 
   array (
@@ -917,6 +930,7 @@ return array (
   'bd4437d5451a56e3abbaf9cbc9864b5a' => 
   array (
     0 => 'http://grahamc.com/vagrant/ubuntu-12.04-omnibus-chef.box',
+      1=>'http://pan.baidu.com/s/1qWrBwx2'
   ),
   '6664f7d1836b8e180810063e5359c271' => 
   array (
@@ -945,6 +959,7 @@ return array (
   '185a620ef7d657360b57d23fd9e4746d' => 
   array (
     0 => 'http://nitron-vagrant.s3-website-us-east-1.amazonaws.com/vagrant_ubuntu_12.04.3_amd64_vmware.box',
+      1=>'http://pan.baidu.com/s/1bnEwAzt'
   ),
   'f380e6d17a0b76a12efdcd7798567ba5' => 
   array (
@@ -961,6 +976,7 @@ return array (
   'ee4cc2f9867b78379483818a67536d6c' => 
   array (
     0 => 'https://oss-binaries.phusionpassenger.com/vagrant/boxes/latest/ubuntu-14.04-amd64-vbox.box',
+      1=>'http://pan.baidu.com/s/1qW3MGxQ'
   ),
   '88b029f265c2ae8947391fbea624199c' => 
   array (
